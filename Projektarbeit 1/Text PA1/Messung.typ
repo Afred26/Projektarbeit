@@ -20,7 +20,7 @@ In der DIN VDE 0100 Norm sind die Bestimmungen zum errichten Niederspannung Anla
     Niederspannungsanlagen"),
     
   ),
-)<table>
+)<table_VDE_0100_600>
 
 == Prüfung Neuanlagen
 Im folgenden Teil werden wir uns nur mit der erst Prüfung einer neuen Anlage nach DIN VDE 0100 Teil 600 #cite(<noauthor_din_2017>) beschäftigen.

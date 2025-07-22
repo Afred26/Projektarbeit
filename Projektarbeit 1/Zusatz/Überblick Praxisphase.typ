@@ -38,7 +38,7 @@
 
     text("Tätigkeiten des Studenten während des Praxiseinsatzes:"), 
     text("Standard Werkzeugkoffer"),
-    text(""),
+    text("Auswahl von Messgeräten"),
     
     text("Baustellen-Phase:"), 
     text("IBN DC Würgau"),

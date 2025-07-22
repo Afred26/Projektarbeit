@@ -1,6 +1,6 @@
 = Transformator
 Das Umspannwerk versorgt die Rechenzentren über je 4 Y(N)yn0(d) Transformatoren eingespeist. 
-#figure(caption: [Transformator], image("../Bilder/UW Waldheim/Tansformator.jpg"))
+#figure(caption: [Transformator], image("../Bilder/UW Waldheim/Tansformator.jpg"))<transformer>
 
 == Aufbau und Typ des Transformators
 Die Transformerbezeichnung Y(N)yn0(d) steht für:

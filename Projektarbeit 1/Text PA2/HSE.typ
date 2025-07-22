@@ -27,7 +27,7 @@ Ziel: Kein dritter kann die Anlage versehentlich unter Spannung setzten.
   align: right,
   text(""),
   figure(caption: "Sticker: Nicht Schalten Es wird gearbeitet", image(height: 130pt, "../Bilder/HSE/Nicht_Schalten_Kleber.png"))
-)
+)<Maßnahmen_gegen_Einschalten>
 
 === Spannungsfreiheit feststellen
 Bevor mit der Arbeit begonnen wird, muss überprüft werden, ob die Anlage tatsächlich spannungsfrei ist. Dies muss mit einerm Zweipoligen-Spannungsprüfer nach DIN EN 61243-3 (VDE 0682-401) geschehen. Die Spannungsfreiheit muss an allen aktiven Leitern (Außen- & Neutralleiter) und so nah wie möglich an der Arbeitsstelle festgestellt werden. Der Spannungsprüfer muss vor und nach der Prüfung auf Funktion getestet werden. Zudem darf die Spannungsfreiheit nur von einer Elektrofachkraft oder einer elektrotechnisch unterwiesenen Person festgestellt werden.
