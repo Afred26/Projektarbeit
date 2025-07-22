@@ -101,7 +101,7 @@
 //For example this @tabele_ref references the table on the previous page.
 
 
-//Vorwort
+//Einleitung
 #include "Zusatz/Vorwort.typ"
 
 #include "Zusatz/Überblick Praxisphase.typ"
@@ -119,8 +119,7 @@
 
 //Hauptteil 2
 
-
+#include "Text PA2/HSE.typ"
 
 //Schluss
 #include "Zusatz/Schluss.typ"
-

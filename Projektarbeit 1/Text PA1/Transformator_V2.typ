@@ -1,4 +1,3 @@
-#set text(region: none )
 = Transformator
 In diesem Kapitel wird der Transformator als zentrales Element der Energieübertragung im Umspannwerk Waldheim behandelt.
 Transformatoren ermöglichen die Anpassung von Spannungsniveaus und tragen wesentlich zur Netzstabilität bei.

@@ -70,4 +70,4 @@ Dies ist besonders wichtig für den Schutz von Personen vor elektrischem Schlag.
 Für einen RCD des Typen A muss die Auslösezeit und der Auslösestrom mit einer Wechselspannung gemessen werden.
 Die Auslösezeit darf dabei nicht über 0,3s liegen (im Normalfall werden Zeiten unter 0,05s erwartet).
 Der Auslösestrom ist das 0,5 – 1fache des Nennauslösestroms des RCDs (bei einer 30mA RCD lieget der Auslösestrom normalerweise bei ca. 21mA).
-Bei einem RCD Typ B (Allstromsensitiv) muss zusätzlich auch die Auslösung mit Gleichstrom gemessen werden, wobei die Auslösezeitz weiterhin unter 0,3s liegt aber der Auslösestrom beim 1 – 2fachen liegt. #cite(<schwab_elektroenergiesysteme_2022>)
+Bei einem RCD Typ B (Allstromsensitiv) muss zusätzlich auch die Auslösung mit Gleichstrom gemessen werden, wobei die Auslösezeitz weiterhin unter 0,3s liegt aber der Auslösestrom beim 1 – 2fachen liegt.
