@@ -16,4 +16,5 @@
   HSE: "Health, Safety und Environment",
   KI: "Künstliche Inteligenz",
   STATCOM: "Static Synchronous Compensator",
+  PSA: "Persönliche Schutzausrüstung",
 )

@@ -10,17 +10,17 @@
 
 == Acronyms
 
-Use the `acr` function to insert acronyms, which looks like this //#acr("Abt").
+Use the `acr` function to insert acronyms, which looks like this #acr("Abt").
 
-//#acrlpl("DIN") are used to define the interaction between different software systems.
+#acrlpl("DIN") are used to define the interaction between different software systems.
 
-//#acrs("IBN") is an architectural style for networked applications.
+#acrs("IBN") is an architectural style for networked applications.
 
 == Glossary
 
 Use the `gls` function to insert glossary terms, which looks like this:
 
-//A #gls("Vulnerability") is a weakness in a system that can be exploited.
+A #gls("Vulnerability") is a weakness in a system that can be exploited.
 
 == Lists
 
@@ -40,7 +40,7 @@ Create figures or tables like this:
 
 === Figures
 
-//#figure(caption: "Image Example", image(width: 4cm, "assets/ts.svg"))
+#figure(caption: "Image Example", image(width: 4cm, "assets/ts.svg"))
 
 === Tables
 
@@ -71,8 +71,8 @@ Create figures or tables like this:
 
 == References
 
-//Cite like this #cite(form: "prose", <iso18004>).
-//Or like this @iso18004.
+Cite like this #cite(form: "prose", <iso18004>).
+Or like this @iso18004.
 
 You can also reference by adding `<ref>` with the desired name after figures or headings.
 

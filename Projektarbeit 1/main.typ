@@ -1,5 +1,5 @@
 #import "@preview/supercharged-dhbw:3.4.1": *
-#import "Zusatz/acronyms.typ": acronyms
+#import "/acronyms.typ": acronyms
 
 #show: supercharged-dhbw.with(
   title: "Inbetriebnahme von Hochspannungs-Anlagen",
@@ -20,7 +20,7 @@
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 
-
+#acr("OS")
 //Einleitung
 #include "Zusatz/Vorwort.typ"
 
@@ -40,6 +40,8 @@
 //Hauptteil 2
 
 #include "Text PA2/HSE.typ"
+
+#include "Text PA2/STATCOM.typ"
 
 //Schluss
 #include "Zusatz/Schluss.typ"
