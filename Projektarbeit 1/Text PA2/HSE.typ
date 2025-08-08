@@ -44,7 +44,7 @@ Mögliche Maßnahmen sind, Isolierende Abdeckungen oder Mechanische Abschrankung
 Da Sicherheit ein zentrales Bestandteil der Unternehmenskultur bei Hitachi Energy ist haben wir noch 5 weitere Sicherheitsregeln. Die 5 Sicherheitsregeln sind allgemeine Grundprinzipien, die für alle Tätigkeiten gelten – unabhängig von der konkreten Aufgabe oder dem Arbeitsumfeld. Sie dienen dem Schutz der Mitarbeitenden, der Anlagen und der Qualität der Arbeit. @kober_elektrosicherheit_handout_2022_2022
 
 === Arbeiten mit klarem Auftrag – und wissen, wer die Verantwortung trägt
-Diese Regel betont die Notwendigkeit klarer Kommunikation und Verantwortungszuweisung. Bevor eine Tätigkeit begonnen wird, muss eindeutig geklärt sein:
+Ein zentraler Grundsatz ist die Notwendigkeit klarer Kommunikation und Verantwortungszuweisung. Bevor eine Tätigkeit begonnen wird, muss eindeutig geklärt sein:
 
 - Was genau zu tun ist
 - Wer die Aufgabe freigegeben hat
@@ -53,7 +53,7 @@ Diese Regel betont die Notwendigkeit klarer Kommunikation und Verantwortungszuwe
 Unklare Zuständigkeiten führen häufig zu Fehlern oder gefährlichen Situationen. Deshalb ist es essenziell, dass jede*r Mitarbeitende weiß, in welchem Rahmen er oder sie handelt – und wann Rücksprache gehalten werden muss.
 
 === Arbeiten nur ausführen, wenn man dafür geschult und berechtigt ist
-Nicht alle dürfen jede Aufgabe übernehmen. Diese Regel stellt sicher, dass nur qualifiziertes Personal mit entsprechender Schulung und Freigabe sicherheitsrelevante Tätigkeiten ausführt. Dazu zählen:
+Nur qualifiziertes Personal darf sicherheitsrelevante Tätigkeiten ausführen – das schützt alle Beteiligten. Deshalb ist es wichtig, dass nur qualifiziertes Personal mit entsprechender Schulung und Freigabe sicherheitsrelevante Tätigkeiten ausführt. Dazu zählen:
 
 - Fachkenntnisse über das System oder Gerät
 - Kenntnisse über Gefahrenquellen
@@ -77,7 +77,7 @@ Die PSA ist die letzte Schutzbarriere zwischen Mensch und Gefahr. Sie muss:
 - korrekt getragen werden
 - regelmäßig geprüft und gewartet werden
 
-Das Tragen der PSA ist nicht optional, sondern verpflichtend – auch bei kurzen oder vermeintlich ungefährlichen Tätigkeiten.
+PSA schützt. Sie ist kein Zusatz, sondern Pflicht. Helm, Handschuhe und Schutzbrille sind Lebensretter.
 
 === Anlagen nur in Betrieb nehmen, wenn die vorgeschriebenen Kontrollen vorgenommen wurden
 Bevor eine Anlage eingeschaltet oder in Betrieb genommen wird, müssen alle sicherheitsrelevanten Prüfungen abgeschlossen sein. Dazu gehören:
