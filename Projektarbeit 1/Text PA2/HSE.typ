@@ -1,4 +1,4 @@
-= Health, Safety und Environment in der Inbertriebnahme
+= Health and Safety in der Inbertriebnahme
 
 == Gefahren
 
@@ -48,4 +48,48 @@ Mögliche Maßnahmen sind, Isolierende Abdeckungen oder Mechanische Abschrankung
 Ziel:
 Verhindern, dass Personen, Werkzeuge oder Material versehentlich in die Gefahrenzone spannungsführender Teile gelangt.
 
-// die 7 Sicherheitsregeln von Hitachi
+
+// die 5 Sicherheitsregeln von Hitachi
+== Die weiteren 5 Sicherheitsregeln von Hitachi
+
+Sicherheit ist ein zentraler Bestandteil der Unternehmenskultur bei Hitachi Energy. Die sogenannten „5+5 Sicherheitsregeln“ bilden das Rückgrat für sicheres Arbeiten im Prüffeld, in der Fertigung und bei Inbetriebnahmen. Die ersten fünf dieser Regeln sind allgemeine Grundprinzipien, die für alle Tätigkeiten gelten – unabhängig von der konkreten Aufgabe oder dem Arbeitsumfeld. Sie dienen dem Schutz der Mitarbeitenden, der Anlagen und der Qualität der Arbeit.
+
+=== Arbeiten mit klarem Auftrag – und wissen, wer die Verantwortung trägt
+Diese Regel betont die Notwendigkeit klarer Kommunikation und Verantwortungszuweisung. Bevor eine Tätigkeit begonnen wird, muss eindeutig geklärt sein:
+
+Was genau zu tun ist,
+Wer die Aufgabe freigegeben hat,
+Wer die Verantwortung für die Durchführung trägt.
+Unklare Zuständigkeiten führen häufig zu Fehlern oder gefährlichen Situationen. Deshalb ist es essenziell, dass jede*r Mitarbeitende weiß, in welchem Rahmen er oder sie handelt – und wann Rücksprache gehalten werden muss.
+
+=== Arbeiten nur ausführen, wenn man dafür geschult und berechtigt ist
+Nicht jede*r darf jede Aufgabe übernehmen. Diese Regel stellt sicher, dass nur qualifiziertes Personal mit entsprechender Schulung und Freigabe sicherheitsrelevante Tätigkeiten ausführt. Dazu zählen:
+
+Fachkenntnisse über das System oder Gerät,
+Kenntnisse über Gefahrenquellen,
+Nachweis über absolvierte Schulungen oder Unterweisungen.
+Diese Regel schützt nicht nur die ausführende Person, sondern auch Kolleg*innen und das Unternehmen vor vermeidbaren Risiken.
+
+=== Nur mit sicheren und intakten Arbeitsmitteln arbeiten
+Werkzeuge, Prüfgeräte und persönliche Schutzausrüstung (PSA) müssen regelmäßig geprüft und in einwandfreiem Zustand sein. Defekte oder manipulierte Arbeitsmittel stellen ein erhebliches Risiko dar. Vor Arbeitsbeginn ist daher zu prüfen:
+
+Ist das Werkzeug vollständig und funktionstüchtig?
+Sind Kabel, Stecker und Gehäuse unbeschädigt?
+Ist das Gerät kalibriert und zugelassen?
+Nur wenn diese Fragen mit „Ja“ beantwortet werden können, darf das Arbeitsmittel verwendet werden.
+
+=== Persönliche Schutzausrüstung (PSA) tragen
+Die PSA ist die letzte Schutzbarriere zwischen Mensch und Gefahr. Sie muss:
+
+zur Tätigkeit passen (z. B. Helm, Schutzbrille, isolierende Handschuhe),
+korrekt getragen werden,
+regelmäßig geprüft und gewartet werden.
+Das Tragen der PSA ist nicht optional, sondern verpflichtend – auch bei kurzen oder vermeintlich ungefährlichen Tätigkeiten.
+
+=== Anlagen nur in Betrieb nehmen, wenn die vorgeschriebenen Kontrollen vorgenommen wurden
+Bevor eine Anlage eingeschaltet oder in Betrieb genommen wird, müssen alle sicherheitsrelevanten Prüfungen abgeschlossen sein. Dazu gehören:
+
+Sichtprüfung auf Schäden oder lose Verbindungen,
+Kontrolle der Erdung und Isolation,
+Funktionstest der Schutzsysteme.
+Diese Regel verhindert, dass unvollständige oder fehlerhafte Systeme in Betrieb gehen – was zu schweren Unfällen oder Sachschäden führen könnte.
