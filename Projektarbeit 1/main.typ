@@ -1,10 +1,10 @@
 #import "@preview/supercharged-dhbw:3.4.1": *
-#import "/acronyms.typ": acronyms
+#import "Zusatz/acronyms.typ": acronyms
 
 #show: supercharged-dhbw.with(
   title: "Inbetriebnahme von Hochspannungs-Anlagen",
   authors: (
-    (name: "Fredrik Schall", student-id: "1194924", course: "TEIT24A", course-of-studies: "Elektro-Technik", company: (
+    (name: "Fredrik Schall", student-id: "1194924", course: "TEIT24A", course-of-studies: "Elektrotechnik", company: (
       (name: "Hitachi Energy Germany AG", post-code: "68309", city: "Mannheim")
     )),
   ),
@@ -20,7 +20,6 @@
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 
-#acr("OS")
 //Einleitung
 #include "Zusatz/Vorwort.typ"
 
@@ -42,6 +41,8 @@
 #include "Text PA2/HSE.typ"
 
 #include "Text PA2/STATCOM.typ"
+
+#include "Text PA2/Wekzeug.typ"
 
 //Schluss
 #include "Zusatz/Schluss.typ"

@@ -33,17 +33,18 @@
     column-gutter: 0%,
     inset: 10pt,
     align: horizon,
-    fill: (_, y) => if y == 0 or y == 3 { luma(200) }
+    fill: (_, y) => if y == 0 or y == 4 { luma(200) }
     else { white },
 
     text("Tätigkeiten des Studenten während des Praxiseinsatzes:"), 
     text("Standard Werkzeugkoffer"),
     text("Auswahl von Messgeräten"),
+    text("LoTo Material ausgewählt"),
     
     text("Baustellen-Phase:"), 
     text("IBN DC Würgau"),
     text("IBN Dieselgenerator Würgau/Eikum"),
-    text("Hot-Commissioning Landesbergen"),
+    text("IBN Landesbergen"),
      
   ),
 )<überblick_2>
