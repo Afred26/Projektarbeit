@@ -20,6 +20,8 @@
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 
+// Ziel sind 25-35 Seiten
+
 //Einleitung
 #include "Zusatz/Vorwort.typ"
 

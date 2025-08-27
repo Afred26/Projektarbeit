@@ -1,3 +1,6 @@
+#import "@preview/supercharged-dhbw:3.4.1": *
+#import "../Zusatz/acronyms.typ": acronyms
+
 = Transformator
 In diesem Kapitel wird der Transformator als zentrales Element der Energieübertragung im Umspannwerk Waldheim behandelt.
 Transformatoren ermöglichen die Anpassung von Spannungsniveaus und tragen wesentlich zur Netzstabilität bei.

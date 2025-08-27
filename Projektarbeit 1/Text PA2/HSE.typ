@@ -1,3 +1,6 @@
+#import "@preview/supercharged-dhbw:3.4.1": *
+#import "../Zusatz/acronyms.typ": acronyms
+
 = Health and Safety in der Inbertriebnahme
 
 == Gefahren
@@ -5,10 +8,10 @@
 == Maßnahmen
 
 == Die 5 Sicherheitsregeln
-Diese Regeln dienen dem Schutz vor elektrischen Gefährdungen und müssen nach DIN VDE 0105 Teil 100 #cite(<noauthor_din_2015>) in der angegebenen Reihenfolge durchgeführt werden:
+Diese Regeln dienen dem Schutz vor elektrischen Gefährdungen und müssen nach #acr("DIN") #acr("VDE") 0105 Teil 100 #cite(<noauthor_din_2015>) in der angegebenen Reihenfolge durchgeführt werden:
 
 === Freischalten <freischalten>
-Das Freischalten ist der erste und wichtigste Schritt, um eine elektrische Anlage spannungsfrei zu machen. Dabei wird die Anlage oder der Anlagenteil, an dem gearbeitet werden soll, vollständig von allen Stromquellen getrennt. Dies wird realisiert, in dem man alle aktiven Leiter (Außen- & Neutralleiter) an einer frühstmöglichen Trennstelle abschaltet. Zum Beispiel durch das Öffnen von Leistungsschaltern, das Ziehen von Sicherungen oder das Trennen von Steckverbindungen. Die Trennstellen müssen sichtbar oder eindeutig identifizierbar sein und eine ausreichende Isolationsstrecke aufweisen, um Lichtbögen zu verhindern. Auch Hilfsenergiequellen (z. B. Steuerstromkreise, Notstromaggregate, PV-Anlagen) müssen ebenfalls abgeschaltet werden.
+Das Freischalten ist der erste und wichtigste Schritt, um eine elektrische Anlage spannungsfrei zu machen. Dabei wird die Anlage oder der Anlagenteil, an dem gearbeitet werden soll, vollständig von allen Stromquellen getrennt. Dies wird realisiert, in dem man alle aktiven Leiter (Außen- & Neutralleiter) an einer frühstmöglichen Trennstelle abschaltet. Zum Beispiel durch das Öffnen von Leistungsschaltern, das Ziehen von Sicherungen oder das Trennen von Steckverbindungen. Die Trennstellen müssen sichtbar oder eindeutig identifizierbar sein und eine ausreichende Isolationsstrecke aufweisen, um Lichtbögen zu verhindern. Auch Hilfsenergiequellen (z. B. Steuerstromkreise, Notstromaggregate, #acrs("PV")-Anlagen) müssen ebenfalls abgeschaltet werden.
 
 === Gegen Wiedereinschalten sichern
 Nach dem Freischalten muss sichergestellt werden, dass die Anlage nicht unbeabsichtigt wieder eingeschaltet werden kann. Das wird sichergestellt durch:
@@ -27,10 +30,10 @@ Nach dem Freischalten muss sichergestellt werden, dass die Anlage nicht unbeabsi
 )<Maßnahmen_gegen_Einschalten>
 
 === Spannungsfreiheit feststellen
-Bevor mit der Arbeit begonnen wird, muss überprüft werden, ob die Anlage tatsächlich spannungsfrei ist. Dies muss mit einerm Zweipoligen-Spannungsprüfer nach DIN EN 61243-3 (VDE 0682-401) geschehen. Die Spannungsfreiheit muss an allen aktiven Leitern (Außen- & Neutralleiter) und so nah wie möglich an der Arbeitsstelle festgestellt werden. Der Spannungsprüfer muss vor und nach der Prüfung auf Funktion getestet werden. Zudem darf die Spannungsfreiheit nur von einer Elektrofachkraft oder einer elektrotechnisch unterwiesenen Person festgestellt werden.
+Bevor mit der Arbeit begonnen wird, muss überprüft werden, ob die Anlage tatsächlich spannungsfrei ist. Dies muss mit einerm Zweipoligen-Spannungsprüfer nach #acr("DIN") EN 61243-3 (#acr("VDE") 0682-401) geschehen. Die Spannungsfreiheit muss an allen aktiven Leitern (Außen- & Neutralleiter) und so nah wie möglich an der Arbeitsstelle festgestellt werden. Der Spannungsprüfer muss vor und nach der Prüfung auf Funktion getestet werden. Zudem darf die Spannungsfreiheit nur von einer Elektrofachkraft oder einer elektrotechnisch unterwiesenen Person festgestellt werden.
 
 === Erden und kurzschließen
-Nachdem die Spannungsfreiheit festgestellt wurde, wird die freigeschalteten Anlagenteile geerdet und kurzgeschlossen. Das Erden und kurzschließen muss nur bei Anlagen über 1kV gemacht werden oder bei Niederspannungsanlagen bei denen das Risiko besteht, dass die Anlage durch Rückeinspeisung unter Spannung gesetzt wird. Diese Maßnahme schützt vor gefährlichen Spannungen, die durch unbeabsichtigtes Wiedereinschalten oder durch Rückwirkungen (z. B. kapazitive Aufladungen, Induktion) entstehen können.
+Nachdem die Spannungsfreiheit festgestellt wurde, wird die freigeschalteten Anlagenteile geerdet und kurzgeschlossen. Das Erden und kurzschließen muss nur bei Anlagen über 1#acrs("k")#acrs("V") gemacht werden oder bei Niederspannungsanlagen bei denen das Risiko besteht, dass die Anlage durch Rückeinspeisung unter Spannung gesetzt wird. Diese Maßnahme schützt vor gefährlichen Spannungen, die durch unbeabsichtigtes Wiedereinschalten oder durch Rückwirkungen (z. B. kapazitive Aufladungen, Induktion) entstehen können.
 Das bedeute, es wird eine leitende Verbindung zwischen den aktiven Leitern der Anlage und dem Erdpotential hergestellt. Gleichzeitig wird ein Kurzschluss zwischen den aktiven Leitern erzeugt, um sicherzustellen, dass bei einer versehentlichen Einspeisung sofort ein Schutzmechanismus (z. B. Sicherung) auslöst. Um ein sicheres Anbringen der Erdungs- & Kurzschließvorrichtung zu gewährleisten, wird es zuerst an der Erde angebracht und dann mit den aktiven Leitern. Zudem muss es möglicht nach oder in Sicht des Arbeitsplatzes angebracht werden.
 
 === Unter Spannung stehende Teile abschranken
@@ -62,7 +65,7 @@ Nur qualifiziertes Personal darf sicherheitsrelevante Tätigkeiten ausführen �
 Diese Regel schützt nicht nur die ausführende Person, sondern auch Kolleg*innen und das Unternehmen vor vermeidbaren Risiken.
 
 === Nur mit sicheren und intakten Arbeitsmitteln arbeiten
-Werkzeuge, Prüfgeräte und persönliche Schutzausrüstung (PSA) müssen regelmäßig geprüft und in einwandfreiem Zustand sein. Defekte oder manipulierte Arbeitsmittel stellen ein erhebliches Risiko dar. Vor Arbeitsbeginn ist daher zu prüfen:
+Werkzeuge, Prüfgeräte und #acr("PSA") müssen regelmäßig geprüft und in einwandfreiem Zustand sein. Defekte oder manipulierte Arbeitsmittel stellen ein erhebliches Risiko dar. Vor Arbeitsbeginn ist daher zu prüfen:
 
 - Ist das Werkzeug vollständig und funktionstüchtig?
 - Sind Kabel, Stecker und Gehäuse unbeschädigt?
@@ -71,13 +74,13 @@ Werkzeuge, Prüfgeräte und persönliche Schutzausrüstung (PSA) müssen regelm�
 Nur wenn diese Fragen mit „Ja“ beantwortet werden können, darf das Arbeitsmittel verwendet werden.
 
 === Persönliche Schutzausrüstung (PSA) tragen
-Die PSA ist die letzte Schutzbarriere zwischen Mensch und Gefahr. Sie muss:
+Die #acr("PSA") ist die letzte Schutzbarriere zwischen Mensch und Gefahr. Sie muss:
 
 - zur Tätigkeit passen (z. B. Helm, Schutzbrille, isolierende Handschuhe)
 - korrekt getragen werden
 - regelmäßig geprüft und gewartet werden
 
-PSA schützt. Sie ist kein Zusatz, sondern Pflicht. Helm, Handschuhe und Schutzbrille sind Lebensretter.
+#acr("PSA") schützt. Sie ist kein Zusatz, sondern Pflicht. Helm, Handschuhe und Schutzbrille sind Lebensretter.
 
 === Anlagen nur in Betrieb nehmen, wenn die vorgeschriebenen Kontrollen vorgenommen wurden
 Bevor eine Anlage eingeschaltet oder in Betrieb genommen wird, müssen alle sicherheitsrelevanten Prüfungen abgeschlossen sein. Dazu gehören:

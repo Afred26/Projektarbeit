@@ -1,6 +1,9 @@
+#import "@preview/supercharged-dhbw:3.4.1": *
+#import "../Zusatz/acronyms.typ": acronyms
+
 = DIN VDE 0100 Teil 600 Messung
 
-In der DIN VDE 0100 Norm sind die Bestimmungen zum errichten Niederspannung Anlagen festgehalten. Die DIN VDE 0100 Norm setzt sich aus kleineren Teilgebieten zusammen:
+In der #acr("DIN") #acr("VDE") 0100 Norm sind die Bestimmungen zum errichten Niederspannung Anlagen festgehalten. Die DIN VDE 0100 Norm setzt sich aus kleineren Teilgebieten zusammen:
 #figure(
   caption: "Aufbau der DIN VDE 0100 Norm ",
   table(
@@ -23,9 +26,9 @@ In der DIN VDE 0100 Norm sind die Bestimmungen zum errichten Niederspannung Anla
 )<table_VDE_0100_600>
 
 == Prüfung Neuanlagen
-Im folgenden Teil werden wir uns nur mit der erst Prüfung einer neuen Anlage nach DIN VDE 0100 Teil 600 #cite(<noauthor_din_2017>) beschäftigen.
-Die Prüfung besteht aus der Sichtprüfung, der Erprobung und der Messung, wobei die Messung selbst noch mal in Durchgängigkeit des Schutzleiters, Insolationswiderstand, Schleifenimpedanz und RCD-Prüfung unterteilt werden kann.
-Prüfungen dürfen nur mit einem, nach VDE 0413 geprüften, Messgerät durchgeführt werden.
+Im folgenden Teil werden wir uns nur mit der erst Prüfung einer neuen Anlage nach #acr("DIN") #acr("VDE") 0100 Teil 600 #cite(<noauthor_din_2017>) beschäftigen.
+Die Prüfung besteht aus der Sichtprüfung, der Erprobung und der Messung, wobei die Messung selbst noch mal in Durchgängigkeit des Schutzleiters, Insolationswiderstand, Schleifenimpedanz und #acr("RCD") -Prüfung unterteilt werden kann.
+Prüfungen dürfen nur mit einem, nach #acr("VDE") 0413 geprüften, Messgerät durchgeführt werden.
 
 
 == Sichtprüfung
@@ -42,7 +45,7 @@ Beim Erproben werden einzelne Teile der Anlage nacheinander eingeschalten und au
 Es gilt äußerste Vorsicht, da noch keine der Schutzmaßnahmen überprüft wurden und kleine Fehler wie z.B. eine Sternpunktverschiebung zu großen Schäden führen kann.
 
 == Messung
-Die Messung ist ein zentraler Bestandteil der Erstprüfung nach DIN VDE 0100 Teil 600.
+Die Messung ist ein zentraler Bestandteil der Erstprüfung nach #acr("DIN") #acr("VDE") 0100 Teil 600.
 Es werden verschiedene elektrische Parameter gemessen, um die Sicherheit und Funktionalität der Anlage zu gewährleisten.
 Zu den wichtigsten Messungen gehören:
 
@@ -56,7 +59,7 @@ Der Messwert darf nicht wesentlich über dem Errechneten Idealwert liegen.
 Auch der Isolationswiderstand ist vor dem ersten Einschalten der Anlage zu messen.
 Der Isolationswiderstand zwischen aktiven Leitern und Erde wird gemessen, um sicherzustellen, dass keine ungewollten Strompfade existieren.
 Ein niedriger Isolationswiderstand könnte auf beschädigte Isolierung oder Feuchtigkeit hinweisen.
-Der Grenzwert liegt zwar bei >1MΩ doch sind alle Werte, die unter dem Maximalwert des Messgerätes (meist >500MΩ) liegen auf ihre Ursache zu kontrollieren. 
+Der Grenzwert liegt zwar bei einem #acrs("M")#acrs("Ω") doch sind alle Werte, die unter dem Maximalwert des Messgerätes (meist >500#acrs("M")#acrs("Ω")) liegen auf ihre Ursache zu kontrollieren. 
 
 === Schleifenimpedanz
 Diese Messung hilft, die Wirksamkeit der Schutzmaßnahmen im Fehlerfall zu beurteilen.
@@ -65,9 +68,9 @@ Es muss geprüft werden, ob der Kurzschlussstrom größer als der Auslösestrom 
 Der Auslösestrom hängt von der Auslösecharakteristik und dem Bemessungsstroms der Sicherung ab. 
 
 === RCD-Prüfung
-Fehlerstromschutzschalter (RCDs) werden getestet, um sicherzustellen, dass sie bei einem Fehlerstrom korrekt auslösen.
-Dies ist besonders wichtig für den Schutz von Personen vor elektrischem Schlag. Je nach Typs des RCDs muss die Messung etwas anders ausfallen.
-Für einen RCD des Typen A muss die Auslösezeit und der Auslösestrom mit einer Wechselspannung gemessen werden.
-Die Auslösezeit darf dabei nicht über 0,3s liegen (im Normalfall werden Zeiten unter 0,05s erwartet).
-Der Auslösestrom ist das 0,5 – 1fache des Nennauslösestroms des RCDs (bei einer 30mA RCD lieget der Auslösestrom normalerweise bei ca. 21mA).
-Bei einem RCD Typ B (Allstromsensitiv) muss zusätzlich auch die Auslösung mit Gleichstrom gemessen werden, wobei die Auslösezeitz weiterhin unter 0,3s liegt aber der Auslösestrom beim 1 – 2fachen liegt.
+#acrfpl("RCD") werden getestet, um sicherzustellen, dass sie bei einem Fehlerstrom korrekt auslösen.
+Dies ist besonders wichtig für den Schutz von Personen vor elektrischem Schlag. Je nach Typs des #acrpl("RCD") muss die Messung etwas anders ausfallen.
+Für einen #acr("RCD") des Typen A muss die Auslösezeit und der Auslösestrom mit einer Wechselspannung gemessen werden.
+Die Auslösezeit darf dabei nicht über 0,3 #acr("s") liegen (im Normalfall werden Zeiten unter 0,05s erwartet).
+Der Auslösestrom ist das 0,5 – 1fache des Nennauslösestroms des #acrpl("RCD") (bei einer 30#acrs("m")#acrs("A") #acr("RCD") lieget der Auslösestrom normalerweise bei ca. 21#acrs("m")#acrs("A")).
+Bei einem #acr("RCD") Typ B (Allstromsensitiv) muss zusätzlich auch die Auslösung mit Gleichstrom gemessen werden, wobei die Auslösezeitz weiterhin unter 0,3#acr("s") liegt aber der Auslösestrom beim 1 – 2fachen liegt.
