@@ -28,23 +28,21 @@
 #include "Zusatz/Überblick Praxisphase.typ"
 
 
-//Haupteil 1
-#include "Text PA1/Abt. Commissioning.typ";
+//Hauptteil
+#include "Text PA1/Abt. Commissioning.typ"
 
-#include "Text PA1/UW_Waldheim.typ";
+#include "Text PA2/HSE.typ"
 
-#include "Text PA1/Messung.typ";
+#include "Text PA1/UW_Waldheim.typ"
 
 #include "Text PA1/Transformator.typ"
 
-
-//Hauptteil 2
-
-#include "Text PA2/HSE.typ"
+#include "Text PA1/Messung.typ"
 
 #include "Text PA2/STATCOM.typ"
 
 #include "Text PA2/Marienstraße.typ"
+
 
 //Schluss
 #include "Zusatz/Schluss.typ"
