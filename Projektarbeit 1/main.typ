@@ -47,4 +47,4 @@
 #include "Text PA2/Marienstraße.typ"
 
 //Schluss
-//#include "Zusatz/Schluss.typ"
+#include "Zusatz/Schluss.typ"
