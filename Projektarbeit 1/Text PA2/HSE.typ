@@ -5,9 +5,17 @@
 
 == Gefahren
 
-== Maßnahmen
+=== Allgemeine elektrische Gefahren auf Baustellen
+Elektrische Gefahren gehören zu den gravierendsten Risiken auf Baustellen. Offene Stromquellen, beschädigte Kabel oder unsachgemäß benutzung von Anlagen können zu Stromunfällen führen. Besonders kritisch sind Situationen, in denen Stromleitungen nicht ausreichend gekennzeichnet oder gegen unbeabsichtigten Kontakt gesichert sind. Wobei die Gößte Gefaht von den Sekunärunfällen ausgeht. Diese sind die Unfälle die Aufgrund eines Stromunfalls geschehen, wie das herunterfallen von einer Leiter nach einem Stromschlag.
+
+=== Verstärkte Risiken durch Umgebungsbedingungen
+Feuchtigkeit, metallische Werkzeuge, fehlende Konzentration und beengte Arbeitsbereiche erhöhen die Gefahr elektrischer Unfälle erheblich. In solchen Umgebungen kann bereits eine geringe Spannung ausreichen, um schwere Verletzungen zu verursachen. Auch temporäre Stromversorgungen, wie Baustellenverteiler, stellen ein erhöhtes Risiko dar, wenn sie nicht regelmäßig geprüft und gewartet werden.
+
+=== Folgen und typische Unfallarten
+Zu den häufigsten Unfallarten zählen Stromschläge, Lichtbogenverletzungen und Brände durch Kurzschlüsse. Diese können nicht nur Personen gefährden, sondern auch erhebliche Sachschäden verursachen. Die Folgen reichen von leichten Verbrennungen bis hin zu tödlichen Verletzungen, weshalb elektrische Gefahren auf Baustellen niemals unterschätzt werden dürfen.
 
 == Die 5 Sicherheitsregeln
+Um das Risiko von Stromunfällen zu minimieren, hat der #acr("VDE") die 5 Sicherheitsregeln eingeführt.
 Diese Regeln dienen dem Schutz vor elektrischen Gefährdungen und müssen nach #acr("DIN") #acr("VDE") 0105 Teil 100 #cite(<noauthor_din_2015>) in der angegebenen Reihenfolge durchgeführt werden:
 
 === Freischalten <freischalten>

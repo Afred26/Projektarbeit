@@ -31,4 +31,7 @@
   PV: "Photovoltaik",
   FACTS: "Flexible AC Transmission System",
   SVC: "Statischer Blindleistungskompensator",
+  PWM: "Pulsweitenmodulation",
+  VSC: "Voltage Source Converter",
+  LS: "Leistungsschalter"
 )

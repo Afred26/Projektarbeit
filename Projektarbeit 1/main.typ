@@ -44,7 +44,7 @@
 
 #include "Text PA2/STATCOM.typ"
 
-#include "Text PA2/Wekzeug.typ"
+#include "Text PA2/Marienstraße.typ"
 
 //Schluss
-#include "Zusatz/Schluss.typ"
+//#include "Zusatz/Schluss.typ"

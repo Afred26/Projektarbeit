@@ -71,6 +71,6 @@ Der Auslösestrom hängt von der Auslösecharakteristik und dem Bemessungsstroms
 #acrfpl("RCD") werden getestet, um sicherzustellen, dass sie bei einem Fehlerstrom korrekt auslösen.
 Dies ist besonders wichtig für den Schutz von Personen vor elektrischem Schlag. Je nach Typs des #acrpl("RCD") muss die Messung etwas anders ausfallen.
 Für einen #acr("RCD") des Typen A muss die Auslösezeit und der Auslösestrom mit einer Wechselspannung gemessen werden.
-Die Auslösezeit darf dabei nicht über 0,3 #acr("s") liegen (im Normalfall werden Zeiten unter 0,05s erwartet).
-Der Auslösestrom ist das 0,5 – 1fache des Nennauslösestroms des #acrpl("RCD") (bei einer 30#acrs("m")#acrs("A") #acr("RCD") lieget der Auslösestrom normalerweise bei ca. 21#acrs("m")#acrs("A")).
-Bei einem #acr("RCD") Typ B (Allstromsensitiv) muss zusätzlich auch die Auslösung mit Gleichstrom gemessen werden, wobei die Auslösezeitz weiterhin unter 0,3#acr("s") liegt aber der Auslösestrom beim 1 – 2fachen liegt.
+Die Auslösezeit darf dabei nicht über $0,3 #acr("s")$ liegen (im Normalfall werden Zeiten unter $0,05#acr("s")$ erwartet).
+Der Auslösestrom ist das $0,5 - 1"fache"$ des Nennauslösestroms des #acrpl("RCD") (bei einer $30#acrs("m")#acrs("A")$ #acr("RCD") lieget der Auslösestrom normalerweise bei ca. 21#acrs("m")#acrs("A")).
+Bei einem #acr("RCD") Typ B (Allstromsensitiv) muss zusätzlich auch die Auslösung mit Gleichstrom gemessen werden, wobei die Auslösezeitz weiterhin unter $0,3#acr("s")$ liegt aber der Auslösestrom beim 1 – 2fachen liegt.
