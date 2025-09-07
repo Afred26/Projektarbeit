@@ -4,7 +4,7 @@
 = Umspannwerk Waldheim
 
 In meiner Praxisphase habe ich mich hauptsächlich mit dem #acr("UWW") beschäftigt.
-Das #acr("UWW") wir in Zukunft 340MVA Leistung für ein zwei neue Rechenzentren zu Verfügung stellen.
+Das #acr("UWW") wird in Zukunft 340MVA Leistung für ein zwei neue Rechenzentren zu Verfügung stellen.
 #figure(caption: "GIS Gebäude Umspannwerk Waldheim", image("../Bilder/UW Waldheim/GIS_Gebäude_UWW.jpg", height: auto))<UWW_GIS_Gebäude>
 Das #acr("UW") besteht grobgesagt aus 3 Teilen: Schaltraum A, Schaltraum B und der Steuerung der Anlage.
 Schaltraum A und B sind ähnlich aufgebaut mit kleinen Unterschieden in der #acr("GIS").
@@ -19,7 +19,7 @@ Im Vergleich zu Freiluftanlagen kann so ca. 90% des Platzes eingespart werden.
 Da das Schutzgas #acr("SF6") 23.500-mal schädlicher als #acr("CO2") ist, wird derzeit an Alternativen wie Vakuumschaltern und Stickstoff als Ersatz geforscht. @dr-ing_karsten_burges_konzept_2018
 Trotz der Umweltbedenken werden Schaltanlagen heutzutage noch mit #acr("SF6") isoliert. 
 #figure(caption: "Gasisolierte Schaltanlage im Schaltraum B (Frontansicht)", image("../Bilder/UW Waldheim/GIS_front.jpg"))<GIS_B_Front>
-Die beiden Röhern an der Vorderseite der #acr("GIS") sind die Sammelschienen, welche die einzelnen Felder verbinden.
+Die beiden Röhren an der Vorderseite der #acr("GIS") sind die Sammelschienen, welche die einzelnen Felder verbinden.
 Es sind zwei Sammelschienen verbaut, um die Möglichkeit zu haben einzelne Teile der Sammelscheine abzuschalten, um Messungen und Tests durchzuführen, um Lasten besser zu verteilen oder falls ein Fehler auftritt und ohne Ausfall der Stromnetzes Reparaturen durchgeführt werden müssen. 
 
 An die Sammelschienen sind die Felder der #acr("GIS") angeschlossen. Die Schaltanlage hat vier verschiedene Typen an Schaltfeldern:
@@ -45,6 +45,6 @@ Zur Steuerung der Schaltanlage gehört auch ein #acr("SCADA")-Raum. Dort werden 
 Eine 110#acrs("k")#acrs("V") #acr("GIS") braucht eine Zusätzlicher Stromversorgung, da alle Steuer- und Überwachungsgeräte mit 400#acrs("V") #acr("AC") oder 110#acrs("V") #acr("DC") versorgt werden müsse.
 Dazu wir ein Eigenbedarf #acr("Trafo") ans örtliche 10#acrs("k")#acrs("V") Netz angeschlossen.
 #figure(caption: "Eigenbedarf Transformator 10kV/400V", image("../Bilder/UW Waldheim/Eigenbedarfs_Trafo.jpg"))<Trafo_EB>
-Von dem Trafo geht es zur Niederspannung Hauptverteilung. Von dort wir dann die redundant Batteriegesicherte #acr("DC")-Versorgung gespeist.
+Von dem Trafo geht es zur Niederspannung Hauptverteilung. Von dort wird dann die redundant Batteriegesicherte #acr("DC")-Versorgung gespeist.
 #figure(caption: "Eigenbedarf DC-Verteilung", image("../Bilder/UW Waldheim/Eigenbedarf_DC.jpg"))<EB_DC>
 #figure(caption: "Eigenbedarf AC-Verteilung", image("../Bilder/UW Waldheim/Eigenbedarf_AC.jpg"))<EB_AC>

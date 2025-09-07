@@ -6,7 +6,7 @@
 == Gefahren
 
 === Allgemeine elektrische Gefahren auf Baustellen
-Elektrische Gefahren gehören zu den gravierendsten Risiken auf Baustellen. Offene Stromquellen, beschädigte Kabel oder unsachgemäß benutzung von Anlagen können zu Stromunfällen führen. Besonders kritisch sind Situationen, in denen Stromleitungen nicht ausreichend gekennzeichnet oder gegen unbeabsichtigten Kontakt gesichert sind. Wobei die Gößte Gefaht von den Sekunärunfällen ausgeht. Diese sind die Unfälle die Aufgrund eines Stromunfalls geschehen, wie das herunterfallen von einer Leiter nach einem Stromschlag.
+Elektrische Gefahren gehören zu den gravierendsten Risiken auf Baustellen. Offene Stromquellen, beschädigte Kabel oder unsachgemäß benutzung von Anlagen können zu Stromunfällen führen. Besonders kritisch sind Situationen, in denen Stromleitungen nicht ausreichend gekennzeichnet oder gegen unbeabsichtigten Kontakt gesichert sind. Wobei die größte Gefahr von den Sekunärunfällen ausgeht. Diese sind die Unfälle die Aufgrund eines Stromunfalls geschehen, wie das herunterfallen von einer Leiter nach einem Stromschlag.
 
 === Verstärkte Risiken durch Umgebungsbedingungen
 Feuchtigkeit, metallische Werkzeuge, fehlende Konzentration und beengte Arbeitsbereiche erhöhen die Gefahr elektrischer Unfälle erheblich. In solchen Umgebungen kann bereits eine geringe Spannung ausreichen, um schwere Verletzungen zu verursachen. Auch temporäre Stromversorgungen, wie Baustellenverteiler, stellen ein erhöhtes Risiko dar, wenn sie nicht regelmäßig geprüft und gewartet werden.
@@ -45,7 +45,7 @@ Nachdem die Spannungsfreiheit festgestellt wurde, wird die freigeschalteten Anla
 Das bedeute, es wird eine leitende Verbindung zwischen den aktiven Leitern der Anlage und dem Erdpotential hergestellt. Gleichzeitig wird ein Kurzschluss zwischen den aktiven Leitern erzeugt, um sicherzustellen, dass bei einer versehentlichen Einspeisung sofort ein Schutzmechanismus (z. B. Sicherung) auslöst. Um ein sicheres Anbringen der Erdungs- & Kurzschließvorrichtung zu gewährleisten, wird es zuerst an der Erde angebracht und dann mit den aktiven Leitern. Zudem muss es möglicht nach oder in Sicht des Arbeitsplatzes angebracht werden.
 
 === Unter Spannung stehende Teile abschranken
-Wenn sich in der Nähe der Arbeitsstelle noch unter Spannung stehende Teile befinden, die nicht freigeschaltet werden können, da nicht die gesammte Anlage abgeschalten werden konnte, müssen diese sicher abgeschirmt werden.
+Wenn sich in der Nähe der Arbeitsstelle noch unter Spannung stehende Teile befinden, die nicht freigeschaltet werden können, da nicht die gesamte Anlage abgeschalten werden konnte, müssen diese sicher abgeschirmt werden.
 
 Mögliche Maßnahmen sind, Isolierende Abdeckungen oder Mechanische Abschrankungen, die mechanisch stabil und elektrisch isolierend sind.
 

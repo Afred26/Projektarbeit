@@ -9,7 +9,7 @@ Das technische Hauptproblem des #acrlpl("UW") besteht in der wiederkehrenden Feh
 
 
 #figure(
- caption: "Ergebinss Ereignissverlauf",
+ caption: "Ergebins Ereignissverlauf",
  table(
   columns: (10%, 1fr, 1fr),
     inset: 7pt,
@@ -46,4 +46,4 @@ Die Analyse in @Ereignissverlauf zeigt, dass wenn der Fehler Auftritt etwa $1,30
 
 
 == Lösung
-Da der Fehler nicht auf eine genau Ursache zurück geführt werden kann, wurden alle Kritischen Bauteile im Signalweg ausgetauscht. Dazu gehören das Meldemodul, der Gasdichtewächter und ein Trenn-Relais. Durch diese Maßnahmen wurde der Fehler wahrscheinlich behoben, da aber keine genau Ursachen festgestellt werden konnte wurde dem Kunden empfohlen die Anlage in der nächsten Zeit zu überwachen und sich wieder zu melden, falls der Fehler erneut auftreten sollte.
+Da der Fehler nicht auf eine genaue Ursache zurückgeführt werden kann, wurden alle Kritischen Bauteile im Signalweg ausgetauscht. Dazu gehören das Meldemodul, der Gasdichtewächter und ein Trenn-Relais. Durch diese Maßnahmen wurde der Fehler wahrscheinlich behoben, da aber keine genau Ursachen festgestellt werden konnte wurde dem Kunden empfohlen die Anlage in der nächsten Zeit zu überwachen und sich wieder zu melden, falls der Fehler erneut auftreten sollte.

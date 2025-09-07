@@ -13,7 +13,7 @@
   figure(caption: "Ventiel", image(height: 130pt, "../Bilder/STATCOM/Ventile.jpg"))
 )
 
-Die #acr("STATCOM") wird über einen #acrl("Trafo") parallel zum Netz geschaltet. Durch #acr("PWM") erzeugen die Wechselrichter ein dreiphasiges, nahezu sinusförmiges Spannungssystem, dessen Betrag und Phasenlage gezielt geregelt werden kan. Die Höhe der eingespeisten Blindleistung ist proportional zum eigespeisten Blindstrom $I_q$ und ergibt sich aus der Differenz zwischen der erzeugten Spannung $U_"synth"$ der #acr("STATCOM") und der Netzspannung $U_"Netz"$, geteilt durch die Kurzschlussreaktanz $X_k$ des Transformators: @schwab_elektroenergiesysteme_2022
+Die #acr("STATCOM") wird über einen #acrl("Trafo") parallel zum Netz geschaltet. Durch #acr("PWM") erzeugen die Wechselrichter ein dreiphasiges, nahezu sinusförmiges Spannungssystem, dessen Betrag und Phasenlage gezielt geregelt werden kann. Die Höhe der eingespeisten Blindleistung ist proportional zum eingespeisten Blindstrom $I_q$ und ergibt sich aus der Differenz zwischen der erzeugten Spannung $U_"synth"$ der #acr("STATCOM") und der Netzspannung $U_"Netz"$, geteilt durch die Kurzschlussreaktanz $X_k$ des Transformators: @schwab_elektroenergiesysteme_2022
 
 $ I_q =  (U_"Netz" - U_"synth") / X_k $
 #pagebreak()

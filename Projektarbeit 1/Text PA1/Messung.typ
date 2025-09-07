@@ -27,7 +27,7 @@ In der #acr("DIN") #acr("VDE") 0100 Norm sind die Bestimmungen zum errichten Nie
 
 == Prüfung Neuanlagen
 Im folgenden Teil werden wir uns nur mit der erst Prüfung einer neuen Anlage nach #acr("DIN") #acr("VDE") 0100 Teil 600 #cite(<noauthor_din_2017>) beschäftigen.
-Die Prüfung besteht aus der Sichtprüfung, der Erprobung und der Messung, wobei die Messung selbst noch mal in Durchgängigkeit des Schutzleiters, Insolationswiderstand, Schleifenimpedanz und #acr("RCD") -Prüfung unterteilt werden kann.
+Die Prüfung besteht aus der Sichtprüfung, der Erprobung und der Messung, wobei die Messung selbst noch mal in Durchgängigkeit des Schutzleiters, Isolationswiderstand, Schleifenimpedanz und #acr("RCD") -Prüfung unterteilt werden kann.
 Prüfungen dürfen nur mit einem, nach #acr("VDE") 0413 geprüften, Messgerät durchgeführt werden.
 
 
@@ -53,7 +53,7 @@ Zu den wichtigsten Messungen gehören:
 Diese Messung ist das Erste, was nach der Sichtprüfung gemacht werden sollte, und ist noch vor dem Erproben zu messen.
 Die Messung stellt sicher, dass alle Schutzleiter korrekt verbunden sind und einen niedrigen Widerstand aufweisen.
 Ein hoher Widerstand könnte auf eine schlechte Verbindung hinweisen, die im Fehlerfall gefährlich sein könnte.
-Der Messwert darf nicht wesentlich über dem Errechneten Idealwert liegen. 
+Der Messwert darf nicht wesentlich über dem errechneten Idealwert liegen. 
 
 === Isolationswiderstand
 Auch der Isolationswiderstand ist vor dem ersten Einschalten der Anlage zu messen.
@@ -72,5 +72,5 @@ Der Auslösestrom hängt von der Auslösecharakteristik und dem Bemessungsstroms
 Dies ist besonders wichtig für den Schutz von Personen vor elektrischem Schlag. Je nach Typs des #acrpl("RCD") muss die Messung etwas anders ausfallen.
 Für einen #acr("RCD") des Typen A muss die Auslösezeit und der Auslösestrom mit einer Wechselspannung gemessen werden.
 Die Auslösezeit darf dabei nicht über $0,3 #acr("s")$ liegen (im Normalfall werden Zeiten unter $0,05#acr("s")$ erwartet).
-Der Auslösestrom ist das $0,5 - 1"fache"$ des Nennauslösestroms des #acrpl("RCD") (bei einer $30#acrs("m")#acrs("A")$ #acr("RCD") lieget der Auslösestrom normalerweise bei ca. 21#acrs("m")#acrs("A")).
-Bei einem #acr("RCD") Typ B (Allstromsensitiv) muss zusätzlich auch die Auslösung mit Gleichstrom gemessen werden, wobei die Auslösezeitz weiterhin unter $0,3#acr("s")$ liegt aber der Auslösestrom beim 1 – 2fachen liegt.
+Der Auslösestrom ist das $0,5 "bis" 1"fache"$ des Nennauslösestroms des #acrpl("RCD") (bei einer $30#acrs("m")#acrs("A")$ #acr("RCD") liegt der Auslösestrom normalerweise bei ca. 21#acrs("m")#acrs("A")).
+Bei einem #acr("RCD") Typ B (Allstromsensitiv) muss zusätzlich auch die Auslösung mit Gleichstrom gemessen werden, wobei die Auslösezeit weiterhin unter $0,3#acr("s")$ liegt aber der Auslösestrom beim $1 "bis" 2"fachen"$ liegt.
