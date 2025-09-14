@@ -3,17 +3,17 @@
 
 = Transformator
 Das Umspannwerk versorgt die Rechenzentren über je 4 Y(N)yn0(d) #acr("Trafo") eingespeist. 
-#figure(caption: [Transformator], image("../Bilder/UW Waldheim/Tansformator.jpg"))<transformer>
+#figure(caption: [Transformator], image(height: 217pt,"../Bilder/UW Waldheim/Tansformator.jpg"))<transformer>
 
 == Aufbau und Typ des Transformators
 Die Transformerbezeichnung Y(N)yn0(d) steht für:
 
-- Y: Spulen der #acr("OS") in Stern-Verdrahtung verschaltet
+- Y: Wicklungen der #acr("OS") (Primärwicklung) in Stern-Verdrahtung verschaltet
 - (N): Sternpunkt der #acr("OS") herausgeführt 
-- y: Spulen der #acr("US") in Stern-Verdrahtung verschaltet
+- y: Wicklungen der #acr("US") (Sekundärwicklung) in Stern-Verdrahtung verschaltet
 - n: Sternpunkt der #acr("US") herausgeführt
 - 0: Phasenverschiebung zwischen #acr("OS") und #acr("US") (in Vielfachen von 30°)
-- (d): Tertiärspule Dreieck-Verdrahtung verschalten
+- (d): Tertiärwicklung Dreieck-Verdrahtung verschalten
 
 Für die bereitgestellten 340 #acr("MVA") für die Rechenzentren (170#acr("MVA") pro Rechenzentrum) wurden 4x 50#acr("MVA") und 4x 35#acr("MVA") #acrpl("Trafo") verwendet. 
 

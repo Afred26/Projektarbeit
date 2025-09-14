@@ -1,7 +1,7 @@
 #import "@preview/supercharged-dhbw:3.4.1": *
 #import "../Zusatz/acronyms.typ": acronyms
 
-= DIN VDE 0100 Teil 600 Messung
+= DIN VDE 0100 Teil 600 Messung #cite(<noauthor_din_2017>)
 
 In der #acr("DIN") #acr("VDE") 0100 Norm sind die Bestimmungen zum errichten Niederspannung Anlagen festgehalten. Die DIN VDE 0100 Norm setzt sich aus kleineren Teilgebieten zusammen:
 #figure(
@@ -26,7 +26,7 @@ In der #acr("DIN") #acr("VDE") 0100 Norm sind die Bestimmungen zum errichten Nie
 )<table_VDE_0100_600>
 
 == Prüfung Neuanlagen
-Im folgenden Teil werden wir uns nur mit der erst Prüfung einer neuen Anlage nach #acr("DIN") #acr("VDE") 0100 Teil 600 #cite(<noauthor_din_2017>) beschäftigen.
+Im folgenden Teil werden wir uns nur mit der erst Prüfung einer neuen Anlage nach #acr("DIN") #acr("VDE") 0100 Teil 600  beschäftigen.
 Die Prüfung besteht aus der Sichtprüfung, der Erprobung und der Messung, wobei die Messung selbst noch mal in Durchgängigkeit des Schutzleiters, Isolationswiderstand, Schleifenimpedanz und #acr("RCD") -Prüfung unterteilt werden kann.
 Prüfungen dürfen nur mit einem, nach #acr("VDE") 0413 geprüften, Messgerät durchgeführt werden.
 
@@ -59,7 +59,7 @@ Der Messwert darf nicht wesentlich über dem errechneten Idealwert liegen.
 Auch der Isolationswiderstand ist vor dem ersten Einschalten der Anlage zu messen.
 Der Isolationswiderstand zwischen aktiven Leitern und Erde wird gemessen, um sicherzustellen, dass keine ungewollten Strompfade existieren.
 Ein niedriger Isolationswiderstand könnte auf beschädigte Isolierung oder Feuchtigkeit hinweisen.
-Der Grenzwert liegt zwar bei einem #acrs("M")#acrs("Ω") doch sind alle Werte, die unter dem Maximalwert des Messgerätes (meist >500#acrs("M")#acrs("Ω")) liegen auf ihre Ursache zu kontrollieren. 
+Der Grenzwert liegt zwar bei einem mega Ohm doch sind alle Werte, die unter dem Maximalwert des Messgerätes (meist >500MΩ) liegen auf ihre Ursache zu kontrollieren. 
 
 === Schleifenimpedanz
 Diese Messung hilft, die Wirksamkeit der Schutzmaßnahmen im Fehlerfall zu beurteilen.
@@ -71,6 +71,6 @@ Der Auslösestrom hängt von der Auslösecharakteristik und dem Bemessungsstroms
 #acrfpl("RCD") werden getestet, um sicherzustellen, dass sie bei einem Fehlerstrom korrekt auslösen.
 Dies ist besonders wichtig für den Schutz von Personen vor elektrischem Schlag. Je nach Typs des #acrpl("RCD") muss die Messung etwas anders ausfallen.
 Für einen #acr("RCD") des Typen A muss die Auslösezeit und der Auslösestrom mit einer Wechselspannung gemessen werden.
-Die Auslösezeit darf dabei nicht über $0,3 #acr("s")$ liegen (im Normalfall werden Zeiten unter $0,05#acr("s")$ erwartet).
-Der Auslösestrom ist das $0,5 "bis" 1"fache"$ des Nennauslösestroms des #acrpl("RCD") (bei einer $30#acrs("m")#acrs("A")$ #acr("RCD") liegt der Auslösestrom normalerweise bei ca. 21#acrs("m")#acrs("A")).
-Bei einem #acr("RCD") Typ B (Allstromsensitiv) muss zusätzlich auch die Auslösung mit Gleichstrom gemessen werden, wobei die Auslösezeit weiterhin unter $0,3#acr("s")$ liegt aber der Auslösestrom beim $1 "bis" 2"fachen"$ liegt.
+Die Auslösezeit darf dabei nicht über $0,3 s$ liegen (im Normalfall werden Zeiten unter $0,05s$ erwartet).
+Der Auslösestrom ist das $0,5 "bis" 1"fache"$ des Nennauslösestroms des #acrpl("RCD") (bei einer $30"mA"$ #acr("RCD") liegt der Auslösestrom normalerweise bei ca. 21mA).
+Bei einem #acr("RCD") Typ B (Allstromsensitiv) muss zusätzlich auch die Auslösung mit Gleichstrom gemessen werden, wobei die Auslösezeit weiterhin unter $0,3s$ liegt aber der Auslösestrom beim $1 "bis" 2"fachen"$ liegt.

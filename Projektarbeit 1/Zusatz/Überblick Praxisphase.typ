@@ -2,7 +2,7 @@
 #import "../Zusatz/acronyms.typ": acronyms
 
 = Überblick Tätigkeit der Praxisphase
-
+Die Projektarbeit beschreibt Inhalte aus 2 Praxisphasen. Die Tätigkeiten dieser, werden in den folgenden 2 Kapiteln erläutert.
 == Praxisphase 1
 
 #figure(

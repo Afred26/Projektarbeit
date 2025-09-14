@@ -1,12 +1,12 @@
 #import "@preview/supercharged-dhbw:3.4.1": *
 #import "../Zusatz/acronyms.typ": acronyms
 
-= Health and Safety in der Inbertriebnahme
+= Health and Safety in der Inbetriebnahme
 
 == Gefahren
 
 === Allgemeine elektrische Gefahren auf Baustellen
-Elektrische Gefahren gehören zu den gravierendsten Risiken auf Baustellen. Offene Stromquellen, beschädigte Kabel oder unsachgemäß benutzung von Anlagen können zu Stromunfällen führen. Besonders kritisch sind Situationen, in denen Stromleitungen nicht ausreichend gekennzeichnet oder gegen unbeabsichtigten Kontakt gesichert sind. Wobei die größte Gefahr von den Sekunärunfällen ausgeht. Diese sind die Unfälle die Aufgrund eines Stromunfalls geschehen, wie das herunterfallen von einer Leiter nach einem Stromschlag.
+Elektrische Gefahren gehören zu den gravierendsten Risiken auf Baustellen. Offene Stromquellen, beschädigte Kabel oder unsachgemäß benutzung von Anlagen können zu Stromunfällen führen. Besonders kritisch sind Situationen, in denen Stromleitungen nicht ausreichend gekennzeichnet oder gegen unbeabsichtigten Kontakt gesichert sind. Wobei die größte Gefahr von den Sekunärunfällen ausgeht. Diese sind die Unfälle die Aufgrund eines Stromunfalls geschehen, wie das Herunterfallen von einer Leiter nach einem Stromschlag.
 
 === Verstärkte Risiken durch Umgebungsbedingungen
 Feuchtigkeit, metallische Werkzeuge, fehlende Konzentration und beengte Arbeitsbereiche erhöhen die Gefahr elektrischer Unfälle erheblich. In solchen Umgebungen kann bereits eine geringe Spannung ausreichen, um schwere Verletzungen zu verursachen. Auch temporäre Stromversorgungen, wie Baustellenverteiler, stellen ein erhöhtes Risiko dar, wenn sie nicht regelmäßig geprüft und gewartet werden.
@@ -14,9 +14,9 @@ Feuchtigkeit, metallische Werkzeuge, fehlende Konzentration und beengte Arbeitsb
 === Folgen und typische Unfallarten
 Zu den häufigsten Unfallarten zählen Stromschläge, Lichtbogenverletzungen und Brände durch Kurzschlüsse. Diese können nicht nur Personen gefährden, sondern auch erhebliche Sachschäden verursachen. Die Folgen reichen von leichten Verbrennungen bis hin zu tödlichen Verletzungen, weshalb elektrische Gefahren auf Baustellen niemals unterschätzt werden dürfen.
 
-== Die 5 Sicherheitsregeln
+== Die 5 Sicherheitsregeln #cite(<noauthor_din_2015>)
 Um das Risiko von Stromunfällen zu minimieren, hat der #acr("VDE") die 5 Sicherheitsregeln eingeführt.
-Diese Regeln dienen dem Schutz vor elektrischen Gefährdungen und müssen nach #acr("DIN") #acr("VDE") 0105 Teil 100 #cite(<noauthor_din_2015>) in der angegebenen Reihenfolge durchgeführt werden:
+Diese Regeln dienen dem Schutz vor elektrischen Gefährdungen und müssen nach #acr("DIN") #acr("VDE") 0105 Teil 100  in der angegebenen Reihenfolge durchgeführt werden:
 
 === Freischalten <freischalten>
 Das Freischalten ist der erste und wichtigste Schritt, um eine elektrische Anlage spannungsfrei zu machen. Dabei wird die Anlage oder der Anlagenteil, an dem gearbeitet werden soll, vollständig von allen Stromquellen getrennt. Dies wird realisiert, in dem man alle aktiven Leiter (Außen- & Neutralleiter) an einer frühstmöglichen Trennstelle abschaltet. Zum Beispiel durch das Öffnen von Leistungsschaltern, das Ziehen von Sicherungen oder das Trennen von Steckverbindungen. Die Trennstellen müssen sichtbar oder eindeutig identifizierbar sein und eine ausreichende Isolationsstrecke aufweisen, um Lichtbögen zu verhindern. Auch Hilfsenergiequellen (z. B. Steuerstromkreise, Notstromaggregate, #acrs("PV")-Anlagen) müssen ebenfalls abgeschaltet werden.
@@ -37,11 +37,11 @@ Nach dem Freischalten muss sichergestellt werden, dass die Anlage nicht unbeabsi
   figure(caption: "Sticker: Nicht Schalten Es wird gearbeitet", image(height: 130pt, "../Bilder/HSE/Nicht_Schalten_Kleber.png"))
 )<Maßnahmen_gegen_Einschalten>
 
-=== Spannungsfreiheit feststellen
+=== Spannungsfreiheit feststellen @noauthor_aufkleber_nodate
 Bevor mit der Arbeit begonnen wird, muss überprüft werden, ob die Anlage tatsächlich spannungsfrei ist. Dies muss mit einerm Zweipoligen-Spannungsprüfer nach #acr("DIN") EN 61243-3 (#acr("VDE") 0682-401) geschehen. Die Spannungsfreiheit muss an allen aktiven Leitern (Außen- & Neutralleiter) und so nah wie möglich an der Arbeitsstelle festgestellt werden. Der Spannungsprüfer muss vor und nach der Prüfung auf Funktion getestet werden. Zudem darf die Spannungsfreiheit nur von einer Elektrofachkraft oder einer elektrotechnisch unterwiesenen Person festgestellt werden.
 
 === Erden und kurzschließen
-Nachdem die Spannungsfreiheit festgestellt wurde, wird die freigeschalteten Anlagenteile geerdet und kurzgeschlossen. Das Erden und kurzschließen muss nur bei Anlagen über 1#acrs("k")#acrs("V") gemacht werden oder bei Niederspannungsanlagen bei denen das Risiko besteht, dass die Anlage durch Rückeinspeisung unter Spannung gesetzt wird. Diese Maßnahme schützt vor gefährlichen Spannungen, die durch unbeabsichtigtes Wiedereinschalten oder durch Rückwirkungen (z. B. kapazitive Aufladungen, Induktion) entstehen können.
+Nachdem die Spannungsfreiheit festgestellt wurde, wird die freigeschalteten Anlagenteile geerdet und kurzgeschlossen. Das Erden und kurzschließen muss nur bei Anlagen über 1kV gemacht werden oder bei Niederspannungsanlagen bei denen das Risiko besteht, dass die Anlage durch Rückeinspeisung unter Spannung gesetzt wird. Diese Maßnahme schützt vor gefährlichen Spannungen, die durch unbeabsichtigtes Wiedereinschalten oder durch Rückwirkungen (z. B. kapazitive Aufladungen, Induktion) entstehen können.
 Das bedeute, es wird eine leitende Verbindung zwischen den aktiven Leitern der Anlage und dem Erdpotential hergestellt. Gleichzeitig wird ein Kurzschluss zwischen den aktiven Leitern erzeugt, um sicherzustellen, dass bei einer versehentlichen Einspeisung sofort ein Schutzmechanismus (z. B. Sicherung) auslöst. Um ein sicheres Anbringen der Erdungs- & Kurzschließvorrichtung zu gewährleisten, wird es zuerst an der Erde angebracht und dann mit den aktiven Leitern. Zudem muss es möglicht nach oder in Sicht des Arbeitsplatzes angebracht werden.
 
 === Unter Spannung stehende Teile abschranken
@@ -51,8 +51,8 @@ Mögliche Maßnahmen sind, Isolierende Abdeckungen oder Mechanische Abschrankung
 
 
 // die 5 Sicherheitsregeln von Hitachi
-== Die weiteren 5 Sicherheitsregeln von Hitachi
-Da Sicherheit ein zentrales Bestandteil der Unternehmenskultur bei Hitachi Energy ist haben wir noch 5 weitere Sicherheitsregeln. Die 5 Sicherheitsregeln sind allgemeine Grundprinzipien, die für alle Tätigkeiten gelten – unabhängig von der konkreten Aufgabe oder dem Arbeitsumfeld. Sie dienen dem Schutz der Mitarbeitenden, der Anlagen und der Qualität der Arbeit. @kober_elektrosicherheit_handout_2022_2022
+== Die weiteren 5 Sicherheitsregeln von Hitachi @kober_elektrosicherheit_handout_2022_2022
+Da Sicherheit ein zentrales Bestandteil der Unternehmenskultur bei Hitachi Energy ist haben wir noch 5 weitere Sicherheitsregeln. Die 5 Sicherheitsregeln sind allgemeine Grundprinzipien, die für alle Tätigkeiten gelten – unabhängig von der konkreten Aufgabe oder dem Arbeitsumfeld. Sie dienen dem Schutz der Mitarbeitenden, der Anlagen und der Qualität der Arbeit. 
 
 === Arbeiten mit klarem Auftrag – und wissen, wer die Verantwortung trägt
 Ein zentraler Grundsatz ist die Notwendigkeit klarer Kommunikation und Verantwortungszuweisung. Bevor eine Tätigkeit begonnen wird, muss eindeutig geklärt sein:

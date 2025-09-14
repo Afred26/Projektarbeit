@@ -21,28 +21,28 @@ Das technische Hauptproblem des #acrlpl("UW") besteht in der wiederkehrenden Feh
     ),
 
     text("1"),
-    $8,15#acr("s")$,
-    $1,33#acr("s")$,
+    $8,15s$,
+    $1,33s$,
 
     text("2"), 
-    $8,17#acr("s")$,
-    $1,31#acr("s")$,
+    $8,17s$,
+    $1,31s$,
 
     text("3"),
-    $8,17#acr("s")$,
-    $1,25#acr("s")$,
+    $8,17s$,
+    $1,25s$,
 
     text("4"),
-    $8,17#acr("s")$,
-    $1,41#acr("s")$,
+    $8,17s$,
+    $1,41s$,
 
     text("Ø"),
-    $8,16#acr("s")$,
-    $1,30#acr("s")$,
+    $8,16s$,
+    $1,30s$,
   ),
 )<Ereignissverlauf>
 
-Die Analyse in @Ereignissverlauf zeigt, dass wenn der Fehler Auftritt etwa $1,30#acr("s")$ dem Schaltbefehl erscheint, was auf ein tieferliegendes Signalproblem hindeutet. Da der Fehler auch ohne Betätigung des Leistungsschalters auftritt, wird ein Zusammenhang mit der Verdrahtung ausgeschlossen und die Ursache im Bereich vor oder innerhalb des Meldemoduls vermutet.
+Die Analyse in @Ereignissverlauf zeigt, dass wenn der Fehler Auftritt etwa $1,30s$ dem Schaltbefehl erscheint, was auf ein tieferliegendes Signalproblem hindeutet. Da der Fehler auch ohne Betätigung des Leistungsschalters auftritt, wird ein Zusammenhang mit der Verdrahtung ausgeschlossen und die Ursache im Bereich vor oder innerhalb des Meldemoduls vermutet.
 
 
 == Lösung
