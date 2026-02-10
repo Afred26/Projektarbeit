@@ -25,9 +25,16 @@
 
 #include "Text/Einleitung/1 Überblick Praxisphase.typ"
 
-// Hauptteil
-#include "Text/Hauptteil/0.typ"
+#include "Text/Einleitung/2 Hintergrund und Motivation.typ"
 
+#include "Text/Einleitung/3 Technologische Grundlagen und Begriffsdefinitionen.typ"
 
-// 
-#include "Text/Schluss/0.typ"
+//Haupteil
+#include "Text/Hauptteil/0 Transformation im Engineering.typ"
+
+#include "Text/Hauptteil/1 Auswirkungen auf die Wertschöpfungskette .typ"
+
+#include "Text/Hauptteil/2 Herausforderungen und Chancen.typ"
+
+//Schluss
+#include "Text/Schluss/1 Ausblick und Fazit.typ"
