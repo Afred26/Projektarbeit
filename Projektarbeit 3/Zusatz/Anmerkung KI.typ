@@ -1,5 +1,5 @@
-#import "@local/templat-projektarbeit:0.1.2": *
-#import "../../Zusatz/acronyms.typ": acronyms
+#import "@local/templat-projektarbeit:0.1.5": *
+#import "acronyms.typ": acronyms
 
 #v(2em)
 #text(size: 20pt, weight: "bold", "Anmerkung zur Nutzung von Künstlicher 

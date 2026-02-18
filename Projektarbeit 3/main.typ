@@ -1,12 +1,14 @@
-#import "@local/templat-projektarbeit:0.1.2": *
+#import "@local/templat-projektarbeit:0.1.5": *
 #import "Zusatz/acronyms.typ": acronyms
+#import "Zusatz/Anmerkung KI.typ": *
+
 
 #show: supercharged-dhbw.with(
   title: "Transformation im Engineering: Von 2D-CAD Design über 3D - BIM Modellierung zum digitalen Zwilling",
   authors: (
-    (name: "Fredrik Schall", student-id: "1194924", course: "TEIT24EE1", course-of-studies: "Elektro- & Informationstechnik", company: (
-      (name: "Hitachi Energy Germany AG", post-code: "68309", city: "Mannheim")
-    )),
+    (name: "Fredrik Schall", student-id: "1194924", course: "TEIT24EE1", course-of-studies: "Elektro- & Informationstechnik", 
+    company: (name: "Hitachi Energy Germany AG", post-code: "68309", city: "Mannheim")
+    ),
   ),
   acronyms: acronyms, // displays the acronyms defined in the acronyms dictionary
   at-university: false, // if true the company name on the title page and the confidentiality statement are hidden
@@ -25,6 +27,8 @@
 
 #include "Text/Einleitung/1 Überblick Praxisphase.typ"
 
+#include "Text/Einleitung/4 Historische Entwicklung.typ"
+
 #include "Text/Einleitung/2 Hintergrund und Motivation.typ"
 
 #include "Text/Einleitung/3 Technologische Grundlagen und Begriffsdefinitionen.typ"
@@ -37,4 +41,4 @@
 #include "Text/Hauptteil/2 Herausforderungen und Chancen.typ"
 
 //Schluss
-#include "Text/Schluss/1 Ausblick und Fazit.typ"
+#include "Text/Schluss/0 Ausblick und Fazit.typ"

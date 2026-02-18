@@ -1,5 +1,6 @@
-#import "@local/templat-projektarbeit:0.1.2": *
+#import "@local/templat-projektarbeit:0.1.5": *
 #import "../../Zusatz/acronyms.typ": acronyms
+
 
 = Technologische Grundlagen
 #acrs("CAD")-Systeme entstanden in den 1960er Jahren als Werkzeuge zur digitalen Zeichnungserstellung. Anfangs beschränkten sie sich auf zweidimensionale Darstellungen, die den klassischen Papierzeichnungen entsprachen. Mit zunehmender Rechenleistung und Softwareentwicklung wurde die 3D-Modellierung möglich, die eine realitätsnähere Darstellung von Bauteilen und Systemen erlaubt.

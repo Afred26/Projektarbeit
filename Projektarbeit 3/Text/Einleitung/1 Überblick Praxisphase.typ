@@ -1,28 +1,27 @@
-#import "@local/templat-projektarbeit:0.1.2": *
+#import "@local/templat-projektarbeit:0.1.5": *
 #import "../../Zusatz/acronyms.typ": acronyms
+
 = Überblick Tätigkeit der Praxisphase
-Die Projektarbeit beschreibt Inhalte aus der 3. Praxisphasen.
+Beschreibung der Inhalte aus der 3. Praxisphasen.
 
 
 #figure(
-  caption: "Überblick Praxisphase 3 ",
+  caption: "Überblick Praxisphase 3",
   table(
     column-gutter: 0%,
     inset: 10pt,
     align: horizon,
-    fill: (_, y) => if y == 0 or y == 5 { luma(200) }
+    fill: (_, y) => if y == 0 { luma(200) }
     else { white },
-    
+    //Übeschrift
     text("Tätigkeiten des Studenten während des Praxiseinsatzes:"),
-    text("Einarbeitung in das Projektwendungsbereiche"),
-    text("DIN VDE 0100-600 Messprotokolle erstellt"),
-    text("Revisionspläne erstellt"),
-    text("Vorlage Abnahmeprotokoll erstellt"),
-    
-    text("Baustellen-Phase:"),
-    text("Bei Trafo-Umschwenkung geholfen"),
-    text("Neuaufstellung Trafo"),
-    text("DIN VDE 0100-600 Messung"),
-    text("110/10 kV und 20kV/400V Trafo getestet"),
+
+    //Body
+    text("Einarbeiten in Autodesk Revit"),
+    text("Erstellen und Anpassen der Atribute nach Kundenwünschen"),
+    text("Erstellen eines Skriptes zur Automatisierung von Atributanpassungen"),
+    text("Erstellen und Pflegen eine strukturierte Skill‑Matrix zur präzisen Erfassung, Bewertung und Visualisierung technischer Team‑Kompetenzen"),
+  
+
   ),
 )<überblick>
