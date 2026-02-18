@@ -1,4 +1,4 @@
-#import "@local/templat-projektarbeit:0.1.5": *
+#import "@local/templat-projektarbeit:0.1.6": *
 #import "../../Zusatz/acronyms.typ": acronyms
 
 = Transformation im Engineering
@@ -14,7 +14,8 @@ Der digitale Zwilling geht noch einen Schritt weiter: Er bildet das reale Objekt
 
 == Einführung von #acr("BIM")
 
-=== Prinzipien, Standards (IFC @iso_iso_2024, ISO 19650 @iso_iso_2018)
+=== Prinzipien, Standards (IFC, ISO 19650)
+#cite(<iso_iso_2024>) #cite(<iso_iso_2018>)
 
 === Nutzen für Planung, Ausführung und Betrieb
 

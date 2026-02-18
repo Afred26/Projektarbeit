@@ -1,6 +1,5 @@
-#import "@local/templat-projektarbeit:0.1.5": *
+#import "@local/templat-projektarbeit:0.1.6": *
 #import "Zusatz/acronyms.typ": acronyms
-#import "Zusatz/Anmerkung KI.typ": *
 
 
 #show: supercharged-dhbw.with(
@@ -29,9 +28,9 @@
 
 #include "Text/Einleitung/4 Historische Entwicklung.typ"
 
-#include "Text/Einleitung/2 Hintergrund und Motivation.typ"
-
 #include "Text/Einleitung/3 Technologische Grundlagen und Begriffsdefinitionen.typ"
+
+#include "Text/Einleitung/2 Hintergrund und Motivation.typ"
 
 //Haupteil
 #include "Text/Hauptteil/0 Transformation im Engineering.typ"
