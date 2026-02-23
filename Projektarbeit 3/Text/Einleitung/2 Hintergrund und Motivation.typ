@@ -15,13 +15,3 @@ Darüber hinaus erweitern Simulationen und Metaverse‑Technologien die Nutzung 
 Für das Engineering besonders bedeutsam ist, dass digitale Zwillinge sowohl auf Makro‑ (z. B. Produktionslinien) als auch auf Mikroebene (z. B. einzelne Komponenten wie Motoren oder Ventile) eingesetzt werden können #cite(<grieves_digital_2024>, supplement: "p. 122"). Dadurch lassen sich Entwicklungszyklen verkürzen, Varianten effizienter vergleichen und Systeme nachhaltiger gestalten. Gleichzeitig schaffen digitale Zwillinge die Grundlage für den Übergang zu cyber-physischen Systemen und intelligenten Produktionsumgebungen, in denen Daten, Modelle und Menschen eng vernetzt interagieren.
 
 Insgesamt zeigt die Kombination der Quellen, dass die digitale Transformation im Engineering durch #acr("BIM")‑gestützte Datenkonsolidierung und auf digitale Zwillinge basierende Simulationen maßgeblich vorangetrieben wird. Sie ermöglicht präzisere Planung, effizientere Abläufe und datengetriebene Optimierungen über den gesamten Lebenszyklus technischer Systeme hinweg.
-
-== Warum der Wechsel von 2D zu 3D und digitalem Zwilling notwendig ist
-
-
-
-== Aktuelle Herausforderungen in der Industrie
-
-
-
-== Zielsetzung der Arbeit und Forschungsfragen
