@@ -33,9 +33,9 @@
 #include "Text/Einleitung/2 Hintergrund und Motivation.typ"
 
 //Haupteil
-#include "Text/Hauptteil/0 Transformation im Engineering V2.typ"
+#include "Text/Hauptteil/0 Transformation im Engineering.typ"
 
-#include "Text/Hauptteil/1 Auswirkungen auf die Wertschöpfungskette .typ"
+#include "Text/Hauptteil/1 Auswirkungen auf die Wertschöpfungskette.typ"
 
 #include "Text/Hauptteil/2 Herausforderungen und Chancen.typ"
 
