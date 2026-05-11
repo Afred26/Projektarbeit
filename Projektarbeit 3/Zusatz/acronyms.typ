@@ -10,5 +10,6 @@
   LOIN: "Level of Information Need (engl.)",
   TGA:  "Technische Gebäudeausrüstung",
   AIM:  "Asset Information Model (engl.)",
+
   
 )

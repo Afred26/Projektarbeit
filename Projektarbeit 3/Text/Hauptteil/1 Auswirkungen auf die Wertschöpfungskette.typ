@@ -15,19 +15,19 @@ Damit nicht „zu viel“ oder „zu wenig“ modelliert wird, legt das #acr("LO
 
 Digitale Zwillinge erweitern diese modellbasierte Planung. Schon in der Entwurfsphase lassen sich Varianten durchrechnen, z. B. Energiebedarf, Komfort oder Materialeinsatz und später mit echten Betriebsdaten weiterentwickeln. Übersichtsarbeiten zeigen klare Vorteile bei Energieeffizienz, vorausschauender Wartung und beim Testen von „Was‑wäre‑wenn“-Szenarien. Gleichzeitig betont die Forschung, dass für den Übergang vom reinen #acr("BIM")‑Modell zum echten Digitalen Zwilling saubere Schnittstellen zu Sensorik und klare Datenflüsse nötig sind #cite(<cespedes-cubides_review_2024>).
 
-Wichtig ist auch die Interoperabilität: Mit #acr("IFC") #cite(<iso_industry_2024>) steht ein offener, herstellerneutraler Standard bereit. Die aktuelle Version #acr("IFC") 4.3 deckt neben Gebäuden auch Infrastruktur (Straßen, Bahn, Brücken) besser ab. Das erleichtert den Datenaustausch zwischen Planungstools, Auftragnehmern und später den Betreibern—und verhindert Lock‑in bei einzelnen Softwareanbietern.
+Wichtig ist auch die Interoperabilität. Mit #acr("IFC") #cite(<iso_industry_2024>) steht ein offener, herstellerneutraler Standard bereit. Die aktuelle Version #acr("IFC") 4.3 deckt neben Gebäuden auch Infrastruktur (Straßen, Bahn, Brücken) besser ab. Das erleichtert den Datenaustausch zwischen Planungstools, Auftragnehmern und später den Betreibern—und verhindert Lock‑in bei einzelnen Softwareanbietern.
 
 == Produktion und Montage
 
-Auf der Baustelle verbinden viele Teams das #acr("BIM")‑Modell mit Zeit‑ und Kostendaten (4D/5D). So lässt sich die Reihenfolge von Arbeitsschritten besser planen, Materialflüsse werden transparenter, Kollisionen und Nacharbeiten nehmen ab. Studien zeigen, dass Digitalisierung, Standardisierung und Vorfertigung große Produktivitätsgewinne ermöglichen—und dass diese Hebel in den nächsten Jahren entscheidend sind, um Termin‑ und Kostensicherheit zu erhöhen #cite(<jan_mischke_delivering_2024>).
+Auf der Baustelle verbinden viele Teams das #acr("BIM")‑Modell mit Zeit‑ und Kostendaten (4D/5D). So lässt sich die Reihenfolge von Arbeitsschritten besser planen, Materialflüsse werden transparenter, Kollisionen und Nacharbeiten nehmen ab. Studien zeigen, dass Digitalisierung, Standardisierung und Vorfertigung große Produktivitätsgewinne ermöglichen und dass diese Hebel in den nächsten Jahren entscheidend sind, um Termin‑ und Kostensicherheit zu erhöhen #cite(<jan_mischke_delivering_2024>).
 
-Ein Digitaler Zwilling kann bereits in der Bauphase Mehrwert liefern: Er zeigt den Ist‑Stand im Vergleich zum Soll‑Stand und macht Abweichungen sichtbar. Damit lassen sich Baufortschritt, Qualität und Sicherheit besser steuern. Gleichzeitig helfen standardisierte Datenformate wie #acr("IFC") dabei, Mengen, Bauteile und Spezifikationen ohne Medienbrüche an Fertigung und Montage zu übergeben.
+Ein Digitaler Zwilling kann bereits in der Bauphase Mehrwert liefern: Er zeigt den Ist‑Stand im Vergleich zum Soll‑Stand und macht Abweichungen sichtbar. Damit lassen sich Baufortschritt, Qualität und Sicherheit besser steuern. Gleichzeitig helfen standardisierte Datenformate wie #acr("IFC") dabei, Mengen, Bauteile und Spezifikationen ohne Medienwechsel an Fertigung und Montage zu übergeben.
 
-Auch die öffentliche Hand treibt die digitale Kette an: #cite(<eubimtg_handbuch_nodate>) empfiehlt, #acr("BIM")/Informations­management in die Vergabe zu verankern. Das schafft Klarheit für Anforderungen, verbessert Transparenz und erhöht Effizienz vom Auftrag des Projekts bis zur Abnahme.
+Auch die öffentliche Hand treibt die digitale Kette an. #cite(<eubimtg_handbuch_nodate>) empfiehlt, #acr("BIM")/Informations­management in die Vergabe zu verankern. Das schafft Klarheit für Anforderungen, verbessert Transparenz und erhöht Effizienz vom Auftrag des Projekts bis zur Abnahme.
 
 == Betrieb und Wartung
 
-Im Betrieb liegen die größten Einspar‑ und Qualitäts­potenziale. Ein Digitaler Zwilling wird mit Sensordaten gefüttert und zeigt in (beinahe) Echtzeit, wie das Gebäude tatsächlich funktioniert. Er erkennt Auffälligkeiten, empfiehlt Einstellungsänderungen, unterstützt Predictive Maintenance und hilft, Energie zu sparen, Ausfälle zu vermeiden und den Komfort zu steigern.
+Im Betrieb liegen die größten Einspar‑ und Qualitäts­potenziale. Ein Digitaler Zwilling wird mit Sensordaten gefüttert und zeigt in (beinahe) Echtzeit, wie das Gebäude tatsächlich funktioniert. Er erkennt Auffälligkeiten, empfiehlt Einstellungsänderungen, unterstützt "Predictive Maintenance" und hilft, Energie zu sparen, Ausfälle zu vermeiden und den Komfort zu steigern.
 
 Für Vertrauen und verantwortungsvolle Datennutzung bietet #cite(<bolton_gemini_2018>) einen einfachen Werte‑Kompass: Zweck für das Gemeinwohl, Transparenz und Sicherheit. Diese Prinzipien lassen sich auch auf einzelne Gebäude‑Zwillinge anwenden und erhöhen Akzeptanz und Nutzbarkeit.
 

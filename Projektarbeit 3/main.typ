@@ -24,7 +24,7 @@
 // Einleitung
 #include "Text/Einleitung/0 Vorwort.typ"
 
-#include "Text/Einleitung/1 Überblick Praxisphase.typ"
+//#include "Text/Einleitung/1 Überblick Praxisphase.typ"
 
 #include "Text/Einleitung/4 Historische Entwicklung.typ"
 
