@@ -15,7 +15,7 @@ Damit nicht „zu viel“ oder „zu wenig“ modelliert wird, legt das #acr("LO
 
 Digitale Zwillinge erweitern diese modellbasierte Planung. Schon in der Entwurfsphase lassen sich Varianten durchrechnen, z. B. Energiebedarf, Komfort oder Materialeinsatz und später mit echten Betriebsdaten weiterentwickeln. Übersichtsarbeiten zeigen klare Vorteile bei Energieeffizienz, vorausschauender Wartung und beim Testen von „Was‑wäre‑wenn“-Szenarien. Gleichzeitig betont die Forschung, dass für den Übergang vom reinen #acr("BIM")‑Modell zum echten Digitalen Zwilling saubere Schnittstellen zu Sensorik und klare Datenflüsse nötig sind #cite(<cespedes-cubides_review_2024>).
 
-Wichtig ist auch die Interoperabilität. Mit #acr("IFC") #cite(<iso_industry_2024>) steht ein offener, herstellerneutraler Standard bereit. Die aktuelle Version #acr("IFC") 4.3 deckt neben Gebäuden auch Infrastruktur (Straßen, Bahn, Brücken) besser ab. Das erleichtert den Datenaustausch zwischen Planungstools, Auftragnehmern und später den Betreibern—und verhindert Lock‑in bei einzelnen Softwareanbietern.
+Wichtig ist auch die Interoperabilität. Mit #acr("IFC") #cite(<iso_industry_2024>) steht ein offener, herstellerneutraler Standard bereit. Die aktuelle Version #acr("IFC") 4.3 deckt neben Gebäuden auch Infrastruktur (Straßen, Bahn, Brücken) besser ab. Das erleichtert den Datenaustausch zwischen Planungstools, Auftragnehmern und später den Betreibern nd verhindert Lock‑in bei einzelnen Softwareanbietern.
 
 == Produktion und Montage
 

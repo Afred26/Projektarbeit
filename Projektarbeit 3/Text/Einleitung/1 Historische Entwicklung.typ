@@ -8,7 +8,7 @@ Um zu verstehen, welche Bedeutung der aktuelle Wandel in der Planung hat, muss m
 
 == Frühe Hochkulturen und Jungsteinzeit
 
-Die Planungsprozesse im frühen Bauwesen reichen bis in die Jungsteinzeit zurück. Bereits hier lassen sich Formen von Bauplanung nachweisen, obwohl keine gezeichneten Pläne existierten. Entscheidungen über Gebäudegröße, Ausrichtung, Grundrissform und Materialien wurden vor dem Bau bewusst getroffen. Die Übertragung des Grundrisses erfolgte durch Aufschnürung und Absteckung mit Schnüren und Pflöcken. Mit zunehmender Sesshaftigkeit entstanden ab dem 8. Jahrtausend v. Chr. erste Siedlungs- und Umweltplanungen, z. B. Terrassierungsmauern, Staudämme und Stadtmauern. Auch charakteristische Gebäudetypen und Materialkenntnisse entwickelten sich weiter und bildeten das Fundament späterer Planungsprozesse. #cite(<renn_wissensgeschichte_2014>)
+Die Planungsprozesse im frühen Bauwesen reichen bis in die Jungsteinzeit zurück. Bereits hier lassen sich Formen von Bauplanung nachweisen, obwohl keine gezeichneten Pläne existierten. Entscheidungen über Gebäudegröße, Ausrichtung, Grundrissform und Materialien wurden vor dem Bau bewusst getroffen. Die Übertragung des Grundrisses erfolgte durch Absteckung mit Schnüren und Pflöcken. Mit zunehmender Sesshaftigkeit entstanden ab dem 8. Jahrtausend v. Chr. erste Siedlungs- und Umweltplanungen, z. B. Terrassierungsmauern, Staudämme und Stadtmauern. Auch charakteristische Gebäudetypen und Materialkenntnisse entwickelten sich weiter und bildeten das Fundament späterer Planungsprozesse. #cite(<renn_wissensgeschichte_2014>)
 
 == Alter Orient und Antike
 
