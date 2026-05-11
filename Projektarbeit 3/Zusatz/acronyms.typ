@@ -1,9 +1,9 @@
 #let acronyms = (
   
-  CAD:  "Computer Aided Design (engl.)",
+  CAD:  "Computer-Aided Design (engl.)",
   BIM:  "Building Information Modeling (engl.)",
   IoT:  "Internet of Things (engl.)",
-  KI:   "Künstliche Inteligenz",
+  KI:   "Künstliche Intelligenz",
   ISO:  "International Organization for Standardization (engl.)",
   IFC:  "Industry Foundation Classes (engl.)",
   CDE:  "Common Data Environment (engl.)",

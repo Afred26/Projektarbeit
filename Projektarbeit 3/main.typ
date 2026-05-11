@@ -18,6 +18,7 @@
   university: "Duale Hochschule Baden-Württemberg",
   university-location: "Mannheim",
   university-short: "DHBW",
+  show-confidentiality-statement: false
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 
@@ -26,11 +27,11 @@
 
 //#include "Text/Einleitung/1 Überblick Praxisphase.typ"
 
-#include "Text/Einleitung/4 Historische Entwicklung.typ"
+#include "Text/Einleitung/1 Historische Entwicklung.typ"
 
-#include "Text/Einleitung/3 Technologische Grundlagen und Begriffsdefinitionen.typ"
+#include "Text/Einleitung/2 Technologische Grundlagen und Begriffsdefinitionen.typ"
 
-#include "Text/Einleitung/2 Hintergrund und Motivation.typ"
+#include "Text/Einleitung/3 Beduetung der digitalen Transformation.typ"
 
 //Haupteil
 #include "Text/Hauptteil/0 Transformation im Engineering.typ"

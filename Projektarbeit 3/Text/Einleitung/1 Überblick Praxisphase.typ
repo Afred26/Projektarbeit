@@ -18,9 +18,9 @@ Beschreibung der Inhalte aus der 3. Praxisphasen.
 
     //Body
     text("Einarbeiten in Autodesk Revit"),
-    text("Erstellen und Anpassen der Atribute nach Kundenwünschen"),
-    text("Erstellen eines Skriptes zur Automatisierung von Atributanpassungen"),
-    text("Erstellen und Pflegen eine strukturierte Skill‑Matrix zur präzisen Erfassung, Bewertung und Visualisierung technischer Team‑Kompetenzen"),
+    text("Erstellen und Anpassen der  Attribute nach Kundenwünschen"),
+    text("Erstellen eines Skriptes zur Automatisierung von  Attributanpassungen"),
+    text("Erstellen und Pflegen einer strukturierte Skill‑Matrix zur präzisen Erfassung, Bewertung und Visualisierung technischer Team‑Kompetenzen"),
   
 
   ),
