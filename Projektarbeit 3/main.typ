@@ -1,4 +1,4 @@
-#import "@local/templat-projektarbeit:0.1.10": *
+#import "@local/templat-projektarbeit:0.1.11": *
 #import "Zusatz/acronyms.typ": acronyms
 
 
@@ -19,7 +19,9 @@
   university: "Duale Hochschule Baden-Württemberg",
   university-location: "Mannheim",
   university-short: "DHBW",
-  show-confidentiality-statement: false
+  show-confidentiality-statement: false,
+  font: "Hitachi Sans",
+  logo-right: image("Bilder/Hitachi_Global_Logo_Black_RGB.svg"),
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 
