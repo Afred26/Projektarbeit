@@ -1,4 +1,4 @@
-#import "@local/templat-projektarbeit:0.1.13": *
+#import "@local/templat-projektarbeit:0.1.14": *
 #import "../../Zusatz/acronyms.typ": acronyms
 = Überblick Tätigkeit der Praxisphase
 Die Projektarbeit beschreibt Inhalte aus der 3. Praxisphasen.
