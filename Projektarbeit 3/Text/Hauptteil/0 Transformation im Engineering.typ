@@ -1,4 +1,4 @@
-#import "@local/templat-projektarbeit:0.1.9": *
+#import "@local/templat-projektarbeit:0.1.10": *
 #import "../../Zusatz/acronyms.typ": acronyms
 
 = Transformation im Engineering

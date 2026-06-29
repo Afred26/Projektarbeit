@@ -1,4 +1,4 @@
-#import "@local/templat-projektarbeit:0.1.9": *
+#import "@local/templat-projektarbeit:0.1.10": *
 #import "Zusatz/acronyms.typ": acronyms
 
 
@@ -14,6 +14,7 @@
   bibliography: bibliography("Zusatz/zotero.bib"),
   date: datetime.today(),
   language: "de", // en, de
+  ki-anmerkung-content: include "Zusatz/Anmerkung KI.typ",
   supervisor: (company: "Marco Marino"),
   university: "Duale Hochschule Baden-Württemberg",
   university-location: "Mannheim",
