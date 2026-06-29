@@ -1,4 +1,4 @@
-#import "@local/templat-projektarbeit:0.1.11": *
+#import "@local/templat-projektarbeit:0.1.13": *
 #import "Zusatz/acronyms.typ": acronyms
 
 #show: supercharged-dhbw.with(
@@ -12,7 +12,9 @@
   bibliography: bibliography("Zusatz/zotero.bib"),
   date: datetime.today(),
   language: "en", // en, de
-  ki-anmerkung-content: include "Anmerkung KI.typ",
+  ki-anmerkung-content: include "Zusatz/Anmerkung KI.typ",
+  // Vorwort einfügen (optional):
+  foreword: include "Texte/Vorwort.typ",
   supervisor: (company: "Marco Van-Rosmalen"),
   university: "Duale Hochschule Baden-Württemberg",
   university-location: "Mannheim",
@@ -23,13 +25,12 @@
 )
 
 // Einleitung
-#include "Text/Einleitung/0 Vorwort.typ"
 
-#include "Text/Einleitung/1 Überblick Praxisphase.typ"
+#include "Texte/Einleitung/1 Überblick Praxisphase.typ"
 
 // Hauptteil
-#include "Text/Hauptteil/0.typ"
+#include "Texte/Hauptteil/0.typ"
 
 
 //
-#include "Text/Schluss/0.typ"
+#include "Texte/Schluss/0.typ"
