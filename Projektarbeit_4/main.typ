@@ -14,7 +14,7 @@
   language: "en", // en, de
   ki-anmerkung-content: include "Zusatz/Anmerkung KI.typ",
   // Vorwort einfügen (optional):
-  foreword: include "Texte/Vorwort.typ",
+  foreword: include "Texte/0_Einleitung/0_Vorwort.typ",
   supervisor: (company: "Marco Van-Rosmalen"),
   university: "Duale Hochschule Baden-Württemberg",
   university-location: "Mannheim",
@@ -24,13 +24,18 @@
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 
-// Einleitung
+//Einleitung
+#include "Texte/0_Einleitung/1_Introduction.typ"
 
-#include "Texte/Einleitung/1 Überblick Praxisphase.typ"
+//Theorieteil
+#include "Texte/1_Theorieteil/0_Theoretical Background.typ"
 
-// Hauptteil
-#include "Texte/Hauptteil/0.typ"
+//Forschungsleistung
+#include "Texte/2_Forschungsleistung/0_Existing SECP.typ"
+#include "Texte/2_Forschungsleistung/1_Validation Methodology.typ"
+#include "Texte/2_Forschungsleistung/2_Assessment of SECP.typ"
+#include "Texte/2_Forschungsleistung/3_Development of Verification.typ"
+#include "Texte/2_Forschungsleistung/4_Evaluation Verification.typ"
 
-
-//
-#include "Texte/Schluss/0.typ"
+//Zusammenfassung
+#include "Texte/3_Zusammenfassung/0_Conclusion.typ"
