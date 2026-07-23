@@ -3,8 +3,8 @@
 
 = Evaluation of the Independent Verification Process
 
-== Advantages of the Excel-Based Approach
+  == Advantages of the Excel-Based Approach
 
-== Limitations of the Excel-Based Approach
+  == Limitations of the Excel-Based Approach
 
-== Future Improvements
+  == Future Improvements

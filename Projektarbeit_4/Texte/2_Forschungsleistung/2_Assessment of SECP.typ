@@ -1,18 +1,18 @@
 #import "@local/templat-projektarbeit:0.1.15": *
 #import "../../Zusatz/acronyms.typ": acronyms
 
-= Assessment of CT Calculations in SECP
+= Assessment of #acr("CT") Calculations in SECP
 
-== Investigated Calculation Cases
+  == Investigated Calculation Cases
 
-== Identified Formula Errors
+  == Identified Formula Errors
 
-== Identified Numerical Errors
+  == Identified Numerical Errors
 
-== Identified Logical Inconsistencies
+  == Identified Logical Inconsistencies
 
-== Documentation and Reporting Issues
+  == Documentation and Reporting Issues
 
-== Summary of Findings
+  == Summary of Findings
 
-== Root Cause Analysis
+  == Root Cause Analysis

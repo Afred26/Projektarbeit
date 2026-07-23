@@ -3,14 +3,12 @@
 
 = Validation Methodology
 
-== Error Classification Framework
+  == Error Classification Framework
+    === Formula Errors
+    === Numerical Errors
+    === Logical Errors
+    === Documentation Errors
+    === Traceability Issues
+    === Quality Assessment Method
 
-=== Formula Errors
-=== Numerical Errors
-=== Logical Errors
-=== Documentation Errors
-=== Traceability Issues
-=== Quality Assessment Method
-
-
-== Validation Approach
+  == Validation Approach

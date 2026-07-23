@@ -2,7 +2,7 @@
 #import "Zusatz/acronyms.typ": acronyms
 
 #show: supercharged-dhbw.with(
-  title: "Validation and Assessment of CT and VT Calculations in SECP Global: Development of a User Guide and Independent Verification Tool",
+  title: "Validation and Quality Assessment of CT Calculations in SECP Global",
   authors: (
     (name: "Fredrik Schall", student-id: "1194924", course: "TEIT24EE1", course-of-studies: "Elektro- & Informationstechnik", company: (name: "Hitachi Energy The Netherlands B.V.", post-code: "3068 AX", city: "Rotterdam", country: "Netherlands")
     ),
