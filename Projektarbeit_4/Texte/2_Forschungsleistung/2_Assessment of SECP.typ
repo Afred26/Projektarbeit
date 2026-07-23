@@ -1,7 +1,7 @@
 #import "@local/templat-projektarbeit:0.1.15": *
 #import "../../Zusatz/acronyms.typ": acronyms
 
-= Assessment of #acr("CT") Calculations in SECP
+= Assessment of #acr("CT") Calculations in #acr("SECP")
 
   == Investigated Calculation Cases
 
