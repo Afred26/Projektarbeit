@@ -7,11 +7,11 @@ This chapter defines the method used to answer the central question of this thes
 
 == Research Design
 
-The evaluation follows the logic of design-science research, in which an artefact is investigated through a structured cycle of problem investigation, treatment design and treatment evaluation. This thesis is located in the evaluation part of that cycle: it does not develop #acr("SECP") but determines, empirically and against documented criteria, how well the tool solves the dimensioning problem it is intended to solve. #cite(<Wieringa_Design_Science>)
+The evaluation follows the logic of design-science research, in which an artefact is investigated through a structured cycle of problem investigation, treatment design and treatment evaluation. This thesis is located in the evaluation part of that cycle: it does not develop #acr("SECP") but determines, empirically and against documented criteria, how well the tool solves the dimensioning problem it is intended to solve. //#cite(<Wieringa_Design_Science>)
 
-Because a single tool is examined in its real engineering setting, the work is organised as a single-case study in the sense of empirical software engineering. The case is #acr("SECP") Global; the units of analysis are individual #acr("CT") adequacy calculations and their generated reports. Adopting an established case-study frame is deliberate: it provides a recognised structure for stating research questions, collecting evidence in a traceable way and, in particular, for discussing the validity of the conclusions. #cite(<Runeson_Case_Study>)
+Because a single tool is examined in its real engineering setting, the work is organised as a single-case study in the sense of empirical software engineering. The case is #acr("SECP") Global; the units of analysis are individual #acr("CT") adequacy calculations and their generated reports. Adopting an established case-study frame is deliberate: it provides a recognised structure for stating research questions, collecting evidence in a traceable way and, in particular, for discussing the validity of the conclusions. //#cite(<Runeson_Case_Study>)
 
-In the terminology of the quality-evaluation framework of #acr("ISO")/#acr("IEC") 25040, the study is a quality evaluation for suitability to a specific use rather than a conformity check against a full requirements specification. This classification matters because it fixes the reference against which #acr("SECP") is judged: the defined intended use, not an abstract notion of software quality. #cite(<ISO_IEC_25040>)
+In the terminology of the quality-evaluation framework of #acr("ISO")/#acr("IEC") 25040, the study is a quality evaluation for suitability to a specific use rather than a conformity check against a full requirements specification. This classification matters because it fixes the reference against which #acr("SECP") is judged: the defined intended use, not an abstract notion of software quality. //#cite(<ISO_IEC_25040>)
 
 == Research Questions
 
@@ -31,7 +31,7 @@ RQ4 (usability and maintainability): Is the generated report fit for its documen
 
 == Evaluation Context, Object and Scope
 
-The intended use fixed for this evaluation is the following: a protection engineer performs #acr("CT") adequacy dimensioning during the planning phase using #acr("SECP") Global, and the generated calculation report is transmitted to the customer as an auditable design record. Defining the intended use explicitly is a prerequisite for a defensible verdict, because releasability can only be judged relative to a stated purpose and user. #cite(<ISO_IEC_25040>)
+The intended use fixed for this evaluation is the following: a protection engineer performs #acr("CT") adequacy dimensioning during the planning phase using #acr("SECP") Global, and the generated calculation report is transmitted to the customer as an auditable design record. Defining the intended use explicitly is a prerequisite for a defensible verdict, because releasability can only be judged relative to a stated purpose and user. //#cite(<ISO_IEC_25040>)
 
 The object of study is the #acr("CT") and #acr("VT") adequacy check module of #acr("SECP"), restricted to its #acr("CT") sizing function. #cite(<SECP_User_Manual>)
 
@@ -58,9 +58,9 @@ A criterion that only degrades presentation or convenience is treated as a limit
 
 == Quality Model and Measurement
 
-The properties referenced by the decision rule are anchored in the product quality model of #acr("ISO")/#acr("IEC") 25010, which provides the vocabulary of quality characteristics against which the tool is assessed. #cite(<ISO_IEC_25010>) The four releasable properties map to that model as follows: correctness and completeness are aspects of functional suitability, traceability is treated as an aspect of the report's functional correctness and of analysability, and report fitness combines interaction capability with the maintainability of the report artefact.
+The properties referenced by the decision rule are anchored in the product quality model of #acr("ISO")/#acr("IEC") 25010, which provides the vocabulary of quality characteristics against which the tool is assessed. /*#cite(<ISO_IEC_25010>)*/ The four releasable properties map to that model as follows: correctness and completeness are aspects of functional suitability, traceability is treated as an aspect of the report's functional correctness and of analysability, and report fitness combines interaction capability with the maintainability of the report artefact.
 
-To make these properties measurable rather than impressionistic, each is operationalised through the goal–question–metric approach, in which an evaluation goal is refined into answerable questions and each question into a concrete metric with an associated decision criterion. #cite(<Basili_GQM>) The resulting operationalisation is given in @tab-gqm and defines, for every sub-question, what is measured and how the outcome feeds the decision rule.
+To make these properties measurable rather than impressionistic, each is operationalised through the goal–question–metric approach, in which an evaluation goal is refined into answerable questions and each question into a concrete metric with an associated decision criterion. /*#cite(<Basili_GQM>)*/ The resulting operationalisation is given in @tab-gqm and defines, for every sub-question, what is measured and how the outcome feeds the decision rule.
 
 #figure(
   table(
@@ -84,7 +84,7 @@ The comparison follows the distinction, established in the verification-and-vali
 
 $ delta = (q_"SECP" - q_"ref") / q_"ref" $ <eq-deviation>
 
-is evaluated for every quantity $q$, where $q_"SECP"$ is the value produced by #acr("SECP") and $q_"ref"$ the value produced by the reference model. A case satisfies RQ1 if the magnitude of the deviation in @eq-deviation stays within a tolerance that reflects display precision and permissible rounding; a larger deviation is recorded as a discrepancy for further analysis. The residual uncertainty of the reference value itself, arising from rounding and from admissible variants of the standard formulae, is acknowledged in the sense of the guide to the expression of uncertainty in measurement, so that the tolerance is understood as a band rather than an exact threshold. #cite(<JCGM_100_GUM>) Where a validation metric with an associated uncertainty is required for a quantity, the comparison is framed in the manner of the verification-and-validation standard for computational analysis. #cite(<ASME_VV20>)
+is evaluated for every quantity $q$, where $q_"SECP"$ is the value produced by #acr("SECP") and $q_"ref"$ the value produced by the reference model. A case satisfies RQ1 if the magnitude of the deviation in @eq-deviation stays within a tolerance that reflects display precision and permissible rounding; a larger deviation is recorded as a discrepancy for further analysis. The residual uncertainty of the reference value itself, arising from rounding and from admissible variants of the standard formulae, is acknowledged in the sense of the guide to the expression of uncertainty in measurement, so that the tolerance is understood as a band rather than an exact threshold. /*#cite(<JCGM_100_GUM>)*/ Where a validation metric with an associated uncertainty is required for a quantity, the comparison is framed in the manner of the verification-and-validation standard for computational analysis. //#cite(<ASME_VV20>)
 
 The method separates two questions that are easily conflated. The first is whether the numerical output of #acr("SECP") matches the reference, which is the subject of RQ1 and belongs to the computation layer. The second is whether the formula displayed in the report matches the formula that produced that output, which is the subject of RQ2 and belongs to the presentation layer. A case in which the numbers agree while the displayed derivation does not is therefore not a contradiction but a defect confined to the presentation layer, and the two layers are recorded independently.
 
@@ -98,7 +98,7 @@ For RQ4 the generated report is assessed against the releasable properties defin
 
 == Defect Classification Scheme
 
-To keep the findings systematic and to connect them to the decision rule, every observation is recorded through a common classification scheme with three levels, shown in @tab-classification. The first level identifies the cause as a software defect and classifies it using the attributes of the standard classification for software anomalies. #cite(<IEEE_1044>) The second level describes the effect as the resulting numerical or metrological deviation, expressed through the deviation of @eq-deviation and its uncertainty. #cite(<ASME_VV20>), #cite(<JCGM_100_GUM>) The third level evaluates the consequence against the domain benchmark, that is, against the #acr("CT") adequacy criterion of the #acr("IEC") 61869 series. #cite(<IEC_68169_2>), #cite(<IEC_61869_100>) The overall verification-and-validation activity is structured in accordance with the corresponding process standard. #cite(<IEEE_1012>)
+To keep the findings systematic and to connect them to the decision rule, every observation is recorded through a common classification scheme with three levels, shown in @tab-classification. The first level identifies the cause as a software defect and classifies it using the attributes of the standard classification for software anomalies. /*#cite(<IEEE_1044>)*/ The second level describes the effect as the resulting numerical or metrological deviation, expressed through the deviation of @eq-deviation and its uncertainty. /*#cite(<ASME_VV20>), #cite(<JCGM_100_GUM>)*/ The third level evaluates the consequence against the domain benchmark, that is, against the #acr("CT") adequacy criterion of the #acr("IEC") 61869 series. #cite(<IEC_68169_2>), #cite(<IEC_61869_100>) The overall verification-and-validation activity is structured in accordance with the corresponding process standard. //#cite(<IEEE_1012>)
 
 #figure(
   table(
@@ -117,7 +117,7 @@ Each finding is additionally assigned a severity that reflects whether it affect
 
 == Validity Considerations
 
-The credibility of the conclusions is discussed in terms of the four validity aspects used in case-study research. #cite(<Runeson_Case_Study>)
+The credibility of the conclusions is discussed in terms of the four validity aspects used in case-study research. //#cite(<Runeson_Case_Study>)
 
 Construct validity concerns whether the criteria actually capture what releasability means to the organisation. It is addressed by defining the intended use explicitly, by deriving the releasable properties from an established quality model, and, where an internal report or quality specification exists, by aligning the criteria with it; the decision rule is fixed in advance to prevent post-hoc adjustment.
 
