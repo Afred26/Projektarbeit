@@ -1,4 +1,4 @@
-#import "@local/templat-projektarbeit:0.1.16": *
+#import "@local/templat-projektarbeit:0.1.17": *
 #import "Zusatz/acronyms.typ": acronyms
 
 #show: supercharged-dhbw.with(
@@ -32,13 +32,11 @@
 
 //Forschungsleistung
 
-#include "Texte/2_Forschungsleistung/5_Quality Assessment.typ"
-
 #include "Texte/2_Forschungsleistung/0_Existing SECP.typ"
 #include "Texte/2_Forschungsleistung/1_Validation Methodology.typ"
-#include "Texte/2_Forschungsleistung/2_Assessment of SECP.typ"
-#include "Texte/2_Forschungsleistung/3_Development of Verification.typ"
-#include "Texte/2_Forschungsleistung/4_Evaluation Verification.typ"
-
+#include "Texte/2_Forschungsleistung/2_Model for Verification.typ"
+#include "Texte/2_Forschungsleistung/3_Assessment Results.typ"
+#include "Texte/2_Forschungsleistung/4_Verdict.typ"
+//#include "Texte/2_Forschungsleistung/6_Over Corrent Protection.typ"
 //Zusammenfassung
 #include "Texte/3_Zusammenfassung/0_Conclusion.typ"

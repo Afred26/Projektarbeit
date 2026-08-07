@@ -1,7 +1,7 @@
-#import "@local/templat-projektarbeit:0.1.16": *
+#import "@local/templat-projektarbeit:0.1.17": *
 #import "../../Zusatz/acronyms.typ": acronyms
 
-= Existing #acr("CT") Calculation Process in #acr("SECP")
+= The #acr("SECP") Global #acr("CT") Calculation Process
 
 This chapter describes the current process used by #acr("SECP") Global to perform current-transformer calculations. It introduces the overall application, explains the structure and sequence of the #acr("CT") calculation workflow, identifies the protection functions supported by the #acr("CT") calculation module and outlines the generation and content of calculation reports. The description is limited to the functionality documented in the provided #acr("SECP") user manual and the structure observed in the available calculation reports.
 

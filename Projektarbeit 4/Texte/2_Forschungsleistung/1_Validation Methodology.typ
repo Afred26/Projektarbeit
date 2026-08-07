@@ -1,4 +1,4 @@
-#import "@local/templat-projektarbeit:0.1.16": *
+#import "@local/templat-projektarbeit:0.1.17": *
 #import "../../Zusatz/acronyms.typ": acronyms
 
 = Methodology
@@ -78,7 +78,7 @@ To make these properties measurable rather than impressionistic, each is operati
 
 == Validation by Reference-Model Comparison
 
-RQ1 is answered by comparing #acr("SECP") against an independent reference. #acr("SECP") is the system under test and a separate reference model, implemented in a spreadsheet and computing the #acr("CT") adequacy quantities directly from the formulae of #acr("IEC") 61869-2 and the guidance of #acr("IEC") TR 61869-100, serves as the test oracle. #cite(<IEC_68169_2>), #cite(<IEC_61869_100>) The reference model is not taken from a single secondary source but derived from the primary standards, so that the comparison rests on the normative basis itself.
+RQ1 is answered by comparing #acr("SECP") against an independent reference. #acr("SECP") is the system under test and a separate reference model, implemented in a spreadsheet and computing the #acr("CT") adequacy quantities directly from the formulae of #acr("IEC") 61869-2 and the guidance of #acr("IEC") TR 61869-100, serves as the test oracle. #cite(<IEC_61869_2>), #cite(<IEC_61869_100>) The reference model is not taken from a single secondary source but derived from the primary standards, so that the comparison rests on the normative basis itself.
 
 The comparison follows the distinction, established in the verification-and-validation literature, between verifying that a model is solved correctly and validating that the correct model is solved. #cite(<Roach_Verification_Validation>), #cite(<Oberkampf_Verification_Validation>) For each test case the same input set is entered into #acr("SECP") and into the reference model, the relevant output quantities are recorded, and the relative deviation
 
@@ -90,7 +90,7 @@ The method separates two questions that are easily conflated. The first is wheth
 
 == Structured Quality Assessment
 
-RQ2, RQ3 and RQ4 are assessed by structured examination rather than by numerical comparison. For RQ2 the displayed formulae and calculation steps of the detailed report, whose stated purpose is to present the calculation procedure with formulae and results, are checked against the governing calculation and the applicable clause of the standard, and any mismatch is recorded with the location at which it occurs and with an indication of whether it is isolated or systematic. #cite(<SECP_User_Manual>), #cite(<IEC_68169_2>)
+RQ2, RQ3 and RQ4 are assessed by structured examination rather than by numerical comparison. For RQ2 the displayed formulae and calculation steps of the detailed report, whose stated purpose is to present the calculation procedure with formulae and results, are checked against the governing calculation and the applicable clause of the standard, and any mismatch is recorded with the location at which it occurs and with an indication of whether it is isolated or systematic. #cite(<SECP_User_Manual>), #cite(<IEC_61869_2>)
 
 For RQ3 the coverage question is separated from the equivalence question. Coverage is established by determining which of the required application–device combinations can actually be represented in #acr("SECP"). Where the required device is not selectable and only a substitute is offered, equivalence is examined by comparing the dimensioning basis that #acr("SECP") applies through the substitute with the #acr("CT") requirement published for the required device in its own documentation. #cite(<REF650_Technical_Guide>), #cite(<RET670_Application_Manual>) The substitute is regarded as equivalent only if it applies the same governing requirement with the same input quantities and is no less onerous than the required device's requirement, so that any #acr("CT") accepted through the substitute would also satisfy the required device. A substitute whose basis is less onerous is treated as unsafe for substitution and therefore as a blocker, because it can lead to an under-dimensioned #acr("CT") while appearing internally consistent.
 
@@ -98,7 +98,7 @@ For RQ4 the generated report is assessed against the releasable properties defin
 
 == Defect Classification Scheme
 
-To keep the findings systematic and to connect them to the decision rule, every observation is recorded through a common classification scheme with three levels, shown in @tab-classification. The first level identifies the cause as a software defect and classifies it using the attributes of the standard classification for software anomalies. #cite(<IEEE_1044>) The second level describes the effect as the resulting numerical or metrological deviation, expressed through the deviation of @eq-deviation and its uncertainty. #cite(<JCGM_100_GUM>) The third level evaluates the consequence against the domain benchmark, that is, against the #acr("CT") adequacy criterion of the #acr("IEC") 61869 series. #cite(<IEC_68169_2>), #cite(<IEC_61869_100>) The overall verification-and-validation activity is structured in accordance with the corresponding process standard.
+To keep the findings systematic and to connect them to the decision rule, every observation is recorded through a common classification scheme with three levels, shown in @tab-classification. The first level identifies the cause as a software defect and classifies it using the attributes of the standard classification for software anomalies. #cite(<IEEE_1044>) The second level describes the effect as the resulting numerical or metrological deviation, expressed through the deviation of @eq-deviation and its uncertainty. #cite(<JCGM_100_GUM>) The third level evaluates the consequence against the domain benchmark, that is, against the #acr("CT") adequacy criterion of the #acr("IEC") 61869 series. #cite(<IEC_61869_2>), #cite(<IEC_61869_100>) The overall verification-and-validation activity is structured in accordance with the corresponding process standard.
 
 #figure(
   table(

@@ -15,6 +15,7 @@
     text("Copilot"),              text("Searching and summarizing (company) documents"),
     text("Gemini"),               text("Researching general information"),
     text("Google Scholar Labs"),   text("Researching academic literature"),
+    text("Claude Code"),          text("Anpassen des Templates")
 
   )
 )<KI>
