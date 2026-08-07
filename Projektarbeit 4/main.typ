@@ -38,5 +38,6 @@
 #include "Texte/2_Forschungsleistung/3_Assessment Results.typ"
 #include "Texte/2_Forschungsleistung/4_Verdict.typ"
 //#include "Texte/2_Forschungsleistung/6_Over Corrent Protection.typ"
+
 //Zusammenfassung
 #include "Texte/3_Zusammenfassung/0_Conclusion.typ"

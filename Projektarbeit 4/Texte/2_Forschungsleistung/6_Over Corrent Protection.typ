@@ -5,18 +5,6 @@
 
 The calculation procedures provided for REF630 and REF650 address the same fundamental engineering objective: the current transformer must reproduce the primary fault current with sufficient accuracy for the protection function to operate as intended. In both cases, the calculation is therefore not limited to selecting the rated #acr("CT") transformation ratio. It must also consider the current level to be reproduced, the #acr("CT") secondary winding resistance, the connected burden and the saturation behaviour of the #acr("CT") core. However, the two device manuals express these requirements through different calculation frameworks. The REF630 application manual primarily uses the #acr("CT") accuracy class and the effective accuracy limit factor, whereas the REF650 technical guide specifies a required rated equivalent limiting secondary acr("emf") for each overcurrent protection characteristic.
 
-== Normative basis
-
-The relevant normative basis for conventional inductive protection CTs is IEC 61869-2 in conjunction with the general requirements of IEC 61869-1. IEC 61869-2 defines a protective current transformer as a #acr("CT") intended to transmit information to protection and control devices. For class P and PR CTs, the standard defines the #acr("ALF") as the ratio of the rated accuracy-limit primary current to the rated primary current. The corresponding secondary limiting acr("emf") is denoted by $E_"ALF"$​ and is determined from the accuracy limit factor, rated secondary current, #acr("CT") winding impedance and rated burden.
-
-For protection classes specified by their transient performance, IEC 61869-2 additionally defines the rated symmetrical short-circuit current factor $K_"ssc"$​, the transient dimensioning factor $K_"td"$ and the rated equivalent limiting secondary acr("emf") $E_"al"$. The latter is defined as
-
-$ E_"al" = K_"ssc" K_"td" (R_"ct" + R_b) I_"sr" $
-
-where $R_"ct"$​ is the secondary winding resistance, $R_b$​ is the secondary burden resistance and $I_"sr"$ is the rated secondary current. Thus, the voltage-based and factor-based descriptions are not independent physical concepts. They are alternative means of characterising the #acr("CT") capability at its specified accuracy limit.
-
-IEC TR 61869-100 supplements the normative requirements with application guidance. It identifies overcurrent protection by #acr("ANSI") device numbers 50, 51, 50N, 51N, 67 and 67N and by the #acr("IEC") symbol *I>*. The report states that overcurrent protection compares the measured current with a pickup threshold and operates instantaneously or after a time delay when the threshold is exceeded. It also explains that modern relay manufacturers may determine the necessary #acr("CT") overdimensioning through analytical evaluations and device tests and subsequently publish simplified requirements in the relay documentation. The project engineer then applies these published requirements to the fault-current and burden conditions of the particular installation.
-
 == REF630 calculation approach
 
 The REF630 application manual describes the #acr("CT") requirement in terms of the accuracy class, nominal accuracy limit factor and actual connected burden. The calculation therefore begins with a #acr("CT") specified by an IEC protection class, typically expressed in a form such as 5P20. In this designation, the letter P identifies a protection #acr("CT"), the first number represents the permissible composite error in percent at the accuracy-limit condition, and the second number represents the rated accuracy limit factor. The suitability of the #acr("CT") is then assessed under the actual secondary-circuit conditions.
