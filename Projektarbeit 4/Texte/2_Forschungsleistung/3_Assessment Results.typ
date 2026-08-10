@@ -35,7 +35,7 @@ The two procedures are physically related: IEC 61869-2 defines both the accuracy
   {
   set par(justify: false)
   table(
-    columns: (auto, 1fr, 1fr),
+    columns: (auto, 1fr, 1.3fr),
     inset: 7pt,
     align: (left + horizon, left + horizon, left + horizon),
     table.header([Aspect], [REF630 (substitute)], [REF650 (required)]),

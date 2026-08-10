@@ -21,6 +21,9 @@
   university-short: "DHBW",
   font: "Hitachi Sans",
   logo-right: image("Bilder/Hitachi_Global_Logo_Black_RGB.svg"),
+  titlepage-content: {
+    set page(margin: 0pt)
+    image("Bilder/Deckblatt.pdf")}
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 
