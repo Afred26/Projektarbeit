@@ -29,6 +29,6 @@ The project also aims to establish a repeatable methodology for reviewing calcul
 
 == Scope and Limitations
 
-The project is limited to #acr("CT") calculations in #acr("SECP") Global, with particular attention to transformer differential protection and overcurrent protection. The investigation covers selected representative cases rather than every #acr("CT") application and parameter combination supported by #acr("SECP") Global.
+The project is limited to #acr("CT") calculations in #acr("SECP") Global, with particular attention to transformer differential protection, line differential protection and overcurrent protection. The investigation covers selected representative cases rather than every #acr("CT") application and parameter combination supported by #acr("SECP") Global.
 
 The validation includes comparisons with independent reference calculations and an assessment of formulas, intermediate results, calculation logic, documentation quality and traceability. Formal software certification or certified approval of protection-engineering designs is not part of the project. The investigation is further limited by the availability of information concerning the formulas, assumptions, calculation methods and engineering requirements implemented in #acr("SECP") Global.

@@ -3,7 +3,7 @@
 
 = Methodology
 
-This chapter defines the method used to answer the central question of this thesis, namely whether the #acr("CT") adequacy calculations produced by #acr("SECP") Global can be relied upon for their intended use. Because the object of study is an existing engineering tool rather than a newly constructed one, the work is an evaluation study: #acr("SECP") is treated as a given artefact whose fitness for a defined purpose is assessed against explicit criteria. The chapter first establishes the research design, then formulates the research questions, defines the evaluation context and scope, fixes the decision rule that governs the verdict, operationalises the quality criteria into measurable form, describes the two complementary evaluation strands, specifies the defect-classification schemeand finally discusses the threats to validity and how they are addressed. The subsequent chapters apply this method; the present chapter is the reference that makes those results reproducible and defensible.
+This chapter defines the method used to answer the central question of this thesis, namely whether the #acr("CT") adequacy calculations produced by #acr("SECP") Global can be relied upon for their intended use. Because the object of study is an existing engineering tool rather than a newly constructed one, the work is an evaluation study: #acr("SECP") is treated as a given artefact whose fitness for a defined purpose is assessed against explicit criteria. The chapter first establishes the research design, then formulates the research questions, defines the evaluation context and scope, fixes the decision rule that governs the verdict, operationalises the quality criteria into measurable form, describes the two complementary evaluation strands, specifies the defect-classification scheme and finally discusses the threats to validity and how they are addressed. The subsequent chapters apply this method; the present chapter is the reference that makes those results reproducible and defensible.
 
 == Research Design
 
@@ -31,7 +31,7 @@ RQ4 (usability and maintainability): Is the generated report fit for its documen
 
 == Evaluation Context, Object and Scope
 
-The intended use fixed for this evaluation is the following: a protection engineer performs #acr("CT") adequacy dimensioning during the planning phase using #acr("SECP") Globaland the generated calculation report is transmitted to the customer as an auditable design record. Defining the intended use explicitly is a prerequisite for a defensible verdict, because releasability can only be judged relative to a stated purpose and user. #cite(<ISO_IEC_25040>)
+The intended use fixed for this evaluation is the following: a protection engineer performs #acr("CT") adequacy dimensioning during the planning phase using #acr("SECP") Global and the generated calculation report is transmitted to the customer as an auditable design record. Defining the intended use explicitly is a prerequisite for a defensible verdict, because releasability can only be judged relative to a stated purpose and user. #cite(<ISO_IEC_25040>)
 
 The object of study is the #acr("CT") and #acr("VT") adequacy check module of #acr("SECP"), restricted to its #acr("CT") sizing function. #cite(<SECP_User_Manual>)
 
@@ -39,7 +39,7 @@ The evaluation is scoped to two representative application–device cases that d
 
 == Releasability Decision Rule
 
-The verdict is governed by a decision rule that is fixed before the assessment is carried out, so that individual findings are judged consistently rather than case by case in hindsight. A result is releasable without qualification if it is correct, complete, traceable and presentable without intervention. A result is releasable with a limitation if it becomes releasable only after a manual workaround, provided that the workaround yields a result of very good quality and requires no more than approximately fifteen to thirty minutes of effort per report; in this case the workaround itself is recorded as the limitation. A result is not releasableand an improvement is required, if no workaround satisfies both of these conditions, whether because the outcome remains deficient, because the required effort clearly exceeds the budget or because no workaround is possible at all. The rule is summarised in @tab-decision-rule.
+The verdict is governed by a decision rule that is fixed before the assessment is carried out, so that individual findings are judged consistently rather than case by case in hindsight. A result is releasable without qualification if it is correct, complete, traceable and presentable without intervention. A result is releasable with a limitation if it becomes releasable only after a manual workaround, provided that the workaround yields a result of very good quality and requires no more than approximately fifteen to thirty minutes of effort per report; in this case the workaround itself is recorded as the limitation. A result is not releasable and an improvement is required, if no workaround satisfies both of these conditions, whether because the outcome remains deficient, because the required effort clearly exceeds the budget or because no workaround is possible at all. The rule is summarised in @tab-decision-rule.
 
 #figure(
   table(
@@ -58,7 +58,7 @@ A criterion that only degrades presentation or convenience is treated as a limit
 
 == Quality Model and Measurement
 
-The properties referenced by the decision rule are anchored in the product quality model of #acr("ISO")/#acr("IEC") 25010, which provides the vocabulary of quality characteristics against which the tool is assessed. #cite(<ISO_IEC_25010>) The four releasable properties map to that model as follows: correctness and completeness are aspects of functional suitability, traceability is treated as an aspect of the report's functional correctness and of analysabilityand report fitness combines interaction capability with the maintainability of the report artefact.
+The properties referenced by the decision rule are anchored in the product quality model of #acr("ISO")/#acr("IEC") 25010, which provides the vocabulary of quality characteristics against which the tool is assessed. #cite(<ISO_IEC_25010>) The four releasable properties map to that model as follows: correctness and completeness are aspects of functional suitability, traceability is treated as an aspect of the report's functional correctness and of analysability and report fitness combines interaction capability with the maintainability of the report artefact.
 
 To make these properties measurable rather than impressionistic, each is operationalised through the goal–question–metric approach, in which an evaluation goal is refined into answerable questions and each question into a concrete metric with an associated decision criterion. #cite(<Basili_GQM>) The resulting operationalisation is given in @tab-gqm and defines, for every sub-question, what is measured and how the outcome feeds the decision rule.
 
@@ -106,14 +106,14 @@ To keep the findings systematic and to connect them to the decision rule, every 
     inset: 7pt,
     align: (left + horizon, left + horizon, left + horizon),
     table.header([*Level*], [*Question*], [*Basis*]),
-    [Cause], [Which software defect produced the observationand where does it reside?], [#acr("IEEE") 1044],
+    [Cause], [Which software defect produced the observation and where does it reside?], [#acr("IEEE") 1044],
     [Effect], [What numerical or metrological deviation results?], [ASME V\&V 20, GUM],
     [Benchmark], [How does the consequence rate against the adequacy criterion?], [#acr("IEC") 61869],
   ),
   caption: [Three-level classification applied to each finding.],
 ) <tab-classification>
 
-Each finding is additionally assigned a severity that reflects whether it affects the engineering result or only the presentationand this severity maps directly onto the blocker-versus-limitation distinction of the decision rule, so that the classification of a finding and its effect on the verdict are consistent by construction.
+Each finding is additionally assigned a severity that reflects whether it affects the engineering result or only the presentation and this severity maps directly onto the blocker-versus-limitation distinction of the decision rule, so that the classification of a finding and its effect on the verdict are consistent by construction.
 
 == Validity Considerations
 
@@ -121,7 +121,7 @@ The credibility of the conclusions is discussed in terms of the four validity as
 
 Construct validity concerns whether the criteria actually capture what releasability means to the organisation. It is addressed by defining the intended use explicitly, by deriving the releasable properties from an established quality modeland, where an internal report or quality specification exists, by aligning the criteria with it; the decision rule is fixed in advance to prevent post-hoc adjustment.
 
-Internal validity concerns whether an observed deviation is genuinely attributable to #acr("SECP") rather than to the reference model or to an input error. It is addressed by deriving the reference model from the primary standards, by cross-checking itand by entering identical, documented inputs into both the tool and the reference.
+Internal validity concerns whether an observed deviation is genuinely attributable to #acr("SECP") rather than to the reference model or to an input error. It is addressed by deriving the reference model from the primary standards, by cross-checking it and by entering identical, documented inputs into both the tool and the reference.
 
 External validity concerns the extent to which the findings generalise. Because only two application–device cases and one tool version are examined, the verdict is reported per case rather than as a single blanket statement; the cases are chosen to represent the dominant planning applications, which bounds but does not eliminate this limitation.
 
