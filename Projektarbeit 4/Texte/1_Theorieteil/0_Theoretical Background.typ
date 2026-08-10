@@ -78,7 +78,7 @@ $ I_"ALF" = K_"ALF" * I_"pr" $ <eq-ialf>
 
 The rated accuracy-limit primary current in @eq-kalf is the primary-current value up to which the #acr("CT") complies with the applicable composite-error requirements. #cite(<IEC_61869_2>)
 
-The knee-point electromotive force is relevant particularly to classes PX and PXR. #cite(<IEC_61869_2>) identifies it as the lower limit of the knee-point acr("emf") and relates it to the dimensioning factor $K_x$, secondary winding resistance, rated burden resistance and rated secondary current:
+The knee-point electromotive force is relevant particularly to classes PX and PXR. #cite(<IEC_61869_2>) identifies it as the lower limit of the knee-point #acr("emf") and relates it to the dimensioning factor $K_x$, secondary winding resistance, rated burden resistance and rated secondary current:
 
 $ E_k = K_x (R_"ct" + R_b) I_"sr" $ <eq-ek>
 
@@ -116,7 +116,7 @@ The transient dimensioning factor $K_"td"$ accounts for the increase of the seco
 
 === Rated Equivalent Limiting Secondary Electromotive Force
 
-The rated equivalent limiting secondary acr("emf") $E_"al"$ is the r.m.s. value of the equivalent secondary-circuit acr("emf") at rated frequency that is necessary to meet the requirements of the specified duty cycle. It follows from the dimensioning factors and the secondary loop resistance, as given in @eq-eal:
+The rated equivalent limiting secondary #acr("emf") $E_"al"$ is the r.m.s. value of the equivalent secondary-circuit #acr("emf") at rated frequency that is necessary to meet the requirements of the specified duty cycle. It follows from the dimensioning factors and the secondary loop resistance, as given in @eq-eal:
 
 $ E_"al" = K_"ssc" dot K_"td" dot (R_"ct" + R_b) dot I_"sr" $ <eq-eal>
 
@@ -126,15 +126,15 @@ $E_"al"$ thus expresses the transient requirement as a voltage. This is the form
 
 === Comparison of the Class-Specific Dimensioning Approaches
 
-#cite(<IEC_61869_100>) identifies three approaches for defining protective #acrpl("CT"), each of which may result in the same physical implementation. For each approach an acr("emf") at limiting conditions is defined. For classes P and PR:
+#cite(<IEC_61869_100>) identifies three approaches for defining protective #acrpl("CT"), each of which may result in the same physical implementation. For each approach an #acr("emf") at limiting conditions is defined. For classes P and PR:
 
 $ E_"ALF" = K_"ALF" dot I_"sr" dot (R_"ct" + Z_b) $ <eq-ealf>
 
-for classes PX and PXR the expression for $E_k$ given in @eq-ek, and for classes TPX, TPY and TPZ the expression for $E_"al"$ given in @eq-eal. The associated dimensioning factors $K_"ALF"$, $K_x$ and the product $K_"ssc" dot K_"td"$ can each be understood as the ratio between the acr("emf") at limiting conditions and the acr("emf") at rated burden and rated current, and can therefore be compared with one another. #cite(<IEC_61869_100>)
+for classes PX and PXR the expression for $E_k$ given in @eq-ek, and for classes TPX, TPY and TPZ the expression for $E_"al"$ given in @eq-eal. The associated dimensioning factors $K_"ALF"$, $K_x$ and the product $K_"ssc" dot K_"td"$ can each be understood as the ratio between the #acr("emf") at limiting conditions and the #acr("emf") at rated burden and rated current, and can therefore be compared with one another. #cite(<IEC_61869_100>)
 
 The approximate conversions given in #cite(<IEC_61869_100>) are $E_"ALF" approx E_"al"$ and $E_k approx E_"al" \/ F$, where the factor $F$ reflects the properties of the core material. Practical values lie between 1.2 and 1.3 for non-gapped cores and around 1.1 for gapped cores. The corresponding relation between the dimensioning factors is $K_"ALF" approx K_"ssc" dot K_"td"$.
 
-These relations are approximations rather than equalities. #cite(<Mustajärvi_Instrument_Transformer>) states that no general relation between the knee-point acr("emf") and $E_"al"$ can be established, while noting that the knee-point value is typically in the order of 80 % of $E_"al"$, which is consistent with the range given for $F$. Any calculation that converts between classes therefore introduces an approximation whose admissibility must be justified for the individual case.
+These relations are approximations rather than equalities. #cite(<Mustajärvi_Instrument_Transformer>) states that no general relation between the knee-point #acr("emf") and $E_"al"$ can be established, while noting that the knee-point value is typically in the order of 80 % of $E_"al"$, which is consistent with the range given for $F$. Any calculation that converts between classes therefore introduces an approximation whose admissibility must be justified for the individual case.
 
 === Operational Burden and Actual Accuracy Limit Factor
 
@@ -148,10 +148,10 @@ An equivalent formulation in terms of apparent power uses the internal burden, t
 
 === Adequacy Criterion
 
-An adequacy assessment compares a required value derived from the application with a rated value derived from the #acr("CT") data. The required equivalent limiting secondary acr("emf"), denoted $E_"al,req"$ in the following, follows from the protection function, the relevant fault current, the secondary loop resistance and the applicable dimensioning factor. As stated in @eq-adequacy, the #acr("CT") is adequate for the application when its rated value is at least equal to the required value:
+An adequacy assessment compares a required value derived from the application with a rated value derived from the #acr("CT") data. The required equivalent limiting secondary #acr("emf"), denoted $E_"al,req"$ in the following, follows from the protection function, the relevant fault current, the secondary loop resistance and the applicable dimensioning factor. As stated in @eq-adequacy, the #acr("CT") is adequate for the application when its rated value is at least equal to the required value:
 
 $ E_"al" >= E_"al,req" $ <eq-adequacy>
 
-Where the #acr("CT") is specified by class P or PR, the comparison is performed using the secondary limiting acr("emf"), which is approximately equal to $E_"al"$. Where it is specified by class PX or PXR, the comparison is performed using the rated knee-point acr("emf"), which is lower than $E_"al"$ by the factor $F$. The assessment therefore depends on the class in which the #acr("CT") is specified, and the same physical core can yield different numerical margins depending on the route selected. #cite(<IEC_61869_100>), #cite(<Mustajärvi_Instrument_Transformer>)
+Where the #acr("CT") is specified by class P or PR, the comparison is performed using the secondary limiting #acr("emf"), which is approximately equal to $E_"al"$. Where it is specified by class PX or PXR, the comparison is performed using the rated knee-point #acr("emf"), which is lower than $E_"al"$ by the factor $F$. The assessment therefore depends on the class in which the #acr("CT") is specified, and the same physical core can yield different numerical margins depending on the route selected. #cite(<IEC_61869_100>), #cite(<Mustajärvi_Instrument_Transformer>)
 
 Because the required value depends on the protection function, on the applicable dimensioning or oversizing factor and on the assumed worst-case fault condition, these three inputs must be identified explicitly before any comparison can be regarded as meaningful. They form the basis of the validation approach developed in the following chapters.
