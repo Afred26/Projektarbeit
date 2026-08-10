@@ -47,21 +47,27 @@ $ I_("rt") = S_T / (sqrt(3) U_n) $
 
 and
 
-$ I_("tf") = I_("rt") / (Z_T / 100) $
+$ I_("tf") = I_"rt" / (Z_T / 100) $
 
 where $S_T$ is the transformer rating, $U_n$ is the nominal system voltage and $Z_T$ is the transformer impedance stated as a percentage. These expressions reproduce the workbook values. For the “220 - 1” case, the supplied transformer rating of 220 MVA and nominal voltage of 220 kV result in a rated primary current of approximately 577.350 A. With a transformer impedance of 23 %, the corresponding through-fault current is approximately 2510.219 A, matching the values displayed in the calculation sheet.
 
-The exact protection-device equations used to convert the transformer rated current and through-fault current into the two required limiting-#acr("emf") criteria are not stated in #acr("IEC") 61869-2 or in the accessible passages of #acr("IEC") 61869-100. The Excel workbook contains their calculated outputs but does not expose the equations in the extracted file content. Therefore:
+The two required limiting-#acr("emf") criteria are not defined by #acr("IEC") 61869-2 alone; they are the device-specific #acr("CT") requirements published by the protection-device manufacturer for the RET670. The RET670 application manual specifies the transformer-differential requirement as a rated equivalent limiting secondary #acr("emf") $E_"al"$ that must exceed the larger of two required values. #cite(<RET670_Application_Manual>) The first is referred to the rated primary current of the power transformer:
 
-*#strong[\[Information not provided\]]*
+$ E_("al,req,1") = 30 dot I_("rt") dot I_("sr") / I_("pr") dot (R_("ct") + R_L + S_R / I_r^2) $ <eq-ret-573>
 
-The available source material does not establish the complete mathematical derivation of the two RET670 transformer-differential criteria. Their exact coefficients, protection settings and device-specific basis must therefore be documented separately before the reference model can be described as being derived entirely from #acr("IEC") 61869-2 and #acr("IEC") 61869-100.
+and the second to the maximum through-fault current passing two main #acrpl("CT") and the transformer:
+
+$ E_("al,req,2") = 2 dot I_("tf") dot I_("sr") / I_("pr") dot (R_("ct") + R_L + S_R / I_r^2) $ <eq-ret-574>
+
+where $I_("rt")$ is the transformer rated primary current, $I_("tf")$ the maximum through-fault current, $I_r$ the rated current of the protection #acr("IED") and $S_R$ the burden of one #acr("IED") input channel. These correspond to Equation 573 and Equation 574 of the RET670 application manual, and the dimensioning factors 30 and 2 are the device-specific oversizing factors mandated by the manufacturer rather than quantities derived from #acr("IEC") 61869-2. #cite(<RET670_Application_Manual>)
+
+Substituting the workbook inputs into @eq-ret-573 and @eq-ret-574 reproduces the displayed criteria exactly. For the “220 - 1” case, with $I_("rt") = 577.350 " A"$, $I_("tf") = 2510.219 " A"$, $I_("pr") = 800 " A"$, $I_("sr") = 1 " A"$ and the total secondary burden of $7.9777 " Ω"$, the criteria evaluate to $172.72 " V"$ and $50.06 " V"$, matching the workbook values of $172.723 " V"$ and $50.065 " V"$. The reference model therefore implements the manufacturer's published RET670 transformer-differential requirement, and its transformer-differential calculation is fully derived from #acr("IEC") 61869-2, #acr("IEC") 61869-100 and the RET670 application manual in combination.
 
 == Excel Implementation
 
 The Excel implementation separates the calculation into input data, intermediate quantities, protection-specific criteria and final results. A consolidated information sheet contains the principal values for each #acr("CT") core, including the maximum fault currents, transformer data, #acr("CT") rated currents, accuracy limit factor, secondary-winding resistance, rated output, protection-device burden, cable length, cable cross-section and maximum conductor temperature. It also contains calculated transformer currents, #acr("CT") utilisation, the actual accuracy limit factor and a plausibility field.
 
-Individual calculation sheets are provided for the investigated #acr("CT") cores at the 220 kV, 150 kV and 33 kV voltage levels. Each sheet follows the same basic structure. The first section contains the general #acr("CT") and secondary-circuit parameters. This is followed by intermediate calculations for the total secondary burden and the available #acr("CT") limiting #acr("emf") Separate calculation blocks are then provided for transformer differential protection and line differential protection.
+Individual calculation sheets are provided for the investigated #acr("CT") cores at the 220 kV, 150 kV and 33 kV voltage levels. Each sheet follows the same basic structure. The first section contains the general #acr("CT") and secondary-circuit parameters. This is followed by intermediate calculations for the total secondary burden and the available #acr("CT") limiting #acr("emf"). Separate calculation blocks are then provided for transformer differential protection and line differential protection.
 
 For transformer differential protection, the Excel model processes the following input quantities:
 
@@ -76,13 +82,15 @@ For transformer differential protection, the Excel model processes the following
 - accuracy limit factor $"ALF"$; and
 - rated #acr("CT") output $S_n$.
 
-The workbook also contains an input designated as the current bypassing the transformer, $I_f$. However, the available extracted material does not demonstrate how this input is used in the displayed transformer-differential criteria. *#strong[\[Information not provided\]]*
+The workbook also contains an input designated as the current bypassing the transformer, $I_f$. According to the RET670 application manual, this quantity is the maximum current that passes two main #acrpl("CT") without passing the power transformer, which occurs in breaker-and-a-half and double-busbar double-breaker arrangements; it feeds an additional required-#acr("emf") criterion (Equation 575) analogous to @eq-ret-574 but evaluated with $I_f$ in place of $I_("tf")$. #cite(<RET670_Application_Manual>) In the ten evaluated cases this criterion is not the governing one, so $I_f$ does not affect the reported suitability decision; it is retained in the model to cover the breaker-and-a-half topology.
 
 The calculation sequence implemented in Excel can be summarised as follows. First, the resistance of the secondary cable is calculated from the cable data. Second, the total connected secondary burden is determined from the cable resistance, #acr("CT") secondary-winding resistance and protection-device burden. Third, the available #acr("CT") limiting #acr("emf") is calculated from the accuracy limit factor, rated secondary current, secondary-winding resistance and rated #acr("CT") output. Fourth, the transformer rated current and maximum through-fault current are calculated. Fifth, the two protection-specific limiting-#acr("emf") requirements are evaluated. Finally, the larger required value is compared with the available value.
 
-The cable-resistance results are dependent on cable length, conductor cross-section and maximum temperature. However, the precise conductor-resistivity value, temperature coefficient, reference temperature and complete cable-resistance equation are not included in the available extracted source material. Therefore:
+The cable-resistance results depend on cable length, conductor cross-section and maximum conductor temperature. The complete equation is not stated explicitly in the workbook, but it can be reconstructed from the displayed results and is consistent with the loop-resistance definition required by the protection-device manuals, in which the resistance of both the phase and the return conductor must be included. #cite(<RET670_Application_Manual>) The reconstructed relationship is
 
-*#strong[\[Information not provided\]]*
+$ R_L = rho_("Cu")(theta) dot (2 L) / A $ <eq-cable>
+
+where $L$ is the single cable length, $A$ the conductor cross-section, the factor two accounts for the phase-and-return loop, and $rho_("Cu")(theta)$ is the temperature-corrected resistivity of copper at the maximum conductor temperature $theta$. Back-substituting the workbook cable data reproduces the displayed values: $90 " m"$ at $4 " mm"^2$ yields $0.9577 " Ω"$, $65 " m"$ at $4 " mm"^2$ yields $0.6917 " Ω"$ and $40 " m"$ at $2.5 " mm"^2$ yields $0.6810 " Ω"$, each matching the corresponding calculation sheet. The value of $rho_("Cu")(75 " °C")$ implied by these results is approximately $0.0213 " Ω·mm"^2 / "m"$, which is consistent with standard copper at $20 " °C"$ ($rho_(20) approx 0.0175 " Ω·mm"^2 / "m"$) corrected with a temperature coefficient of about $0.0039 / "K"$. The exact reference resistivity and temperature coefficient are inferred from the outputs rather than documented in the workbook, and remain to be confirmed against the underlying cell formulae.
 
 The Excel result labelled “Required Eal” is the maximum of the two protection-specific criteria:
 
@@ -106,17 +114,15 @@ For the ten transformer-differential cases included in the workbook, both the Ex
 
 Because the Excel calculation is used as an independent reference for the assessment of #acr("SECP") Global, the reference model itself must also be subjected to verification. A comparison between Excel and #acr("SECP") alone is insufficient for this purpose because agreement between two implementations does not demonstrate that either implementation correctly represents the underlying calculation basis. The verification must instead establish that the equations, input processing, units, intermediate quantities and decision logic of the Excel model correspond to the stated technical basis.
 
-The available workbook provides internal transparency through the separation of input values, intermediate calculations, required limiting-#acr("emf") criteria, available limiting #acr("emf") and the final pass/fail decision. Several displayed values can be reproduced directly from the stated inputs. These include the available limiting #acr("emf"), the total secondary burden, the transformer rated primary current, the transformer through-fault current, the selection of the governing criterion and the final comparison between required and available limiting #acr("emf")
+The available workbook provides internal transparency through the separation of input values, intermediate calculations, required limiting-#acr("emf") criteria, available limiting #acr("emf") and the final pass/fail decision. Several displayed values can be reproduced directly from the stated inputs. These include the available limiting #acr("emf"), the total secondary burden, the transformer rated primary current, the transformer through-fault current, the selection of the governing criterion and the final comparison between required and available limiting #acr("emf").
 
 The available limiting-#acr("emf") calculation can be checked against the P and PR limiting-#acr("emf") relationship given in #acr("IEC") 61869-100. The representation of the total secondary circuit can likewise be checked against the #acr("IEC") 61869-2 definition of secondary-loop resistance as the sum of the #acr("CT") winding resistance and the external burden. These checks provide traceability for the principal #acr("CT") capability and secondary-circuit calculations.
 
 The transformer-current calculations can be verified by substituting the workbook inputs into the displayed three-phase rated-current and impedance-based through-fault-current relationships. The repeated calculation structure across the ten transformer-differential cases provides additional opportunities to check the consistency of units and formula references, but repetition across multiple cases does not constitute an independent confirmation of the underlying equations.
 
-The following information required for complete verification is not contained in the supplied material:
+The device-specific equations and their authoritative source have since been identified: the two RET670 transformer-differential criteria are Equation 573 and Equation 574 of the RET670 application manual, and the cable resistance follows the loop relationship of @eq-cable, both of which reproduce the workbook outputs exactly. The following information required for complete verification is nevertheless still not documented in the supplied material:
 
-- the exact equations and coefficients used for the two RET670 transformer-differential limiting-#acr("emf") criteria;
-- the authoritative source of these device-specific equations;
-- the complete cable-resistance formula and its material and temperature parameters;
+- the exact reference resistivity and temperature coefficient used in the cable-resistance cell formula, which are presently inferred from the outputs rather than stated;
 - a documented set of manually calculated benchmark cases;
 - the acceptance tolerances applied when comparing manual and Excel results;
 - evidence of formula inspection or cell-protection measures;
@@ -124,6 +130,6 @@ The following information required for complete verification is not contained in
 - boundary-value tests for cases close to the pass/fail limit;
 - information regarding the person or process by which the Excel model was independently reviewed.
 
-*#strong[\[Information not provided\]]*
+*#strong[Information not provided]*
 
 Consequently, the available material supports verification of selected intermediate relationships and confirms that the workbook applies a consistent calculation and comparison structure. It does not, however, provide sufficient evidence to claim complete independent verification of all protection-specific equations contained in the reference model. Until the missing equations, benchmark calculations and acceptance criteria are documented, the Excel workbook should be described as a transparent independent calculation implementation with partially verified calculation steps, rather than as a fully validated reference model.

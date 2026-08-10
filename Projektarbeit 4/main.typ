@@ -23,7 +23,8 @@
   logo-right: image("Bilder/Hitachi_Global_Logo_Black_RGB.svg"),
   titlepage-content: {
     set page(margin: 0pt)
-    image("Bilder/Deckblatt.pdf")}
+    image("Bilder/Deckblatt.pdf")},
+    appendix: {"CT Calculation EXCEL vs SECP"}
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 

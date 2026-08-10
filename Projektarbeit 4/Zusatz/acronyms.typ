@@ -2,6 +2,7 @@
   
   CT: "Current Transformer",
   VT: "Voltage Transformer",
+  IED: "Intelligent Electronic Device",
   IEC: "International Electrotechnical Commission",
   ISO: "International Organization for Standardization",
   IEEE: "Institute of Electrical and Electronics Engineers",
