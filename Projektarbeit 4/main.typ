@@ -24,7 +24,6 @@
   titlepage-content: {
     set page(margin: 0pt)
     image("Bilder/Deckblatt.pdf")},
-    appendix: {"CT Calculation EXCEL vs SECP"}
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 

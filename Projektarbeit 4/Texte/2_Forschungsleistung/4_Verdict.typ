@@ -3,44 +3,49 @@
 
 = Releasability Verdict
 
-This chapter consolidates the outcomes of the validation and quality assessment process and derives the final releasability verdict for the investigated CT calculations in SECP Global. The verdict is established on the basis of the defined decision rule and the results obtained during the evaluation process. Furthermore, the suitability of the reference-model approach is assessed, and the main research question is answered.
+This chapter consolidates the assessment results into a releasability verdict for the investigated #acr("CT") calculations in #acr("SECP") Global. The verdict is derived by applying the decision rule fixed in the methodology to each evaluated case, after which the reference-model approach is appraised and the main research question is answered. In accordance with the non-compensatory character of the decision rule, a strong result in one case cannot offset a blocking finding in another.
 
-== Per-Case Verdict via Decision Rule
+== Per-Case Verdict via the Decision Rule
 
-For each evaluated test case, the final verdict was determined by applying the decision rule defined in this study. The purpose of this procedure was to ensure a consistent and transparent assessment of the investigated CT calculations across all considered cases.
+Each case is judged against the three outcomes of the decision rule: releasable without qualification, releasable with a documented limitation or not releasable and requiring an improvement. A finding that only affects presentation is treated as a limitation, whereas a finding that affects the engineering result is treated as a blocker. The outcomes are summarised in @tab-verdict and explained below.
 
-The decision rule translates the results of the validation and quality assessment into a case-specific verdict. Each test case was evaluated against the established assessment criteria, and the corresponding outcome was assigned according to the predefined evaluation logic.
+The *line differential* case is releasable. The criterion applied by #acr("SECP") is correctly formed, the suitability decision matches the reference model in all ten cases and the only deviation is the small conservative difference in lead resistance arising from the cable-resistance basis, with a mean of approximately 0.49%. This deviation does not affect any decision and lies within the tolerance defined for the comparison. The single condition attached to release is that the small conservative deviation be disclosed in the delivered document.
 
-The resulting verdicts for the individual test cases are summarized in [Information not provided]. These results form the basis for the overall evaluation of the CT calculation functionality within SECP Global.
+The *transformer differential* case is not releasable as generated and requires an improvement. The suitability decisions are consistent with the reference model, but the required value is numerically incorrect: the tool counts the secondary lead resistance twice, evaluating the criterion with $R_"ct" + 2 R_"lead" + R_"relay"$ although $R_"lead"$ is already a loop resistance, so the reported required #acr("emf") is over-estimated by a mean of approximately 8.79% and by up to 21.98%. The defect is conservative and in the interim the results are therefore safe to rely on in the sense that an inadequate #acr("CT") cannot be accepted; but the printed value is wrong and departs from the RET670 requirement the report itself cites and the defect resides in the tool rather than in any single report. No manual workaround within the effort budget of the decision rule can correct it, so the outcome is an improvement required, not a documentable limitation. The improvement is precise and small in scope: the lead resistance must enter the transformer-differential criterion once rather than twice.
 
-A detailed discussion of the individual case results is outside the scope of this chapter. Instead, the focus is placed on the implications of the obtained verdicts for the overall releasability assessment.
+The *overcurrent* case is not releasable and requires an improvement for a different reason. The device required for the planning work, the REF650, is not selectable in the #acr("CT") and #acr("VT") adequacy-check module and the only overcurrent option offered is the REF630, whose dimensioning basis is a burden-corrected accuracy limit factor rather than the required secondary limiting #acr("emf") of the REF650. Because the substitute is not shown to be at least as onerous as the required device, its use could in principle accept an under-dimensioned #acr("CT") while appearing internally consistent, which is a blocker under the decision rule. Release for this case therefore requires either that the REF650 be made selectable or that the equivalence of the REF630 substitute be demonstrated formally through the conversion between the two dimensioning bases.
+
+#figure(
+  table(
+    columns: (100pt, 100pt, 1fr),
+    inset: 7pt,
+    align: (left + horizon, left + horizon, left + horizon),
+    table.header([*Case*], [*Verdict*], [*Basis*]),
+    [Line differential (RED670)],
+      [Yes],
+      [Correctly formed criterion; decision matches reference in all cases; only a small conservative cable-resistance deviation, to be disclosed.],
+    [Transformer differential (RET670)],
+      [No, improvement required],
+      [Lead-resistance double-count over-estimates the required value; conservative but numerically incorrect and standard-inconsistent; a tool-level fix, not a per-report workaround.],
+    [Overcurrent (REF650)],
+      [No, improvement required],
+      [Required device not selectable; REF630 substitute uses a different basis not shown to be at least as onerous; coverage-and-equivalence blocker.],
+  ),
+  caption: [Per-case releasability verdict under the decision rule.],
+) <tab-verdict>
+
+A supersession finding applies across all cases: every generated report cites #acr("IEC") 61869-1:2007, a withdrawn edition of the general-requirements standard. This weakens the delivered document as an auditable reference and should be corrected, but it is a documentation-level matter separate from the two engineering findings above.
 
 == Evaluation of the Reference-Model Approach
 
-The validation methodology employed in this study is based on a reference-model approach. The objective of this approach is to compare the calculation results generated by SECP Global with results obtained from an independently established reference.
+The reference-model approach proved effective for the purpose it was given. By comparing #acr("SECP") against an independent implementation derived from #acr("IEC") 61869-2, #acr("IEC") TR 61869-100 and the device manuals, it isolated a defect that a decision-only check would have missed entirely: because the transformer-differential deviation is conservative, every suitability decision agreed with the reference, yet the required value was numerically wrong. Comparing numerical outputs rather than only verdicts was therefore decisive and separating the computation layer from the presentation layer allowed the same root cause to be recognised as both a correctness finding and a traceability finding.
 
-The effectiveness of the reference-model approach depends on several factors, including the quality of the reference model, the traceability of the calculations, and the ability to identify deviations between both calculation methods. Within the scope of this work, the reference-model approach served as the primary mechanism for assessing the correctness and consistency of the investigated CT calculations.
-
-The strengths, limitations, and overall suitability of the reference-model approach for assessing CT calculations are [Information not provided]. Consequently, no further conclusions regarding its effectiveness can be drawn from the material available in this prompt.
-
-Nevertheless, the reference-model approach provides a structured framework for evaluating calculation results and enables systematic comparison between different implementations. The extent to which this objective was achieved within the present study is [Information not provided].
+The approach also has limits that bound the strength of the conclusions. The reference model is itself only partially verified: its transformer-differential and line-differential criteria and its cable-resistance relationship reproduce the workbook outputs exactly and are traceable to the device manuals, but documented benchmark calculations, acceptance tolerances and an independent review of the model are not available and the reference resistivity used for the cable is inferred rather than stated. The evaluation is further bounded to two computable application–device cases, one tool version and the operating points contained in the supplied dataset. The verdict is consequently reported per case rather than as a single blanket statement and its generalisation beyond the tested configurations is deliberately not claimed.
 
 == Answer to the Main Research Question
 
-The main research question of this project was addressed through the validation and quality assessment activities described in the preceding chapters.
+The main research question asked whether the #acr("CT") adequacy calculations produced by #acr("SECP") Global can be released to the customer for the planning-phase use case, under which limitations and, if not, which improvements are required. The answer is conditional and function-specific.
 
-The final answer to the research question must be derived from the outcomes of the case evaluations, the application of the decision rule, and the overall assessment of the investigated CT calculations. However, the specific results, findings, and conclusions required to formulate this answer have not been provided in the available material.
+For line differential protection, the calculations can be released, subject only to disclosure of the small conservative deviation in lead resistance. For transformer differential protection, the calculations cannot be released as generated: although the suitability decisions are safe because the deviation is conservative, the required value is numerically incorrect through a lead-resistance double-count and the required improvement is to apply the lead resistance once in the transformer-differential criterion. For overcurrent protection, the calculations cannot be released with the required device at all, because the REF650 is not selectable and the equivalence of the REF630 substitute is not established; the required improvement is either to add the REF650 or to demonstrate the substitute's equivalence.
 
-Therefore, the answer to the main research question is:
-
-#strong[Information not provided]
-
-To provide a complete and scientifically sound conclusion, the following information would be required:
-
-- The defined decision rule.
-- The verdict obtained for each test case.
-- The overall assessment results.
-- The identified strengths and weaknesses of the investigated solution.
-- The final criteria used to determine releasability.
-
-Without this information, any further conclusion would require assumptions that are not supported by the provided material.
+Because the decision rule is non-compensatory, the strong line-differential result does not lift the overall verdict. #acr("SECP") Global is therefore not releasable without qualification for the planning-phase use case in its present state. It is usable now for line differential protection and its transformer-differential results are safe to rely on in the conservative direction while the formula defect is outstanding; but unqualified release depends on correcting the transformer-differential lead-resistance term, closing the overcurrent coverage gap and updating the superseded normative reference carried in every report.

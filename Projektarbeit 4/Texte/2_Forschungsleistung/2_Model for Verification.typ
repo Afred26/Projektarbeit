@@ -59,9 +59,9 @@ and the second to the maximum through-fault current passing two main #acrpl("CT"
 
 $ E_("al,req,2") = 2 dot I_("tf") dot I_("sr") / I_("pr") dot (R_("ct") + R_L + S_R / I_r^2) $ <eq-ret-574>
 
-where $I_("rt")$ is the transformer rated primary current, $I_("tf")$ the maximum through-fault current, $I_r$ the rated current of the protection #acr("IED") and $S_R$ the burden of one #acr("IED") input channel. These correspond to Equation 573 and Equation 574 of the RET670 application manual, and the dimensioning factors 30 and 2 are the device-specific oversizing factors mandated by the manufacturer rather than quantities derived from #acr("IEC") 61869-2. #cite(<RET670_Application_Manual>)
+where $I_("rt")$ is the transformer rated primary current, $I_("tf")$ the maximum through-fault current, $I_r$ the rated current of the protection #acr("IED") and $S_R$ the burden of one #acr("IED") input channel. These correspond to Equation 573 and Equation 574 of the RET670 application manualand the dimensioning factors 30 and 2 are the device-specific oversizing factors mandated by the manufacturer rather than quantities derived from #acr("IEC") 61869-2. #cite(<RET670_Application_Manual>)
 
-Substituting the workbook inputs into @eq-ret-573 and @eq-ret-574 reproduces the displayed criteria exactly. For the “220 - 1” case, with $I_("rt") = 577.350 " A"$, $I_("tf") = 2510.219 " A"$, $I_("pr") = 800 " A"$, $I_("sr") = 1 " A"$ and the total secondary burden of $7.9777 " Ω"$, the criteria evaluate to $172.72 " V"$ and $50.06 " V"$, matching the workbook values of $172.723 " V"$ and $50.065 " V"$. The reference model therefore implements the manufacturer's published RET670 transformer-differential requirement, and its transformer-differential calculation is fully derived from #acr("IEC") 61869-2, #acr("IEC") 61869-100 and the RET670 application manual in combination.
+Substituting the workbook inputs into @eq-ret-573 and @eq-ret-574 reproduces the displayed criteria exactly. For the “220 - 1” case, with $I_("rt") = 577.350 " A"$, $I_("tf") = 2510.219 " A"$, $I_("pr") = 800 " A"$, $I_("sr") = 1 " A"$ and the total secondary burden of $7.9777 " Ω"$, the criteria evaluate to $172.72 " V"$ and $50.06 " V"$, matching the workbook values of $172.723 " V"$ and $50.065 " V"$. The reference model therefore implements the manufacturer's published RET670 transformer-differential requirementand its transformer-differential calculation is fully derived from #acr("IEC") 61869-2, #acr("IEC") 61869-100 and the RET670 application manual in combination.
 
 == Excel Implementation
 
@@ -90,7 +90,7 @@ The cable-resistance results depend on cable length, conductor cross-section and
 
 $ R_L = rho_("Cu")(theta) dot (2 L) / A $ <eq-cable>
 
-where $L$ is the single cable length, $A$ the conductor cross-section, the factor two accounts for the phase-and-return loop, and $rho_("Cu")(theta)$ is the temperature-corrected resistivity of copper at the maximum conductor temperature $theta$. Back-substituting the workbook cable data reproduces the displayed values: $90 " m"$ at $4 " mm"^2$ yields $0.9577 " Ω"$, $65 " m"$ at $4 " mm"^2$ yields $0.6917 " Ω"$ and $40 " m"$ at $2.5 " mm"^2$ yields $0.6810 " Ω"$, each matching the corresponding calculation sheet. The value of $rho_("Cu")(75 " °C")$ implied by these results is approximately $0.0213 " Ω·mm"^2 / "m"$, which is consistent with standard copper at $20 " °C"$ ($rho_(20) approx 0.0175 " Ω·mm"^2 / "m"$) corrected with a temperature coefficient of about $0.0039 / "K"$. The exact reference resistivity and temperature coefficient are inferred from the outputs rather than documented in the workbook, and remain to be confirmed against the underlying cell formulae.
+where $L$ is the single cable length, $A$ the conductor cross-section, the factor two accounts for the phase-and-return loopand $rho_("Cu")(theta)$ is the temperature-corrected resistivity of copper at the maximum conductor temperature $theta$. Back-substituting the workbook cable data reproduces the displayed values: $90 " m"$ at $4 " mm"^2$ yields $0.9577 " Ω"$, $65 " m"$ at $4 " mm"^2$ yields $0.6917 " Ω"$ and $40 " m"$ at $2.5 " mm"^2$ yields $0.6810 " Ω"$, each matching the corresponding calculation sheet. The value of $rho_("Cu")(75 " °C")$ implied by these results is approximately $0.0213 " Ω·mm"^2 / "m"$, which is consistent with standard copper at $20 " °C"$ ($rho_(20) approx 0.0175 " Ω·mm"^2 / "m"$) corrected with a temperature coefficient of about $0.0039 / "K"$. The exact reference resistivity and temperature coefficient are inferred from the outputs rather than documented in the workbookand remain to be confirmed against the underlying cell formulae.
 
 The Excel result labelled “Required Eal” is the maximum of the two protection-specific criteria:
 
@@ -120,7 +120,7 @@ The available limiting-#acr("emf") calculation can be checked against the P and 
 
 The transformer-current calculations can be verified by substituting the workbook inputs into the displayed three-phase rated-current and impedance-based through-fault-current relationships. The repeated calculation structure across the ten transformer-differential cases provides additional opportunities to check the consistency of units and formula references, but repetition across multiple cases does not constitute an independent confirmation of the underlying equations.
 
-The device-specific equations and their authoritative source have since been identified: the two RET670 transformer-differential criteria are Equation 573 and Equation 574 of the RET670 application manual, and the cable resistance follows the loop relationship of @eq-cable, both of which reproduce the workbook outputs exactly. The following information required for complete verification is nevertheless still not documented in the supplied material:
+The device-specific equations and their authoritative source have since been identified: the two RET670 transformer-differential criteria are Equation 573 and Equation 574 of the RET670 application manualand the cable resistance follows the loop relationship of @eq-cable, both of which reproduce the workbook outputs exactly. The following information required for complete verification is nevertheless still not documented in the supplied material:
 
 - the exact reference resistivity and temperature coefficient used in the cable-resistance cell formula, which are presently inferred from the outputs rather than stated;
 - a documented set of manually calculated benchmark cases;
@@ -130,6 +130,6 @@ The device-specific equations and their authoritative source have since been ide
 - boundary-value tests for cases close to the pass/fail limit;
 - information regarding the person or process by which the Excel model was independently reviewed.
 
-*#strong[Information not provided]*
+#strong[Information not provided]
 
 Consequently, the available material supports verification of selected intermediate relationships and confirms that the workbook applies a consistent calculation and comparison structure. It does not, however, provide sufficient evidence to claim complete independent verification of all protection-specific equations contained in the reference model. Until the missing equations, benchmark calculations and acceptance criteria are documented, the Excel workbook should be described as a transparent independent calculation implementation with partially verified calculation steps, rather than as a fully validated reference model.

@@ -110,7 +110,7 @@ The transient requirement is completed by the specified primary time constant $T
 
 The transient factor $K_"tf"$ is the ratio of the secondary linked flux at a specified instant of the duty cycle to the peak value of its alternating component. It is defined as a function of time and depends on the primary time constant, the secondary loop time constant $T_s$, the duty cycle and the fault inception angle. #cite(<IEC_61869_2>)
 
-The transient dimensioning factor $K_"td"$ accounts for the increase of the secondary linked flux caused by the direct-current component of the primary short-circuit current. Whereas $K_"tf"$ is time-dependent, $K_"td"$ is the definitive dimensioning parameter and appears on the rating plate. It is obtained either from the #acr("CT") requirements stated by the protection-device manufacturer, which are themselves derived from relay stability type tests, or from a worst-case evaluation of the $K_"tf"$ curves. #cite(<IEC_61869_2>), #cite(<IEC_61869_99>)
+The transient dimensioning factor $K_"td"$ accounts for the increase of the secondary linked flux caused by the direct-current component of the primary short-circuit current. Whereas $K_"tf"$ is time-dependent, $K_"td"$ is the definitive dimensioning parameter and appears on the rating plate. It is obtained either from the #acr("CT") requirements stated by the protection-device manufacturer, which are themselves derived from relay stability type tests or from a worst-case evaluation of the $K_"tf"$ curves. #cite(<IEC_61869_2>), #cite(<IEC_61869_99>)
 
 #cite(<IEC_61869_100>) emphasises that the choice of $K_"td"$ should not rest on analytical formulae alone but should additionally be supported by relay tests using saturated #acr("CT") models. The applicable value therefore depends on both the protection function and the specific protection device, which is directly relevant wherever a calculation tool assigns a fixed factor to an entire application category.
 
@@ -122,7 +122,7 @@ $ E_"al" = K_"ssc" dot K_"td" dot (R_"ct" + R_b) dot I_"sr" $ <eq-eal>
 
 where $R_b$ is the rated resistive burden. The sum $R_"ct" + R_b$ constitutes the secondary loop resistance $R_s$. #cite(<IEC_61869_2>)
 
-$E_"al"$ thus expresses the transient requirement as a voltage. This is the form in which modern numerical protection devices state their #acr("CT") requirements, and consequently the form in which the adequacy assessment is ultimately performed. #cite(<Mustajärvi_Instrument_Transformer>)
+$E_"al"$ thus expresses the transient requirement as a voltage. This is the form in which modern numerical protection devices state their #acr("CT") requirements and consequently the form in which the adequacy assessment is ultimately performed. #cite(<Mustajärvi_Instrument_Transformer>)
 
 === Comparison of the Class-Specific Dimensioning Approaches
 
@@ -130,7 +130,7 @@ $E_"al"$ thus expresses the transient requirement as a voltage. This is the form
 
 $ E_"ALF" = K_"ALF" dot I_"sr" dot (R_"ct" + Z_b) $ <eq-ealf>
 
-for classes PX and PXR the expression for $E_k$ given in @eq-ek, and for classes TPX, TPY and TPZ the expression for $E_"al"$ given in @eq-eal. The associated dimensioning factors $K_"ALF"$, $K_x$ and the product $K_"ssc" dot K_"td"$ can each be understood as the ratio between the #acr("emf") at limiting conditions and the #acr("emf") at rated burden and rated current, and can therefore be compared with one another. #cite(<IEC_61869_100>)
+for classes PX and PXR the expression for $E_k$ given in @eq-ek and for classes TPX, TPY and TPZ the expression for $E_"al"$ given in @eq-eal. The associated dimensioning factors $K_"ALF"$, $K_x$ and the product $K_"ssc" dot K_"td"$ can each be understood as the ratio between the #acr("emf") at limiting conditions and the #acr("emf") at rated burden and rated current and can therefore be compared with one another. #cite(<IEC_61869_100>)
 
 The approximate conversions given in #cite(<IEC_61869_100>) are $E_"ALF" approx E_"al"$ and $E_k approx E_"al" \/ F$, where the factor $F$ reflects the properties of the core material. Practical values lie between 1.2 and 1.3 for non-gapped cores and around 1.1 for gapped cores. The corresponding relation between the dimensioning factors is $K_"ALF" approx K_"ssc" dot K_"td"$.
 
@@ -152,6 +152,6 @@ An adequacy assessment compares a required value derived from the application wi
 
 $ E_"al" >= E_"al,req" $ <eq-adequacy>
 
-Where the #acr("CT") is specified by class P or PR, the comparison is performed using the secondary limiting #acr("emf"), which is approximately equal to $E_"al"$. Where it is specified by class PX or PXR, the comparison is performed using the rated knee-point #acr("emf"), which is lower than $E_"al"$ by the factor $F$. The assessment therefore depends on the class in which the #acr("CT") is specified, and the same physical core can yield different numerical margins depending on the route selected. #cite(<IEC_61869_100>), #cite(<Mustajärvi_Instrument_Transformer>)
+Where the #acr("CT") is specified by class P or PR, the comparison is performed using the secondary limiting #acr("emf"), which is approximately equal to $E_"al"$. Where it is specified by class PX or PXR, the comparison is performed using the rated knee-point #acr("emf"), which is lower than $E_"al"$ by the factor $F$. The assessment therefore depends on the class in which the #acr("CT") is specified and the same physical core can yield different numerical margins depending on the route selected. #cite(<IEC_61869_100>), #cite(<Mustajärvi_Instrument_Transformer>)
 
 Because the required value depends on the protection function, on the applicable dimensioning or oversizing factor and on the assumed worst-case fault condition, these three inputs must be identified explicitly before any comparison can be regarded as meaningful. They form the basis of the validation approach developed in the following chapters.
