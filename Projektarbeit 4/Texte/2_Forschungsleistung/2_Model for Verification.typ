@@ -1,9 +1,9 @@
-#import "@local/templat-projektarbeit:0.1.17": *
+#import "@local/templat-projektarbeit:0.1.18": *
 #import "../../Zusatz/acronyms.typ": acronyms
 
 = Reference Model for Independent Verification
 
-The purpose of the reference model is to provide a calculation basis that is independent of #acr("SECP") Global and can therefore be used to assess the correctness and numerical consistency of its current-transformer calculations. The model is implemented in Microsoft Excel and represents the relevant #acr("CT") parameters, secondary-circuit quantities, protection-specific calculation criteria and final suitability decision in a transparent calculation structure. The present description is based exclusively on #acr("IEC") 61869-2, #acr("IEC") 61869-100 and the calculation workbook Mappe1_mit_Entscheidungsmatrix_Trafo_Diff.xlsx.
+The purpose of the reference model is to provide a calculation basis that is independent of #acr("SECP") Global and can therefore be used to assess the correctness and numerical consistency of its current-transformer calculations. The model is implemented in Microsoft Excel and represents the relevant #acr("CT") parameters, secondary-circuit quantities, protection-specific calculation criteria and final suitability decision in a transparent calculation structure. The present description is based exclusively on #acr("IEC") 61869-2, #acr("IEC") 61869-100 and the calculation workbook @Excel_Calc
 
 == Derivation from #acr("IEC") 61869-2 and #acr("IEC") 61869-100
 

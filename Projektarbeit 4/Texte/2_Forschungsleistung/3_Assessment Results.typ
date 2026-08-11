@@ -1,11 +1,11 @@
-#import "@local/templat-projektarbeit:0.1.17": *
+#import "@local/templat-projektarbeit:0.1.18": *
 #import "../../Zusatz/acronyms.typ": acronyms
 
 = Assessment Results
 
 This chapter presents the results of the assessment of current-transformer calculations performed in #acr("SECP") Global. The evaluation is organised by the four research questions and closes with a cross-cutting review of the normative references used by #acr("SECP"). Three application–device cases are examined: transformer differential protection with the RET670, line differential protection with the RED670 and overcurrent protection with a REF650 requirement. The first two are computable in #acr("SECP") and are assessed against an independent reference model; the third exercises the coverage question and is assessed through RQ3.
 
-Two sources of evidence are used. The first is the comparison workbook _Mappe1_mit_Entscheidungsmatrix_Trafo_Diff.xlsx_, which contains ten evaluated transformer-differential cases and ten line-differential cases together with their #acr("SECP") counterparts. The second is a #acr("SECP") detailed calculation report, which exposes the formulae, intermediate values and normative references actually printed by the tool and thereby makes the traceability and report-quality questions answerable. In line with the methodology, the releasability of each case is decided by the non-compensatory decision rule; the weighted decision matrix contained in the workbook is retained only as a supplementary, data-driven indicator and does not by itself determine the verdict.
+Two sources of evidence are used. The first is the comparison workbook @Excel_Calc, which contains ten evaluated transformer-differential cases and ten line-differential cases together with their #acr("SECP") counterparts. The second is a #acr("SECP") detailed calculation report, which exposes the formulae, intermediate values and normative references actually printed by the tool and thereby makes the traceability and report-quality questions answerable. In line with the methodology, the releasability of each case is decided by the non-compensatory decision rule; the weighted decision matrix contained in the workbook is retained only as a supplementary, data-driven indicator and does not by itself determine the verdict.
 
 == RQ1 – Numerical Correctness
 

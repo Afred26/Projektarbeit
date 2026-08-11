@@ -1,4 +1,4 @@
-#import "@local/templat-projektarbeit:0.1.17": *
+#import "@local/templat-projektarbeit:0.1.18": *
 #import "../../Zusatz/acronyms.typ": acronyms
 
 = Methodology
