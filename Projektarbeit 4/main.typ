@@ -24,6 +24,7 @@
   titlepage-content: {
     set page(margin: 0pt)
     image("Bilder/Deckblatt.pdf")},
+  abstract: include "Texte/0_Einleitung/2_abstract.typ",
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 

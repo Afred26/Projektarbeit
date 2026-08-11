@@ -80,7 +80,7 @@ To make these properties measurable rather than impressionistic, each is operati
 
 RQ1 is answered by comparing #acr("SECP") against an independent reference. #acr("SECP") is the system under test and a separate reference model, implemented in a spreadsheet and computing the #acr("CT") adequacy quantities directly from the formulae of #acr("IEC") 61869-2 and the guidance of #acr("IEC") TR 61869-100, serves as the test oracle. #cite(<IEC_61869_2>), #cite(<IEC_61869_100>) The reference model is not taken from a single secondary source but derived from the primary standards, so that the comparison rests on the normative basis itself.
 
-The comparison follows the distinction, established in the verification-and-validation literature, between verifying that a model is solved correctly and validating that the correct model is solved. #cite(<Roach_Verification_Validation>), #cite(<Oberkampf_Verification_Validation>) For each test case the same input set is entered into #acr("SECP") and into the reference model, the relevant output quantities are recordedand the relative deviation
+The comparison follows the distinction, established in the verification-and-validation literature, between verifying that a model is solved correctly and validating that the correct model is solved. #cite(<Roach_Verification_Validation>), #cite(<Oberkampf_Verification_Validation>) For each test case the same input set is entered into #acr("SECP") and into the reference model, the relevant output quantities are recorded and the relative deviation
 
 $ delta = (q_"SECP" - q_"ref") / q_"ref" $ <eq-deviation>
 
