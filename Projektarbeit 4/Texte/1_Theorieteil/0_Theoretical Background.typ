@@ -3,7 +3,7 @@
 
 = Theoretical Background
 
-This chapter establishes the theoretical basis required for the subsequent validation and quality assessment of current-transformer calculations in #acr("SECP") Global. It introduces the operating principles and relevant characteristics of #acrfpl("CT"), explains their use in transformer differential and overcurrent protection and defines the #acr("CT") performance parameters used in protection-oriented dimensioning and verification. 
+This chapter establishes the theoretical basis required for the subsequent validation and quality assessment of current-transformer calculations in #acr("SECP") Global. It introduces the operating principles and relevant characteristics of #acrfpl("CT"), explains their use in transformer differential, line differential and overcurrent protection and defines the #acr("CT") performance parameters used in protection-oriented dimensioning and verification. 
 
 == #acrl("CT")
 

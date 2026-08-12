@@ -7,17 +7,7 @@ The purpose of the reference model is to provide a calculation basis that is ind
 
 == Derivation from #acr("IEC") 61869-2 and #acr("IEC") 61869-100
 
-The electrical behaviour of a current transformer is influenced by the resistance of its secondary winding and by the impedance connected to the secondary terminals. #acr("IEC") 61869-2 defines the secondary-loop resistance $R_s$ as the total resistance of the secondary circuit:
-
-$ R_s = R_"ct" + R_b $
-
-where $R_"ct"$ is the #acr("CT") secondary-winding resistance and $R_b$ is the resistive secondary burden. The corresponding standard definition therefore distinguishes between the internal winding resistance of the #acr("CT") and the externally connected burden.
-
-For a class P or PR protective current transformer, #acr("IEC") 61869-100 expresses the limiting secondary electromotive force as
-
-$ E_("ALF") = "ALF" * I_("sr") * (R_("ct") + Z_b) $
-
-where $"ALF"$ is the accuracy limit factor, $I_("sr")$ is the rated secondary current, $R_("ct")$ is the secondary-winding resistance and $Z_b$ is the rated secondary burden expressed as an impedance. #acr("IEC") 61869-100 identifies this expression as the limiting #acr("emf") definition for P and PR classes. The dimensioning factor represented by the accuracy limit factor can be interpreted as the ratio between the limiting #acr("emf") and the #acr("emf") at rated current and rated burden.
+The reference model builds on the #acr("CT") dimensioning relationships established in the theoretical background rather than re-deriving them. Two of those relationships underpin the workbook's available-capability calculation. The first is the secondary-loop resistance $R_s = R_"ct" + R_b$ defined by #acr("IEC") 61869-2, in which $R_"ct"$ is the #acr("CT") secondary-winding resistance and $R_b$ the resistive secondary burden. The second is the class P and PR limiting secondary #acr("emf") of @eq-ealf, in which the accuracy limit factor can be interpreted as the ratio between the limiting #acr("emf") and the #acr("emf") at rated current and rated burden. The accuracy limit factor is written here in its spelled form $"ALF"$ to match the workbook, in place of the symbol $K_"ALF"$ used in @eq-ealf. What the reference model contributes is not these definitions but their explicit, transparent implementation and their combination with the device-specific RET670 requirements introduced below, which lie outside the general standard framework.
 
 The rated burden is provided in volt-amperes in the workbook. For the resistive burden representation used by the reference model, its corresponding impedance is obtained from the rated apparent-power relationship:
 
@@ -108,7 +98,7 @@ This decision rule is consistent with the status values displayed in the individ
 
 The workbook additionally contains a consolidated results sheet in which the Excel outputs are placed alongside the corresponding #acr("SECP") results. For each calculation case and protection function, the sheet presents both calculated criteria, the proposed limiting #acr("emf") and the resulting pass/fail status. This structure enables numerical deviations and differences in the suitability decision to be evaluated separately. Such a separation is important because a numerical deviation does not necessarily result in a different engineering decision.
 
-For the ten transformer-differential cases included in the workbook, both the Excel model and #acr("SECP") produce a “pass” status. The workbook reports that the #acr("SECP") criterion values are higher than the corresponding Excel values in the investigated dataset. The decision-matrix sheet characterises this deviation direction as conservative for the cases examined. The reported relative deviation of the governing criterion ranges from approximately 0.0268 to 0.2198, with a reported mean of approximately 0.0879. These values are workbook results and do not establish performance outside the investigated cases.
+For the ten transformer-differential cases included in the workbook, both the Excel model and #acr("SECP") produce a “pass” status. The workbook reports that the #acr("SECP") criterion values are consistently higher than the corresponding Excel values in the investigated dataset, so that the deviation direction is conservative for the cases examined. The magnitude of this deviation and its cause are quantified as part of the RQ1 assessment in the following chapter rather than pre-empted here; the workbook figures are results of the investigated cases and do not establish performance outside them.
 
 == Verification of the Reference Model Itself
 
@@ -129,7 +119,5 @@ The device-specific equations and their authoritative source have since been ide
 - tests for invalid, missing or physically inconsistent input values;
 - boundary-value tests for cases close to the pass/fail limit;
 - information regarding the person or process by which the Excel model was independently reviewed.
-
-#strong[Information not provided]
 
 Consequently, the available material supports verification of selected intermediate relationships and confirms that the workbook applies a consistent calculation and comparison structure. It does not, however, provide sufficient evidence to claim complete independent verification of all protection-specific equations contained in the reference model. Until the missing equations, benchmark calculations and acceptance criteria are documented, the Excel workbook should be described as a transparent independent calculation implementation with partially verified calculation steps, rather than as a fully validated reference model.
