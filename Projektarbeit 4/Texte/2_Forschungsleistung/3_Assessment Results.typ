@@ -55,7 +55,7 @@ The REF630 application manual verifies the #acr("CT") through its accuracy class
 
 $ "ALF'" = "ALF"  (S_r + I_"sr"^2 R_"ct") / (S_"act" + I_"sr"^2 R_"ct") $
 
-where $S_r$ is the rated and $S_"act"$ the actual burden. A lower actual burden yields a higher effective factor. The available $"ALF'"$ is then compared with the fault-current multiple the #acr("CT") must reproduce. The result is dimensionlessand the manual presents one common procedure for the non-directional overcurrent stages rather than separate equations per characteristic.
+where $S_r$ is the rated and $S_"act"$ the actual burden. A lower actual burden yields a higher effective factor. The available $"ALF'"$ is then compared with the fault-current multiple the #acr("CT") must reproduce. The result is dimensionless and the manual presents one common procedure for the non-directional overcurrent stages rather than separate equations per characteristic.
 
 === REF650: required secondary limiting #acr("emf")
 
@@ -67,7 +67,7 @@ with $I_"op"$ the primary operate value and $S_R$ the burden of one IED input ch
 
 === Equivalence assessment
 
-The two procedures are physically related: IEC 61869-2 defines both the accuracy-limit quantities of class P and PR #acrpl("CT") and the equivalent limiting #acr("emf")and the REF650 guide notes that the secondary limiting #acr("emf") $E_"ALF"$ of a class P or PR #acr("CT") is approximately equal to $E_"al"$. They are nonetheless not directly comparable in the form each manual presents them, as summarised in @tab-oc-comparison.
+The two procedures are physically related: IEC 61869-2 defines both the accuracy-limit quantities of class P and PR #acrpl("CT") and the equivalent limiting #acr("emf") and the REF650 guide notes that the secondary limiting #acr("emf") $E_"ALF"$ of a class P or PR #acr("CT") is approximately equal to $E_"al"$. They are nonetheless not directly comparable in the form each manual presents them, as summarised in @tab-oc-comparison.
 
 #figure(
   {
@@ -96,7 +96,7 @@ The generated report is a standardised Microsoft Word document with a cover page
 
 Two substantive issues nevertheless limit its fitness for delivery and both are engineering issues rather than cosmetic ones. The first is the transformer-differential formula defect of RQ1 and RQ2: the report presents an incorrect required value as an authoritative, standard-referenced result and a customer auditing the document against the RET670 manual would find that the printed formula does not match the cited clause. The second is the outdated normative reference discussed below. Neither can be remedied by a per-report manual workaround within the effort budget of the decision rule, because both originate in the tool rather than in the individual report; they are properties of every report #acr("SECP") generates for the affected function. Under the decision rule they are therefore treated as improvement-required findings for the transformer-differential case rather than as documentable limitations.
 
-An internal inconsistency between an inline "adequate" statement and a "not adequate" summary was reported for an earlier #acr("SECP") example. It is not reproduced in the current report, whose inline verdicts and tap summaries are mutually consistent throughoutand it is therefore not carried forward as a finding of this evaluation; the earlier observation is regarded as pertaining to a superseded revision.
+An internal inconsistency between an inline "adequate" statement and a "not adequate" summary was reported for an earlier #acr("SECP") example. It is not reproduced in the current report, whose inline verdicts and tap summaries are mutually consistent throughout and it is therefore not carried forward as a finding of this evaluation; the earlier observation is regarded as pertaining to a superseded revision.
 
 === Answer to RQ4
 

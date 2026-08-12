@@ -25,9 +25,9 @@ RQ1 (correctness): Do the numerical #acr("CT") dimensioning results of #acr("SEC
 
 RQ2 (traceability): Do the formulae and calculation steps shown in the generated report correspond to the calculation actually performed and to the applicable standard?
 
-RQ3 (completeness and appropriateness): Does #acr("SECP") cover the required application and relay casesand where only a substitute device is selectable, is its dimensioning basis equivalent to that of the required device?
+RQ3 (coverage and appropriateness): Does #acr("SECP") cover the required application and relay casesand where only a substitute device is selectable, is its dimensioning basis equivalent to that of the required device?
 
-RQ4 (usability and maintainability): Is the generated report fit for its documentation purposeand can any formatting deficiencies be remedied within an acceptable effort?
+RQ4 (report fitness): Is the generated report fit for its documentation purposeand can any formatting deficiencies be remedied within an acceptable effort?
 
 == Evaluation Context, Object and Scope
 
@@ -123,6 +123,6 @@ Construct validity concerns whether the criteria actually capture what releasabi
 
 Internal validity concerns whether an observed deviation is genuinely attributable to #acr("SECP") rather than to the reference model or to an input error. It is addressed by deriving the reference model from the primary standards, by cross-checking it and by entering identical, documented inputs into both the tool and the reference.
 
-External validity concerns the extent to which the findings generalise. Because only two application–device cases and one tool version are examined, the verdict is reported per case rather than as a single blanket statement; the cases are chosen to represent the dominant planning applications, which bounds but does not eliminate this limitation.
+External validity concerns the extent to which the findings generalise. Because only three application–device cases and one tool version are examined, the verdict is reported per case rather than as a single blanket statement; the cases are chosen to represent the dominant planning applications, which bounds but does not eliminate this limitation.
 
 Reliability concerns whether another evaluator would reach the same result. It is addressed by documenting the reference model, the input sets, the decision rule and the classification scheme, so that the evaluation can in principle be repeated independently.
