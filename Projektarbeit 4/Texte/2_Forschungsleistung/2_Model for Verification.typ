@@ -7,7 +7,7 @@ The reference model provides a calculation basis independent of #acr("SECP") Glo
 
 == Derivation from #acr("IEC") 61869-2 and #acr("IEC") 61869-100
 
-The model builds on the #acr("CT") dimensioning relationships of the theoretical background rather than re-deriving them. Two of them underpin its available-capability calculation: the secondary-loop resistance $R_s = R_"ct" + R_b$ of #acr("IEC") 61869-2 and the class P and PR limiting secondary #acr("emf") of @eq-ealf, in which the accuracy limit factor is the ratio between the limiting #acr("emf") and the #acr("emf") at rated current and burden (written $"ALF"$ to match the workbook). The rated burden is given in volt-amperes, so its impedance follows from $Z_("b,n") = S_n / I_("sr")^2$ and the available limiting #acr("emf") becomes
+The model builds on the #acr("CT") dimensioning relationships of the theoretical background rather than re-deriving them. Two of them underpin its available-capability calculation: the secondary-loop resistance $R_s = R_"ct" + R_b$ of #acr("IEC") 61869-2 and the class P and PR limiting secondary #acr("emf") of /*@eq-ealf*/, in which the accuracy limit factor is the ratio between the limiting #acr("emf") and the #acr("emf") at rated current and burden (written $"ALF"$ to match the workbook). The rated burden is given in volt-amperes, so its impedance follows from $Z_("b,n") = S_n / I_("sr")^2$ and the available limiting #acr("emf") becomes
 
 $ E_("ALF,available") = "ALF" * I_("sr") (R_("ct") + S_n / I_("sr")^2) $
 
@@ -31,11 +31,11 @@ where $S_T$ is the transformer rating, $U_n$ the nominal system voltage and $Z_T
 
 The two criteria are the device-specific RET670 requirements and are not defined by #acr("IEC") 61869-2 alone. The RET670 application manual specifies a rated equivalent limiting secondary #acr("emf") $E_"al"$ that must exceed the larger of #cite(<RET670_Application_Manual>)
 
-$ E_("al,req,1") = 30 dot I_("rt") dot I_("sr") / I_("pr") dot (R_("ct") + R_L + S_R / I_r^2) $ <eq-ret-573>
+$ E_("al,req,1") = 30 * I_("rt") * I_("sr") / I_("pr") * (R_("ct") + R_L + S_R / I_r^2) $ <eq-ret-573>
 
 and
 
-$ E_("al,req,2") = 2 dot I_("tf") dot I_("sr") / I_("pr") dot (R_("ct") + R_L + S_R / I_r^2) $ <eq-ret-574>
+$ E_("al,req,2") = 2 * I_("tf") * I_("sr") / I_("pr") * (R_("ct") + R_L + S_R / I_r^2) $ <eq-ret-574>
 
 where $I_r$ is the rated current of the protection #acr("IED") and $S_R$ the burden of one #acr("IED") input channel. These are Equation 573 and Equation 574 of the manual; the factors 30 and 2 are the manufacturer's device-specific oversizing factors, not #acr("IEC") 61869-2 quantities. #cite(<RET670_Application_Manual>) For “220 - 1”, with the total secondary burden of 7.9777 Ω, $I_"pr" = 800 " A"$ and $I_"sr" = 1 " A"$, they evaluate to 172.72 V and 50.06 V, matching the workbook (172.723 V and 50.065 V). The reference model therefore implements the manufacturer's published RET670 requirement in combination with #acr("IEC") 61869-2 and #acr("IEC") 61869-100.
 
@@ -45,7 +45,7 @@ The implementation separates input data, intermediate quantities, protection-spe
 
 The calculation sequence is: cable resistance from the cable data; total connected secondary burden; available limiting #acr("emf"); transformer rated and through-fault currents; the two required-#acr("emf") criteria; and the comparison of the larger required value with the available value. The cable resistance is not stated explicitly in the workbook but follows the loop relationship required by the device manuals, in which both phase and return conductor are included: #cite(<RET670_Application_Manual>)
 
-$ R_L = rho_("Cu")(theta) dot (2 L) / A $ <eq-cable>
+$ R_L = rho_("Cu")(theta) * (2 L) / A $ <eq-cable>
 
 where $L$ is the single cable length, $A$ the conductor cross-section, the factor two the phase-and-return loop and $rho_("Cu")(theta)$ the temperature-corrected copper resistivity at the maximum conductor temperature $theta$. Back-substituting the workbook cable data reproduces the displayed values: 90 m at 4 mm² yields 0.9577 Ω, 65 m at 4 mm² yields 0.6917 Ω and 40 m at 2.5 mm² yields 0.6810 Ω. The implied $rho_("Cu")(75 " °C")$ of approximately $0.0213 " Ω·mm"^2 / "m"$ is consistent with standard copper at 20 °C ($rho_(20) approx 0.0175 " Ω·mm"^2 / "m"$) corrected with a temperature coefficient of about $0.0039 / "K"$. The exact reference resistivity and coefficient are, however, inferred from the outputs rather than documented.
 
