@@ -7,34 +7,35 @@ This chapter consolidates the assessment results into a releasability verdict. T
 
 == Per-Case Verdict via the Decision Rule
 
-Each case is judged against the three outcomes of the decision rule. A finding that only affects presentation is treated as a limitation, whereas one that affects the engineering result is treated as a blocker. The outcomes are summarised in @tab-verdict and explained below.
+Each investigated application-device case is evaluated using the non-compensatory decision rule defined in @Decision_Rule. The corresponding decision process is illustrated in @Decision_process. The first step examines whether the result is correct, complete, traceable and presentable without manual intervention.
 
-The *line differential* case is releasable. The criterion applied by #acr("SECP") is correctly formed, the suitability decision matches the reference model in all ten cases and the only deviation is the small conservative difference in lead resistance arising from the cable-resistance basis (mean approximately 0.49%). This deviation changes no decision and lies within the tolerance defined for the comparison. The single condition attached to release is that the deviation be disclosed in the delivered document.
+#figure(caption: [Decision process for determining the releasability of an evaluated #acr("CT") calculation case],
+  image("../../Bilder/main/Decision process.png"),
+)<Decision_process>
 
-The *transformer differential* case is not releasable as generated and requires an improvement. The suitability decisions are consistent with the reference model, but the required value is numerically incorrect: the tool counts the secondary lead resistance twice, evaluating the criterion with $R_"ct" + 2 R_"lead" + R_"relay"$ although $R_"lead"$ is already a loop resistance. This over-estimates the required #acr("emf") by a mean of approximately 8.79% and by up to 21.98%. The defect is conservative, so in the interim the results are safe in the sense that an inadequate #acr("CT") cannot be accepted. Still, the printed value is wrong, departs from the RET670 requirement the report itself cites and resides in the tool rather than in any single report. No manual workaround within the effort budget of the decision rule can correct it, so the outcome is an improvement required, not a documentable limitation. The required fix is small in scope: the lead resistance must enter the transformer-differential criterion once rather than twice.
+As shown in @Decision_process, a case is classified as releasable if all required properties are fulfilled. If a deficiency is present, the second step examines whether a documented manual workaround can produce a very good result within the defined effort. If this condition is fulfilled, the case is classified as releasable with a limitation. If no suitable workaround is available, the case requires an improvement and is classified as not releasable.
 
-The *overcurrent* case is not releasable and requires an improvement for a different reason. The device required for the planning work, the REF650, is not selectable in the #acr("CT") and #acr("VT") adequacy-check module and the only overcurrent option offered is the REF630, whose dimensioning basis is a burden-corrected accuracy limit factor rather than the required secondary limiting #acr("emf") of the REF650. Because the substitute is not shown to be at least as onerous as the required device, its use could accept an under-dimensioned #acr("CT") while appearing internally consistent, which is a blocker under the decision rule. Release therefore requires either that the REF650 be made selectable or that the equivalence of the REF630 substitute be demonstrated formally through the conversion between the two dimensioning bases.
+The rule is non-compensatory. A strong result in one assessment category cannot offset a defect that affects the correctness or technical applicability of the engineering result. Likewise, a high weighted score in the supplementary decision matrix cannot override a blocking finding. @Decision_process therefore represents the governing logic used to translate the individual findings into the final per-case verdicts.
 
-#figure(
-  table(
-    columns: (100pt, 100pt, 1fr),
-    inset: 7pt,
-    align: (left + horizon, left + horizon, left + horizon),
-    table.header([*Case*], [*Verdict*], [*Basis*]),
-    [Line differential (RED670)],
-      [Yes],
-      [Correctly formed criterion; decision matches reference in all cases; only a small conservative cable-resistance deviation, to be disclosed.],
-    [Transformer differential (RET670)],
-      [No, improvement required],
-      [Lead-resistance double-count over-estimates the required value; conservative but numerically incorrect and standard-inconsistent; a tool-level fix, not a per-report workaround.],
-    [Overcurrent (REF650)],
-      [No, improvement required],
-      [Required device not selectable; REF630 substitute uses a different basis not shown to be at least as onerous; coverage-and-equivalence blocker.],
-  ),
-  caption: [Per-case releasability verdict under the decision rule.],
-) <tab-verdict>
+=== Line Differential Protection
 
-A supersession finding applies across all cases: every generated report cites #acr("IEC") 61869-1:2007, a withdrawn edition of the general-requirements standard. This weakens the delivered document as an auditable reference and should be corrected, but it is a documentation-level matter separate from the two engineering findings above.
+The line differential case is releasable. The criterion applied by #acr("SECP") is correctly formed, and the suitability decision agrees with the independent reference calculation in all ten evaluated cases. The remaining numerical difference is small and conservative and does not change any pass or fail decision in the investigated dataset.
+
+Under the decision process shown in @Decision_process, this finding does not constitute an engineering blocker. The deviation should nevertheless be disclosed in the delivered documentation to ensure complete transparency.
+
+=== Transformer Differential Protection
+
+The transformer differential case is not releasable as generated and requires an improvement. Although the suitability decisions agree with the independent reference calculation in all evaluated cases, #acr("SECP") counts the secondary lead resistance twice when determining the required equivalent limiting secondary e.m.f.
+
+The defect affects the numerical engineering result and originates in the tool-level calculation rather than in the presentation of an individual report. It therefore does not satisfy the first decision stage shown in @Decision_process. Since correcting the formula within every generated report is not an appropriate per-report workaround, the case proceeds to the “Improvement required” outcome.
+
+The required improvement is to apply the complete secondary cable-loop resistance once rather than twice in the transformer differential criterion.
+
+=== Overcurrent Protection
+
+The overcurrent case is also classified as not releasable and requires an improvement. The required REF650 is not selectable in #acr("SECP"), while the available REF630 substitute applies a different dimensioning basis. The available evidence does not demonstrate that the substitute is equivalent to or more onerous than the requirement of the REF650.
+
+Consequently, the evaluated case does not fulfil the completeness and applicability conditions in the first decision stage of @Decision_process. No documented workaround establishes equivalence within the defined process. Release therefore requires either implementation of the REF650 or a formal demonstration that the substitute calculation is sufficiently conservative for the same input conditions.
 
 == Evaluation of the Reference-Model Approach
 
@@ -44,6 +45,6 @@ The approach also has limits that bound the conclusions. The reference model is 
 
 == Answer to the Main Research Question
 
-The main research question asked whether the #acr("CT") adequacy calculations produced by #acr("SECP") Global can be released to the customer for the planning-phase use case, under which limitations and, if not, which improvements are required. The answer is conditional and function-specific, as set out per case in @tab-verdict: line differential protection is releasable subject to disclosing the small conservative deviation; transformer differential protection is not releasable as generated, the required improvement being to apply the lead resistance once rather than twice; and overcurrent protection cannot be released with the required device, the required improvement being to make the REF650 selectable or to demonstrate the equivalence of the REF630 substitute.
+The main research question asked whether the #acr("CT") adequacy calculations produced by #acr("SECP") Global can be released to the customer for the planning-phase use case, under which limitations and, if not, which improvements are required. The answer is conditional and function-specific, as set out per case in @Decision_process: line differential protection is releasable subject to disclosing the small conservative deviation; transformer differential protection is not releasable as generated, the required improvement being to apply the lead resistance once rather than twice; and overcurrent protection cannot be released with the required device, the required improvement being to make the REF650 selectable or to demonstrate the equivalence of the REF630 substitute.
 
 Because the decision rule is non-compensatory, the strong line-differential result does not lift the overall verdict. #acr("SECP") Global is therefore not releasable without qualification for the planning-phase use case in its present state. It is usable now for line differential protection and its transformer-differential results are safe to rely on in the conservative direction while the formula defect is outstanding. Unqualified release, however, depends on correcting the transformer-differential lead-resistance term, closing the overcurrent coverage gap and updating the superseded normative reference carried in every report.

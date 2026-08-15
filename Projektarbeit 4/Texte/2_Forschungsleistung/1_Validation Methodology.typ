@@ -1,7 +1,7 @@
 #import "@local/templat-projektarbeit:0.1.18": *
 #import "../../Zusatz/acronyms.typ": acronyms
 
-= Methodology
+= Methodology <Methodology>
 
 This chapter defines the method used to answer the central question of this thesis: whether the #acr("CT") adequacy calculations produced by #acr("SECP") Global can be relied upon for their intended use. Since the object of the investigation is an existing engineering tool and not a newly developed one, the work is an evaluation study: #acr("SECP") is treated as a given artefact whose fitness for a defined purpose is assessed against explicit criteria. The present chapter documents this method so that the results of the following chapters remain reproducible and defensible.
 
@@ -27,7 +27,7 @@ The intended use fixed for this evaluation is the following: a protection engine
 
 The evaluation is scoped to three representative application–device cases: transformer differential protection with the RET670, line differential protection with the RED670 and overcurrent protection with a REF650 requirement. The #acr("IEC") and #acr("ISO") standards are treated as the release-relevant normative basis; #acr("IEEE") rules are considered only where #acr("SECP") supports both rule sets and a comparison is informative. The two differential cases are computable in #acr("SECP"): the required device is selectable and the calculation completes, so correctness, traceability and report quality can be examined directly against the reference model. The overcurrent case deliberately targets the coverage question. Here the required REF650 is not selectable and the tool offers only the REF630 substitute on a different dimensioning basis, so this case is assessed through the coverage-and-equivalence analysis instead of the numerical comparison.
 
-== Releasability Decision Rule
+== Releasability Decision Rule <Decision_Rule>
 
 The verdict is governed by a decision rule that was fixed before the assessment, so that all findings are judged by the same standard. A result is releasable without qualification if it is correct, complete, traceable and presentable without intervention. It is releasable with a limitation if it becomes releasable only after a manual workaround that yields a very good result within approximately fifteen to thirty minutes per report; in that case the workaround itself is recorded as the limitation. It is not releasable and requires an improvement if no workaround satisfies both conditions. The rule is summarised in @tab-decision-rule.
 
@@ -66,13 +66,25 @@ The properties referenced by the decision rule are anchored in the #acr("ISO")/#
 
 == Validation by Reference-Model Comparison
 
-RQ1 is answered by comparing #acr("SECP") against an independent reference. #acr("SECP") is the system under test. A separate reference model, implemented in a spreadsheet, computes the #acr("CT") adequacy quantities directly from #acr("IEC") 61869-2 and #acr("IEC") TR 61869-100 and serves as the test oracle, so the comparison rests on the primary normative basis itself. #cite(<IEC_61869_2>), #cite(<IEC_61869_100>) The comparison follows the verification-and-validation distinction between solving a model correctly and solving the correct model. #cite(<Roach_Verification_Validation>), #cite(<Oberkampf_Verification_Validation>) The same input set is entered into both implementations, the output quantities are recorded and the relative deviation
+RQ1 is answered by comparing #acr("SECP") with an independent reference calculation implemented in Microsoft Excel. The validation approach is illustrated in @Validation_approach. An identical input dataset is entered into both calculation paths to ensure that observed differences originate from the calculation methods rather than from differing input values.
+
+#figure( caption: [Validation approach used for comparing #acr("SECP") Global with the independent reference calculation],
+  image("../../Bilder/main/Validation approach.png"),
+)<Validation_approach>
+
+As shown in @Validation_approach, #acr("SECP") Global constitutes the system under evaluation, whereas the Excel workbook provides the independent comparison calculation. Both calculation paths determine the required #acr("CT") performance, the available #acr("CT") capability and the final suitability decision. Their outputs are subsequently compared at the numerical and decision levels.
+
+The comparison follows the distinction between solving a calculation correctly and applying the correct calculation basis. The independent calculation implements the relevant requirements from the applicable device manuals together with the #acr("CT") quantities and relationships defined in #acr("IEC") 61869-2 and #acr("IEC") TR 61869-100. It therefore provides a transparent basis against which the #acr("SECP") results can be examined.
+
+For every evaluated quantity $q$, the relative deviation is calculated as
 
 $ delta = (q_"SECP" - q_"ref") / q_"ref" $ <eq-deviation>
 
-is evaluated for every quantity $q$. A case satisfies RQ1 if the magnitude of the deviation in @eq-deviation stays within a tolerance reflecting display precision and permissible rounding; a larger deviation is recorded as a discrepancy. The reference value itself carries a residual uncertainty from rounding and admissible formula variants, which is acknowledged in the sense of the guide to the expression of uncertainty in measurement. The tolerance is therefore understood as a band rather than an exact threshold. #cite(<JCGM_100_GUM>)
+A positive value indicates that #acr("SECP") produces a higher result than the independent reference calculation, whereas a negative value indicates a lower result. The numerical comparison is supplemented by a comparison of the resulting pass or fail decisions. This separation is necessary because a numerical deviation does not necessarily change the final suitability classification.
 
-The method deliberately separates two questions that are easy to mix up: whether the numerical output of #acr("SECP") matches the reference (RQ1, the computation layer) and whether the formula displayed in the report matches the formula that produced that output (RQ2, the presentation layer). If the numbers agree while the displayed derivation does not, this is not a contradiction; it is a defect confined to the presentation layer. The two layers are therefore recorded independently.
+The subsequent assessment combines the numerical comparison with the qualitative examination of formula traceability, device coverage and report fitness. As indicated in @Validation_approach, these findings are consolidated through the structured assessment and finally evaluated using the non-compensatory releasability rule.
+
+The method deliberately separates the computation layer from the presentation layer. RQ1 evaluates whether the numerical result produced by SECP agrees with the independent reference calculation. RQ2 examines whether the formulae and intermediate steps displayed in the generated report correspond to the calculation basis and the calculation actually performed. Agreement at one layer therefore does not automatically demonstrate agreement at the other.
 
 == Structured Quality Assessment
 
