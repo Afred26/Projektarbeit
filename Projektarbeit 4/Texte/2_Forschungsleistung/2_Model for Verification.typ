@@ -9,7 +9,7 @@ The calculation is referred to as an independent reference calculation rather th
 
 == Calculation Basis
 
-The required #acr("CT") performance is derived primarily from the application manuals of the RET670 and RED670. #acr("IEC") 61869-2 and #acr("IEC") TR 61869-100 provide the definitions and relationships required to express the available #acr("CT") capability in terms of the equivalent limiting secondary #acr("emf")
+The required #acr("CT") performance is derived primarily from the application manuals of the RET670 and RED670. #cite(<RET670_Application_Manual>), #cite(<RED670_Application_Manual>) #acr("IEC") 61869-2 and #acr("IEC") TR 61869-100 provide the definitions and relationships required to express the available #acr("CT") capability in terms of the equivalent limiting secondary #acr("emf") #cite(<IEC_61869_2>), #cite(<IEC_61869_100>)
 
 For a class P or PR #acr("CT"), the available equivalent limiting secondary #acr("emf") is calculated as
 
@@ -35,7 +35,7 @@ $ I_("tf") = I_"rt" / (Z_T / 100) $
 
 where $S_T$ is the transformer rating, $U_n$​ the nominal system voltage and $Z_T$​ the transformer impedance in percent.
 
-The two RET670 criteria implemented in the workbook are
+The two RET670 criteria implemented in the workbook are #cite(<RET670_Application_Manual>)
 
 $ E_("al,req,1") = 30 * I_("rt") * I_("sr") / I_("pr") * (R_("ct") + R_L + S_R / I_r^2) $ <eq-ret-573>
 
@@ -47,7 +47,7 @@ The larger of the two values is used as the required equivalent limiting seconda
 
 === Line Differential Protection
 
-For line differential protection, the workbook implements the two RED670 criteria
+For line differential protection, the workbook implements the two RED670 criteria #cite(<RED670_Application_Manual>)
 
 $ E_("al,req,601") = I_("k,max") * I_("sr") / I_("pr") * (R_("ct") + R_L + S_R / I_r^2) $ <eq-red-601>
 
