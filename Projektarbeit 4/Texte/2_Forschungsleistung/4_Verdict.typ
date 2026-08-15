@@ -3,19 +3,15 @@
 
 = Releasability Verdict
 
-This chapter consolidates the assessment results into a releasability verdict. The decision rule fixed in the methodology is applied to each case, the reference-model approach is appraised and the main research question is answered. Because the decision rule is non-compensatory, a strong result in one case cannot offset a blocking finding in another.
+This chapter consolidates the assessment results into a releasability verdict. The decision rule fixed in the methodology is applied to each case, the reference-model approach is appraised and the main research question is answered.
 
 == Per-Case Verdict via the Decision Rule
 
-Each investigated application-device case is evaluated using the non-compensatory decision rule defined in @Decision_Rule. The corresponding decision process is illustrated in @Decision_process. The first step examines whether the result is correct, complete, traceable and presentable without manual intervention.
+Each investigated application–device case is evaluated using the non-compensatory decision rule defined in @Decision_Rule; the corresponding decision process is illustrated in @Decision_process. Because the rule is non-compensatory, neither a strong result in another assessment category nor a high weighted score in the supplementary decision matrix can override a finding that affects the correctness or technical applicability of the engineering result.
 
 #figure(caption: [Decision process for determining the releasability of an evaluated #acr("CT") calculation case],
   image("../../Bilder/main/Decision process.png"),
 )<Decision_process>
-
-As shown in @Decision_process, a case is classified as releasable if all required properties are fulfilled. If a deficiency is present, the second step examines whether a documented manual workaround can produce a very good result within the defined effort. If this condition is fulfilled, the case is classified as releasable with a limitation. If no suitable workaround is available, the case requires an improvement and is classified as not releasable.
-
-The rule is non-compensatory. A strong result in one assessment category cannot offset a defect that affects the correctness or technical applicability of the engineering result. Likewise, a high weighted score in the supplementary decision matrix cannot override a blocking finding. @Decision_process therefore represents the governing logic used to translate the individual findings into the final per-case verdicts.
 
 === Line Differential Protection
 

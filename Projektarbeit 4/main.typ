@@ -40,7 +40,7 @@
 
 #include "Texte/2_Forschungsleistung/0_Existing SECP.typ"
 #include "Texte/2_Forschungsleistung/1_Validation Methodology.typ"
-#include "Texte/2_Forschungsleistung/2_Model for Verification_1.typ"
+#include "Texte/2_Forschungsleistung/2_Model for Verification.typ"
 #include "Texte/2_Forschungsleistung/3_Assessment Results.typ"
 #include "Texte/2_Forschungsleistung/4_Verdict.typ"
 

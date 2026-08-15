@@ -7,7 +7,7 @@ This chapter defines the method used to answer the central question of this thes
 
 == Research Design
 
-The evaluation follows the design-science research framework, in which an artefact is investigated through problem investigation, treatment design and treatment evaluation. This thesis covers the evaluation part of that cycle: it determines, against documented criteria, how well #acr("SECP") solves the dimensioning problem it is intended to solve, without developing the tool further. #cite(<Hevner_Design_Science>) Since a single tool is examined in its real engineering setting, the work is organised as a single-case study in the sense of empirical software engineering. The case is #acr("SECP") Global and the units of analysis are the individual #acr("CT") adequacy calculations and their generated reports. This frame provides a recognised structure for research questions, traceable evidence and the discussion of validity. #cite(<Runeson_Case_Study>) In the terminology of #acr("ISO")/#acr("IEC") 25040, the study is a quality evaluation for suitability to a specific use rather than a conformity check against a full requirements specification. The reference against which #acr("SECP") is judged is therefore the defined intended use. #cite(<ISO_IEC_25040>)
+The evaluation follows the design-science research framework, in which an artefact is investigated through problem investigation, treatment design and treatment evaluation. This thesis covers the evaluation part of that cycle: it determines, against documented criteria, how well #acr("SECP") solves the dimensioning problem it is intended to solve, without developing the tool further. #cite(<Hevner_Design_Science>) Since a single tool is examined in its real engineering setting, the work is organized as a single-case study in the sense of empirical software engineering. The case is #acr("SECP") Global and the units of analysis are the individual #acr("CT") adequacy calculations and their generated reports. This frame provides a recognized structure for research questions, traceable evidence and the discussion of validity. #cite(<Runeson_Case_Study>) In the terminology of #acr("ISO")/#acr("IEC") 25040, the study is a quality evaluation for suitability to a specific use rather than a conformity check against a full requirements specification. The reference against which #acr("SECP") is judged is therefore the defined intended use. #cite(<ISO_IEC_25040>)
 
 == Research Questions
 
@@ -29,7 +29,7 @@ The evaluation is scoped to three representative application–device cases: tra
 
 == Releasability Decision Rule <Decision_Rule>
 
-The verdict is governed by a decision rule that was fixed before the assessment, so that all findings are judged by the same standard. A result is releasable without qualification if it is correct, complete, traceable and presentable without intervention. It is releasable with a limitation if it becomes releasable only after a manual workaround that yields a very good result within approximately fifteen to thirty minutes per report; in that case the workaround itself is recorded as the limitation. It is not releasable and requires an improvement if no workaround satisfies both conditions. The rule is summarised in @tab-decision-rule.
+The verdict is governed by a decision rule that was fixed before the assessment, so that all findings are judged by the same standard. The rule distinguishes three outcomes — releasable without qualification, releasable with a documented limitation and not releasable — and is summarized in @tab-decision-rule.
 
 #figure(
   table(
@@ -48,7 +48,7 @@ A criterion that only degrades the presentation is treated as a limitation, wher
 
 == Quality Model and Measurement
 
-The properties referenced by the decision rule are anchored in the #acr("ISO")/#acr("IEC") 25010 product quality model. #cite(<ISO_IEC_25010>) Correctness and completeness are aspects of functional suitability, traceability is treated as an aspect of functional correctness and analysability and report fitness combines interaction capability with the maintainability of the report artefact. To make these properties measurable, each of them is operationalised with the goal–question–metric approach: a goal is refined into questions and each question into a metric with a decision criterion, as given in @tab-gqm. #cite(<Basili_GQM>)
+The properties referenced by the decision rule are anchored in the #acr("ISO")/#acr("IEC") 25010 product quality model. #cite(<ISO_IEC_25010>) Correctness and completeness are aspects of functional suitability, traceability is treated as an aspect of functional correctness and analysability and report fitness combines interaction capability with the maintainability of the report artefact. To make these properties measurable, each of them is operationalist with the goal–question–metric approach: a goal is refined into questions and each question into a metric with a decision criterion, as given in @tab-gqm. #cite(<Basili_GQM>)
 
 #figure(
   table(
@@ -72,7 +72,7 @@ RQ1 is answered by comparing #acr("SECP") with an independent reference calculat
   image("../../Bilder/main/Validation approach.png"),
 )<Validation_approach>
 
-As shown in @Validation_approach, #acr("SECP") Global constitutes the system under evaluation, whereas the Excel workbook provides the independent comparison calculation. Both calculation paths determine the required #acr("CT") performance, the available #acr("CT") capability and the final suitability decision. Their outputs are subsequently compared at the numerical and decision levels.
+Both calculation paths determine the required #acr("CT") performance, the available #acr("CT") capability and the final suitability decision; their outputs are subsequently compared at the numerical and decision levels.
 
 The comparison follows the distinction between solving a calculation correctly and applying the correct calculation basis. The independent calculation implements the relevant requirements from the applicable device manuals together with the #acr("CT") quantities and relationships defined in #acr("IEC") 61869-2 and #acr("IEC") TR 61869-100. It therefore provides a transparent basis against which the #acr("SECP") results can be examined.
 
@@ -82,9 +82,7 @@ $ delta = (q_"SECP" - q_"ref") / q_"ref" $ <eq-deviation>
 
 A positive value indicates that #acr("SECP") produces a higher result than the independent reference calculation, whereas a negative value indicates a lower result. The numerical comparison is supplemented by a comparison of the resulting pass or fail decisions. This separation is necessary because a numerical deviation does not necessarily change the final suitability classification.
 
-The subsequent assessment combines the numerical comparison with the qualitative examination of formula traceability, device coverage and report fitness. As indicated in @Validation_approach, these findings are consolidated through the structured assessment and finally evaluated using the non-compensatory releasability rule.
-
-The method deliberately separates the computation layer from the presentation layer. RQ1 evaluates whether the numerical result produced by SECP agrees with the independent reference calculation. RQ2 examines whether the formulae and intermediate steps displayed in the generated report correspond to the calculation basis and the calculation actually performed. Agreement at one layer therefore does not automatically demonstrate agreement at the other.
+The method deliberately separates the computation layer from the presentation layer: agreement of the computed numbers (RQ1) does not by itself demonstrate that the formulae displayed in the generated report correspond to the calculation actually performed (RQ2), or vice versa.
 
 == Structured Quality Assessment
 
@@ -111,4 +109,4 @@ Each finding is additionally assigned a severity that reflects whether it affect
 
 == Validity Considerations
 
-The credibility of the conclusions is discussed through the four validity aspects of case-study research. #cite(<Runeson_Case_Study>) Construct validity concerns whether the criteria capture what releasability means to the organisation; it is addressed by defining the intended use explicitly, deriving the releasable properties from an established quality model and fixing the decision rule in advance. Internal validity concerns whether an observed deviation is genuinely attributable to #acr("SECP") rather than to the reference model or an input error; it is addressed by deriving the reference model from the primary standards, cross-checking it and entering identical, documented inputs into both. External validity is limited, because only three application–device cases and one tool version are examined; the verdict is therefore reported per case and the cases are chosen to represent the dominant planning applications. Reliability is addressed by documenting the reference model, the input sets, the decision rule and the classification scheme, so that the evaluation can in principle be repeated independently.
+The credibility of the conclusions is discussed through the four validity aspects of case-study research. #cite(<Runeson_Case_Study>) Construct validity concerns whether the criteria capture what releasability means to the organization; it is addressed by defining the intended use explicitly, deriving the releasable properties from an established quality model and fixing the decision rule in advance. Internal validity concerns whether an observed deviation is genuinely attributable to #acr("SECP") rather than to the reference model or an input error; it is addressed by deriving the reference model from the primary standards, cross-checking it and entering identical, documented inputs into both. External validity is limited, because only three application–device cases and one tool version are examined; the verdict is therefore reported per case and the cases are chosen to represent the dominant planning applications. Reliability is addressed by documenting the reference model, the input sets, the decision rule and the classification scheme, so that the evaluation can in principle be repeated independently.

@@ -1,3 +1,3 @@
-= Excel Calculatin <Excel_Calc>
+= Excel Calculation <Excel_Calc>
 
 = SECP Report <SECP_Rep>
