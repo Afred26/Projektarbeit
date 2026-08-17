@@ -4,7 +4,7 @@
 
 = Releasability Verdict
 
-This chapter consolidates the findings of the four research questions and derives an overall releasability verdict for the investigated planning-phase use case. The assessment considers not only numerical correctness, but also traceability, functional coverage and the suitability of the generated report for customer delivery.
+This chapter consolidates the findings of the four research questions and derives an overall releasability verdict for the investigated planning phase use case. The assessment considers not only numerical correctness, but also traceability, functional coverage and the suitability of the generated report for customer delivery.
 
 == Overall Releasability Assessment
 
@@ -16,18 +16,18 @@ For transformer differential protection, the suitability decisions likewise rema
 
 The overcurrent protection case revealed a different limitation: the required REF650 device cannot currently be represented in SECP and equivalence of the available REF630 substitute could not be demonstrated. As a result, the required engineering assessment cannot presently be reproduced within the investigated workflow. These findings indicate that the quality of the implemented calculations varies depending on the protection function considered.
 
-The most significant limitation identified during the assessment, however, is not restricted to a single protection function. All investigated reports exhibited substantial deficiencies in formatting, readability and maintainability. While the reports provide the necessary calculation inputs, intermediate values and final verdicts, their practical use as customer-facing engineering documents is impaired by layout inconsistencies, poor pagination, formatting artefacts and difficulties associated with editing large automatically generated Word documents. Furthermore, references to superseded standards are included in every generated report. These findings do not directly invalidate the engineering calculations, but they reduce the quality and professionalism of the delivered documentation and significantly increase the effort required for review and correction.
+The most significant limitation identified during the assessment, however, is not restricted to a single protection function. All investigated reports exhibited substantial deficiencies in formatting, readability and maintainability. While the reports provide the necessary calculation inputs, intermediate values and final verdicts, their practical use as customer facing engineering documents is impaired by layout inconsistencies, poor pagination, formatting artefacts and difficulties associated with editing large automatically generated Word documents. Furthermore, references to superseded standards are included in every generated report. These findings do not directly invalidate the engineering calculations, but they reduce the quality and professionalism of the delivered documentation and significantly increase the effort required for review and correction.
 
-*Consequently, the assessment does not support an unrestricted release of SECP-generated CT calculation reports for the investigated planning-phase use case.* 
+*Consequently, the assessment does not support an unrestricted release of SECP generated CT calculation reports for the investigated planning phase use case.* 
 
-The line differential implementation demonstrates that technically sound calculation results can already be produced for certain applications. Nevertheless, the presence of a calculation defect in the transformer differential function, the absence of the required REF650 implementation for overcurrent protection and the widespread report-quality deficiencies prevent an overall release recommendation. Before unrestricted customer delivery can be justified, improvements are required both in the implementation of specific calculation functions and in the report-generation process itself. The latter is particularly important because report-quality issues affect all investigated applications regardless of the correctness of the underlying calculation.
+The line differential implementation demonstrates that technically sound calculation results can already be produced for certain applications. Nevertheless, the presence of a calculation defect in the transformer differential function, the absence of the required REF650 implementation for overcurrent protection and the widespread report quality deficiencies prevent an overall release recommendation. Before unrestricted customer delivery can be justified, improvements are required both in the implementation of specific calculation functions and in the report generation process itself. The latter is particularly important because report quality issues affect all investigated applications regardless of the correctness of the underlying calculation.
 
 == Answer to the Main Research Question
 
-The results do not support an unqualified release of SECP-generated CT calculation reports for customer delivery in the investigated planning-phase use case.
+The results do not support an unqualified release of SECP generated CT calculation reports for customer delivery in the investigated planning phase use case.
 
 The numerical quality of the implemented calculations varies by application. Line differential protection produced results that closely matched the independent reference calculation, while transformer differential protection contains a systematic formula defect. Overcurrent protection cannot currently be evaluated for the required REF650 device because the corresponding application is not implemented.
 
 More importantly, the generated reports exhibit substantial formatting and maintainability deficiencies. Although the reports contain the required engineering information, their presentation quality and editability are insufficient for efficient review and customer delivery. These issues are independent of the investigated protection function and affect the usability of the generated reports as engineering deliverables.
 
-Consequently, SECP cannot currently be considered releasable without qualification. Improvements are required in both the calculation implementation and the report-generation process before unrestricted customer release can be recommended.
+Consequently, SECP cannot currently be considered releasable without qualification. Improvements are required in both the calculation implementation and the report generation process before unrestricted customer release can be recommended.
