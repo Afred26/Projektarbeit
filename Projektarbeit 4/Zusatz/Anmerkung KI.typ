@@ -2,7 +2,7 @@
   caption: [Overview of AI-based tools used in this work],
   table(
   columns: (1.1fr, 4fr),
-    inset: 10pt,
+    inset: 7pt,
     align: horizon,
     fill: (_, y) => if y == 0{ luma(200) }
     else { white },

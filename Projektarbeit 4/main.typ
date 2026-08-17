@@ -14,7 +14,7 @@
   language: "en", // en, de
   ki-anmerkung-content: include "Zusatz/Anmerkung KI.typ",
   // Vorwort einfügen (optional):
-  foreword: include "Texte/0_Einleitung/0_Vorwort.typ",
+  //foreword: include "Texte/0_Einleitung/0_Vorwort.typ",
   supervisor: (company: "Marco Van-Rosmalen"),
   university: "Duale Hochschule Baden-Württemberg",
   university-location: "Mannheim",
@@ -24,14 +24,14 @@
   titlepage-content: {
     set page(margin: 0pt)
     image("Bilder/Deckblatt.pdf")},
-  abstract: include "Texte/0_Einleitung/2_abstract.typ",
-  appendix: include "Zusatz/Apendix/apendix.typ"
+ // abstract: include "Texte/0_Einleitung/1_abstract.typ",
+ // appendix: include "Zusatz/Apendix/apendix.typ"
   
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
 
 //Einleitung
-#include "Texte/0_Einleitung/1_Introduction.typ"
+#include "Texte/0_Einleitung/2_Introduction.typ"
 
 //Theorieteil
 #include "Texte/1_Theorieteil/0_Theoretical Background.typ"
