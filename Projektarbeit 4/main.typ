@@ -24,8 +24,8 @@
   titlepage-content: {
     set page(margin: 0pt)
     image("Bilder/Deckblatt.pdf")},
- // abstract: include "Texte/0_Einleitung/1_abstract.typ",
- appendix: include "Zusatz/Apendix/apendix.typ"
+  //abstract: include "Texte/0_Einleitung/1_abstract.typ",
+  //appendix: include "Zusatz/Apendix/apendix.typ"
   
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )

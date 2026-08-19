@@ -16,9 +16,9 @@ Within this module, #acr("CT") data are organized in a hierarchy of scenario, ba
 
 A calculation begins with a new or reused #acr("SECP") project, to which general project and document information is assigned, including identifiers, substation and customer data, voltage level, revision and the responsible persons. Each scenario contains the general system data and is subdivided into bays and #acr("CT") cores. Each core is assigned a protection application that determines the application specific input fields and the subsequent calculation sequence.
 
-/*#figure( caption: [Simplified #acr("CT") calculation workflow in #acr("SECP") Global],
-  image("../../Bilder/main/Simplified CT calculation workflow in SECP Global.png"),
-)<CT_SECP>*/
+#figure( caption: [screenshot of SECP Global],
+  image("../../Bilder/main/Screenshot SECP.png"),
+)<SECP>
 
 The calculation starts with the project and system data, followed by the #acr("CT"), cable and relay parameters. Based on these inputs, #acr("SECP") determines the secondary loop resistance and performs the calculation required for the selected protection function. The required #acr("CT") performance is then compared with the available #acr("CT") capability to obtain the final suitability decision.
 

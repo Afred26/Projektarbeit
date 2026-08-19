@@ -4,7 +4,7 @@
 
 = Methodology <Methodology>
 
-This chapter defines the method used to answer the central question of this thesis: Whether the #acr("CT") adequacy calculations produced by #acr("SECP") Global can be relied upon for their intended use. Since the object of the investigation is an existing engineering tool and not a newly developed one, the work is an evaluation study: #acr("SECP") is treated as a given artefact whose fitness for a defined purpose is assessed against explicit criteria. //The present chapter documents this method so that the results of the following chapters remain reproducible and defensible.
+This chapter defines the method used to answer the central question of this thesis: Whether the #acr("CT") adequacy calculations produced by #acr("SECP") Global can be relied upon for their intended use. Since the object of the investigation is an existing engineering tool and not a newly developed one, the work is an evaluation study. #acr("SECP") is treated as a given artefact whose fitness for a defined purpose is assessed against explicit criteria. //The present chapter documents this method so that the results of the following chapters remain reproducible and defensible.
 
 //== Research Design
 
@@ -75,9 +75,11 @@ For every evaluated quantity $q$, the relative deviation is calculated as
 
 $ delta = (q_"SECP" - q_"ref") / q_"ref" $ <eq-deviation>
 
-A positive value indicates that #acr("SECP") produces a higher result than the independent reference calculation, whereas a negative value indicates a lower result. The numerical comparison is supplemented by a comparison of the resulting pass or fail decisions. This separation is necessary because a numerical deviation does not necessarily change the final suitability classification.
+A positive value indicates that #acr("SECP") produces a higher result than the independent reference calculation, whereas a negative value indicates a lower result. The numerical comparison is supplemented by a comparison of the resulting pass or fail decisions. This separation is necessary because a numerical deviation does not necessarily change the final suitability classification. The direction of the deviation is nevertheless important for its engineering interpretation. 
 
-//The method deliberately separates the computation layer from the presentation layer: Agreement of the computed numbers (RQ1) does not by itself demonstrate that the formulae displayed in the generated report correspond to the calculation actually performed (RQ2), or vice versa.
+A higher required #acr("CT") performance calculated by #acr("SECP") is conservative from a protection perspective, because the adequacy condition becomes more difficult to satisfy and an insufficient #acr("CT") is not falsely accepted. However, this does not make the deviation harmless. It may lead to the rejection of an otherwise adequate #acr("CT") or to the selection of an unnecessarily larger #acr("CT"), resulting in increased project cost, space requirements or procurement effort. It may also indicate that previous designs based on similar assumptions were more conservative than technically required. 
+
+A lower required #acr("CT") performance calculated by #acr("SECP") is more critical, because the adequacy condition becomes easier to satisfy and a #acr("CT") may be classified as suitable although its actual performance is insufficient for the protection application. Such an underestimation can directly affect the dependability or stability of the protection function. Therefore, higher #acr("SECP") values are mainly treated as a cost and over dimensioning risk, whereas lower #acr("SECP") values are treated as a potential safety and protection reliability risk.
 
 == Structured Quality Assessment
 
