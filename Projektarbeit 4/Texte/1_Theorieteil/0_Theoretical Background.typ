@@ -11,7 +11,7 @@ This chapter establishes the theoretical basis for the validation and quality as
 A #acr("CT") is an instrument transformer whose secondary current is mostly proportional to the primary current under normal conditions, with an approximately zero phase displacement for the correct connection direction. A protective #acr("CT") is specifically intended to supply a current signal to protection and control devices #cite(<IEC_61869_2>). In power system use cases it converts a high primary current $I_p$ into a lower secondary current $I_s$. The transformation is set primarily by the turns ratio. The relevant characteristics include the rated primary and secondary currents, accuracy class, accuracy limit factor, excitation characteristic, secondary winding resistance and rated burden. #cite(<Mustajärvi_Instrument_Transformer>)
 
 #figure(
-  image("../../Bilder/main/CT Ersatzschaldbild.png", height: 211pt),
+  image("../../Bilder/main/CT Ersatzschaldbild.webp", height: 211pt),
   caption: [#acr("CT") simplified equivalent circuit],
 )<CT-Ersatz>
 
