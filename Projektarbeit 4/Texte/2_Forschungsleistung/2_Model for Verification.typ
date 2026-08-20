@@ -76,14 +76,11 @@ As illustrated in @Calculation_sequence, the available equivalent limiting secon
 
 The consolidated results sheet places the Excel and #acr("SECP") outputs next to each other for every investigated case. This arrangement allows the numerical deviations and the final suitability decisions to be evaluated separately. It also supports the identification of systematic differences across #acr("CT") cores and voltage levels.
 
-// The Excel sheet additionally contains separate weighted decision matrices for transformer and line differential protection. As indicated by the final stage in @Calculation_sequence, these matrices combine the numerical comparison with qualitative assessment categories, including correctness of the calculation method, numerical accuracy, safety impact, input processing, consistency of the suitability decision, documentation quality and reproducibility. The weighted score is used only as a supplementary quality indicator and does not replace the non compensatory releasability rule.
 
 == Verification and Limitations of the Reference Calculation
 
 Selected Excel results were checked by manually reproducing the available #acr("CT") capability, the total secondary circuit resistance, the transformer rated current, the through fault current and the protection specific criteria from the input data. These checks reproduced the values shown in the calculation sheets and confirmed that the implemented calculation sequence is consistent with the equations presented above.
 
 The consolidated results also allow the formula implementation to be checked across several #acr("CT") cores and voltage levels. In addition, the pass/fail status can be traced from the input values through the required and available limiting secondary #acr("emf")
-
-Nevertheless, the Excel sheet has not undergone a complete independent software validation. In particular, it does not contain automated input validity checks, protected formula cells, documented boundary value tests or an independently reviewed benchmark dataset. //The precise material constants used for the temperature correction of the cable resistance are also not explicitly documented in the Excel sheet.
 
 The Excel implementation is therefore considered a transparent and reproducible independent calculation for the investigated cases. It provides an appropriate basis for identifying numerical differences between #acr("SECP") and the device manual requirements, but it should not be interpreted as a universally validated #acr("CT") calculation tool.

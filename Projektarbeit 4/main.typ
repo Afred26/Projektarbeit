@@ -47,8 +47,3 @@
 //Zusammenfassung
 #include "Texte/3_Zusammenfassung/0_Conclusion.typ"
 
-//Apendix
-
-/*#pdf.attach("Zusatz/Apendix/CT Calculation EXCEL vs SECP.xlsx",description:"CT Calculation in Excel")<Excel_xlsx>
-#pdf.attach("Zusatz/Apendix/CT Calculation EXCEL vs SECP.pdf",description:"CT Calculation in Excel")<Excel_PDF>
-#pdf.attach("Zusatz/Apendix/SECP Exampel Calculation_IEC_CTVTDesign_Revision - 2_06-Aug-2026 11-49-15.pdf", description: "SECP Output Report")<SECP_PDF>*/

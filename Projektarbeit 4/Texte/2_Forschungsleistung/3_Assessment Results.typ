@@ -6,14 +6,14 @@
 
 This chapter presents the results of the assessment, organized by the four research questions and closing with a review of the normative references used by #acr("SECP"). Three application device cases are examined: Transformer differential protection with the RET670, line differential protection with the RED670 and overcurrent protection with a REF650 requirement. The first two are computable in #acr("SECP") and assessed against the independent reference calculation, the third exercises the coverage question and is assessed through RQ3.
 
-Two sources of evidence are used: The comparison Excel sheet/*@Excel_Calc*/,  which contains ten transformer differential and ten line differential cases and the #acr("SECP") calculation report for the same cases.
+Two sources of evidence are used: The comparison Excel sheet @Excel_attach, which contains ten transformer differential and ten line differential cases and the #acr("SECP") calculation report for the same cases.
 
 == RQ1 - Numerical Correctness
 
 Numerical correctness is assessed by comparing the required equivalent limiting secondary #acr("emf") computed by #acr("SECP") with the reference value of the independent Excel calculation for the same input set. For each case two criteria are evaluated, the governing value is the larger of the two and the resulting pass/fail decision is compared in addition to the numbers. The dataset covers 220 kV, 150 kV and 33 kV and the assessment is limited to these operating points.
 
 *Transformer differential protection.*\ 
-#acr("SECP") returns higher required values than the reference in all ten cases. The deviation of the governing criterion ranges from approximately 2.8% to 28.2%, with a average deviation of approximately 10%. /*The largest is case 33-5 (reference 85.06 V against #acr("SECP") 109.02 V), the smallest case 33-1 (332.30 V against 341.45 V).*/ The suitability classification is nevertheless identical in every case. Both methods pass all ten, so the deviation changes no suitability decision in the dataset.
+#acr("SECP") returns higher required values than the reference in all ten cases. The deviation of the governing criterion ranges from approximately 2.8% to 28.2%, with a average deviation of approximately 10%. The suitability classification is nevertheless identical in every case. Both methods pass all ten, so the deviation changes no suitability decision in the dataset.
 
 The cause can be identified from the detailed report. #acr("SECP") evaluates the governing criterion with a secondary loop resistance of the form, 
 
@@ -44,7 +44,7 @@ Within the dataset, #acr("SECP") preserves the final suitability decision in all
 
 == RQ2 - Traceability of Formulae in the Report
 
-In its structure, the #acr("SECP") detailed report is highly traceable. For each tap it prints the input data, the lead resistance calculation with its normative reference, the relay parameter and fault calculations, the two required #acr("emf") criteria with their substituted values, the proposed #acr("CT") capability and the final adequacy comparison. The governing device requirement is named explicitly /*(the RET670 clause for the transformer differential criteria and #acr("IEC") 61869-100 for the conversion of the accuracy limit factor to a knee point value) #cite(<SECP_User_Manual>), #cite(<RET670_Application_Manual>), #cite(<IEC_61869_100>)*/. A reader can in principle follow every reported result from the inputs to the verdict. Nevertheless, two traceability weaknesses were found. 
+In its structure, the #acr("SECP") detailed report is highly traceable. For each tap it prints the input data, the lead resistance calculation with its normative reference, the relay parameter and fault calculations, the two required #acr("emf") criteria with their substituted values, the proposed #acr("CT") capability and the final adequacy comparison. The governing device requirement is named explicitly. A reader can in principle follow every reported result from the inputs to the verdict. Nevertheless, two traceability weaknesses were found. 
 
 1. The displayed transformer differential formula contains the lead resistance double count identified under RQ1, so the printed equation does not correspond to the single lead resistance requirement of the RET670 clause it cites. The report is internally traceable, but it is not faithful to its own normative reference. 
 
@@ -84,7 +84,6 @@ The two procedures are physically related: #acr("IEC") 61869-2 defines both the 
     table.header([*Aspect*],       [*REF630 (substitute)*],                   [*REF650 (required)*]),
     [Verification quantity],     [Dimensionless effective ALF'],          [Required secondary #acr("emf") $E_"al,req"$ in volts],
     [Characteristic handling],   [One common overcurrent calculation],    [Separate equation per function (instantaneous/definite time, inverse time, directional)],
- //   [Secondary burden],          [Combined actual burden in VA],          [Resistances $R_"ct" + R_L$ plus IED burden $S_R/I_r^2$],
     [Fault current basis],       [Multiple compared against ALF'],        [Operate value, twenty times multiple or $I_"k,max"$ per function],
   )
 },
@@ -92,7 +91,6 @@ The two procedures are physically related: #acr("IEC") 61869-2 defines both the 
 ) <tab-oc-comparison>
 
 Since REF630 returns a dimensionless capability and REF650 a voltage requirement, an equivalence check is not possible. 
-//after converting the REF630 #acr("CT") capability into an equivalent secondary #acr("emf") in accordance with #acr("IEC") 61869-2 or vice versa. The substitute can be accepted as equivalent only if, after this conversion, its requirement is no less onerous than that of the REF650 for the same network, #acr("CT") ratio, winding and lead resistance, relay burden and pickup settings. A less onerous basis would risk an under dimensioned #acr("CT") and is therefore treated as a blocker under the decision rule.
 
 == RQ4 - Report Fitness for Customer Delivery
 
