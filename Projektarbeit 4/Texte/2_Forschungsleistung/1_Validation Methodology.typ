@@ -61,11 +61,7 @@ The properties referenced by the decision rule are anchored in the #acr("ISO")/#
 
 == Validation by Reference Calculation Comparison
 
-RQ1 is answered by comparing #acr("SECP") with an independent reference calculation implemented in Microsoft Excel. /*The validation approach is illustrated in @Validation_approach.
-
-#figure( caption: [Validation approach used for comparing #acr("SECP") Global with the independent reference calculation],
-  image("../../Bilder/main/Validation approach.png"),
-)<Validation_approach>*/
+RQ1 is answered by comparing #acr("SECP") with an independent reference calculation implemented in Microsoft Excel.
 
  An identical input dataset is entered into both calculation paths. Both calculation paths determine the required #acr("CT") performance, the available #acr("CT") capability and the final suitability decision. Their outputs are subsequently compared at the numerical and decision levels.
 

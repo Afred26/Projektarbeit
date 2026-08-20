@@ -58,13 +58,15 @@ $ E_("al,req,602") = 2 * I_("t,max") * I_("sr") / I_("pr") * (R_("ct") + R_L + S
 
 where $I_"k,max"$ is the maximum internal close in fault current and $I_"t,max"$ is the maximum external through fault current.
 
-For both protection functions, the final suitability decision is obtained from $E_("ALF,available") >= max(E_("req,1"), E_("req,2"))$.
+For both protection functions, the final suitability decision is obtained from 
+
+$ E_("ALF,available") >= max(E_("req,1"), E_("req,2")) $
 
 If this condition is fulfilled, the #acr("CT") is classified as suitable. Otherwise, it is classified as unsuitable.
 
 == Excel Implementation
 
-The calculation sequence implemented in the Excel sheet is shown in @Calculation_sequence. The process starts with the transformer, system, fault current, #acr("CT"), cable and relay data. The cable loop resistance is calculated from the applicable cable parameters and combined with the #acr("CT") winding resistance and relay burden to obtain the total secondary circuit resistance.
+The calculation sequence implemented in the Excel sheet is shown in @Calculation_sequence, the complete calculation is provided in @Excel_attach. The process starts with the transformer, system, fault current, #acr("CT"), cable and relay data. The cable loop resistance is calculated from the applicable cable parameters and combined with the #acr("CT") winding resistance and relay burden to obtain the total secondary circuit resistance.
 
 #figure( caption: [Calculation sequence implemented in the independent Excel calculation],
   image("../../Bilder/main/Calculation sequence Excel.png"),
