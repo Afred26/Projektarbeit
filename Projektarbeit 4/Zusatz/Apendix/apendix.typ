@@ -18,4 +18,34 @@
   numbering: "A"
 ) <SECP_attach>
 
+#figure(
+  pdf.attach("RET670_S26_Requirements.pdf", description: "RET670 Application manual Section 26 Requirements"),
+  caption: [RET670 Requirements],
+  kind: "attachment",
+  supplement: "Attachment",
+  numbering: "A"
+) <RET670>
 
+#figure(
+  pdf.attach("RED670_S26_Requirements.pdf", description: "RED670 Application manual Section 26 Requirements"),
+  caption: [RED670 Requirements],
+  kind: "attachment",
+  supplement: "Attachment",
+  numbering: "A"
+) <RED670>
+
+#figure(
+  pdf.attach("REF650_S22_Requirements.pdf", description: "REF650 Application manual Section 22 Requirements"),
+  caption: [REF650 Requirements],
+  kind: "attachment",
+  supplement: "Attachment",
+  numbering: "A"
+) <REF650>
+
+#figure(
+  pdf.attach("REF630_S4_Requirements.pdf", description: "REF630 Application manual Section 4 Requirements"),
+  caption: [REF630 Requirements],
+  kind: "attachment",
+  supplement: "Attachment",
+  numbering: "A"
+) <REF630>
