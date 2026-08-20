@@ -107,7 +107,7 @@ Of these, the general-requirements part #acr("IEC") 61869-1:2007 has been supers
 
 However, the report quality is significantly reduced by shortcomings in formatting, readability and maintainability. Although the output is generated as a Microsoft Word document, extensive use of automatically generated formula fields leads to numerous layout issues. In several locations, formula fields overlap or interfere with surrounding content, making subsequent editing difficult and time consuming. 
 
-This problem becomes increasingly severe for large projects, where reports can exceed a hundred pages and contain a large number of embedded formula fields. As a result, document navigation and editing perfozrmance in Word is noticeably degraded. Therefore, even the small deficiencies identified under RQ1 and RQ2 cannot be corrected in the generated document with reasonable effort.
+This problem becomes increasingly severe for large projects, where reports can exceed a hundred pages and contain a large number of embedded formula fields. As a result, document navigation and editing performance in Word is noticeably degraded. Therefore, even the small deficiencies identified under RQ1 and RQ2 cannot be corrected in the generated document with reasonable effort.
 
 Additional formatting deficiencies are present throughout the report. Section breaks are frequently created through manual spacing rather than proper page break mechanisms, causing chapter headings to appear in arbitrary positions on a page rather than at the beginning of a new section. In some cases, a heading is displayed at the bottom of a page while the associated content continues on the next page. 
 

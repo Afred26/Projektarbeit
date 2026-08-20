@@ -14,7 +14,7 @@
   language: "en", // en, de
   ki-anmerkung-content: include "Zusatz/Anmerkung KI.typ",
   // Vorwort einfügen (optional):
-  //foreword: include "Texte/0_Einleitung/0_Vorwort.typ",
+  foreword: include "Texte/0_Einleitung/0_Vorwort.typ",
   supervisor: (company: "Marco Van-Rosmalen"),
   university: "Duale Hochschule Baden-Württemberg",
   university-location: "Mannheim",
@@ -23,9 +23,9 @@
   logo-right: image("Bilder/Hitachi_Global_Logo_Black_RGB.svg"),
   titlepage-content: {
     set page(margin: 0pt)
-    image("Bilder/Deckblatt.pdf")},
-  //abstract: include "Texte/0_Einleitung/1_abstract.typ",
-  //appendix: include "Zusatz/Apendix/apendix.typ"
+    image("Bilder/Deckbaltt.webp")},
+  abstract: include "Texte/0_Einleitung/1_abstract.typ",
+  appendix: include "Zusatz/Apendix/apendix.typ",
   
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
@@ -46,3 +46,9 @@
 
 //Zusammenfassung
 #include "Texte/3_Zusammenfassung/0_Conclusion.typ"
+
+//Apendix
+
+/*#pdf.attach("Zusatz/Apendix/CT Calculation EXCEL vs SECP.xlsx",description:"CT Calculation in Excel")<Excel_xlsx>
+#pdf.attach("Zusatz/Apendix/CT Calculation EXCEL vs SECP.pdf",description:"CT Calculation in Excel")<Excel_PDF>
+#pdf.attach("Zusatz/Apendix/SECP Exampel Calculation_IEC_CTVTDesign_Revision - 2_06-Aug-2026 11-49-15.pdf", description: "SECP Output Report")<SECP_PDF>*/

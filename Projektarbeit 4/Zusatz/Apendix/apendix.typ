@@ -1,24 +1,21 @@
 #import "@local/templat-projektarbeit:0.1.18": *
 #import "../../Zusatz/acronyms.typ": acronyms
-#import "@preview/rexllent:0.4.1": xlsx-parser
 
-= Excel Calculation <Excel_Calc>
-#xlsx-parser(read("CT Calculation EXCEL vs SECP.xlsx", encoding: none), sheet-index: 2,parse-table-style: false)
-#pagebreak()
-#xlsx-parser(read("CT Calculation EXCEL vs SECP.xlsx", encoding: none), sheet-index: 3,parse-table-style: false)
-#pagebreak()
-#xlsx-parser(
-  read("CT Calculation EXCEL vs SECP.xlsx", encoding: none),
-  sheet-index: 4,
-  parse-header: false,
-  parse-stroke: true,
-  prepend-elems: (table.hline()),
-  stroke: (_, y) => {
-    if y == 0 {
-      return (bottom: black)
-    }
-  },
-  table.hline(),
-)
 
-= #acr("SECP") Report <SECP_Rep>
+#figure(
+  pdf.attach("CT Calculation EXCEL vs SECP.pdf", description:"CT Calculation in Excel"),
+  caption: [CT Calculation in Excel],
+  kind: "attachment",
+  supplement: "Attachment",
+  numbering: "A"
+) <Excel_attach>
+
+#figure(
+  pdf.attach("SECP Exampel Calculation_IEC_CTVTDesign_Revision - 2_06-Aug-2026 11-49-15.pdf", description: "SECP Output Report"),
+  caption: [SECP Output Report],
+  kind: "attachment",
+  supplement: "Attachment",
+  numbering: "A"
+) <SECP_attach>
+
+
