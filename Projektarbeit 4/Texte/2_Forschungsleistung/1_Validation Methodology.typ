@@ -69,7 +69,7 @@ A lower required #acr("CT") performance calculated by #acr("SECP") is more criti
 
 == Structured Quality Assessment
 
-RQ2, RQ3 and RQ4 are assessed by structured examination rather than numerical comparison. For RQ2 the displayed formulae and steps of the detailed report are checked against the governing calculation and the applicable clause of the standard. Any mismatch is recorded together with its location and with the note whether it is isolated or systematic. #cite(<SECP_User_Manual>), #cite(<IEC_61869_2>) 
+RQ2, RQ3 and RQ4 are assessed by structured examination rather than numerical comparison. For RQ2 the displayed formulae and steps of the detailed report are checked against the governing calculation and the applicable clause of the standard. Any mismatch is recorded together with its location and with the note whether it is isolated or systematic. #cite(<SECP_User_Manual>) #cite(<IEC_61869_2>) 
 
 For RQ3 coverage is separated from equivalence. Coverage is established by which application device combinations can be represented in #acr("SECP") at all. Where only a substitute is offered, equivalence is examined by comparing the dimensioning basis #acr("SECP") applies through the substitute with the #acr("CT") requirement published for the required device #cite(<REF650_Technical_Guide>). The substitute is regarded as equivalent only if it applies the same governing requirement with the same input quantities and provides a level of performance that is at least equivalent to that of the required device. A less stringent basis is treated as a blocker, because it can under dimension a #acr("CT") while appearing internally consistent. 
 

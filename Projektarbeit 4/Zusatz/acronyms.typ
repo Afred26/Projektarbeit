@@ -10,5 +10,6 @@
   ALF: "Accuracy Limit Factor",
   SECP: "Substation Engineering Calculation Program",
   emf: ("electromotive force", "e.m.f."),
+  DC: "direct current",
   
 )
