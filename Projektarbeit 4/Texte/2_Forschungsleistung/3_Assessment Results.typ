@@ -58,14 +58,14 @@ The generated report supports traceability in its form: Formulae, intermediate v
 Overcurrent protection is the case in which #acr("SECP") does not cover the required device. The REF650 required for the relevant planning work is not selectable in the #acr("CT") and #acr("VT") adequacy check module. The only overcurrent option offered is the REF630. The question is therefore whether the dimensioning basis that #acr("SECP") applies through the REF630 substitute is equivalent to and no less onerous than, the #acr("CT") requirement published for the required REF650. Both devices pursue the same objective, namely that the #acr("CT") must reproduce the relevant fault current accurately enough for the protection function to operate, but they express that requirement through different verification quantities.
 
 *REF630: Burden corrected accuracy limit factor.*\
-The REF630 application manual (see @REF630) verifies the #acr("CT") through its accuracy class and a burden corrected #acr("ALF"). Starting from a nameplate class such as 5P20, the rated #acr("ALF") (which applies at the rated burden) is corrected to the actual connected burden,
+The REF630 application manual verifies the #acr("CT") through its accuracy class and a burden corrected #acr("ALF"). Starting from a nameplate class such as 5P20, the rated #acr("ALF") (which applies at the rated burden) is corrected to the actual connected burden,
 
 $ "ALF'" = "ALF"  (S_r + I_"sr"^2 R_"ct") / (S_"act" + I_"sr"^2 R_"ct") $
 
-where $S_r$ is the rated and $S_"act"$ the actual burden. A lower actual burden yields a higher effective factor. The available $"ALF'"$ is then compared with the fault current multiple the #acr("CT") must reproduce. The result is dimensionless and the manual presents one common procedure for the non directional overcurrent stages rather than separate equations per characteristic. #cite(<REF630_Application_Manual>)
+where $S_r$ is the rated and $S_"act"$ the actual burden. A lower actual burden yields a higher effective factor. The available $"ALF'"$ is then compared with the fault current multiple the #acr("CT") must reproduce. The result is dimensionless and the manual presents one common procedure for the non directional overcurrent stages rather than separate equations per characteristic. #cite(<REF630_manual>)
 
 *REF650: Required secondary limiting #acr("emf").*\
-The REF650 technical guide (see @REF650) states the requirement directly as a minimum rated equivalent limiting secondary #acr("emf") $E_"al,req"$, which the selected #acr("CT") must satisfy through $E_"al" >= E_"al,req"$. For non directional instantaneous and definite time protection it specifies
+The REF650 technical guide states the requirement directly as a minimum rated equivalent limiting secondary #acr("emf") $E_"al,req"$, which the selected #acr("CT") must satisfy through $E_"al" >= E_"al,req"$. For non directional instantaneous and definite time protection it specifies
 
 $ E_"al,req" = 1.5 I_"op" I_"sr" / I_"pr" (R_"ct" + R_L + S_R / I_"sr"^2) $
 

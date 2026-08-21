@@ -36,7 +36,7 @@ $ I_("tf") = I_"rt" / (Z_T / 100) $
 
 where $S_T$ is the transformer rating, $U_n$ the nominal system voltage and $Z_T$ the transformer impedance in percent.
 
-The two RET670 criteria from #cite(<RET670_Application_Manual>) (reproduced in @RET670) implemented in the Excel sheet are
+The two RET670 criteria from #cite(<RET670_Application_Manual>) implemented in the Excel sheet are
 
 $ E_("al,req,1") = 30 I_("rt") I_("sr") / I_("pr") (R_("ct") + R_L + S_R / I_("sr")^2) $ <eq-ret-573>
 
@@ -48,7 +48,7 @@ The larger of the two values is used as the required equivalent limiting seconda
 
 === Line Differential Protection
 
-For line differential protection, the Excel sheet implements the two RED670 criteria from #cite(<RED670_Application_Manual>) (reproduced in @RED670)
+For line differential protection, the Excel sheet implements the two RED670 criteria from #cite(<RED670_Application_Manual>)
 
 $ E_("al,req,601") = I_("k,max") I_("sr") / I_("pr") (R_("ct") + R_L + S_R / I_("sr")^2) $ <eq-red-601>
 
@@ -67,7 +67,7 @@ If this condition is fulfilled, the #acr("CT") is classified as suitable. Otherw
 The calculation sequence implemented in the Excel sheet is shown in @Calculation_sequence, the complete calculation is provided in @Excel_attach. The process starts with the transformer, system, fault current, #acr("CT"), cable and relay data. The cable loop resistance is calculated from the applicable cable parameters and combined with the #acr("CT") winding resistance and relay burden to obtain the total secondary circuit resistance.
 
 #figure( caption: [Calculation sequence implemented in the independent Excel calculation],
-  image("../../Bilder/main/Calculation sequence Excel.png"),
+  image("../../Bilder/main/Calculation sequence Excel.webp"),
 )<Calculation_sequence>
 
 As illustrated in @Calculation_sequence, the available equivalent limiting secondary #acr("emf") is determined independently from the #acr("CT") nameplate data. In parallel, the relevant protection specific criteria are calculated using the total secondary circuit resistance and the applicable currents. The largest protection specific criterion is selected as the governing required value and compared with the available capability as described above. The individual calculation sheets follow this same sequence.
@@ -77,10 +77,25 @@ The consolidated results sheet places the Excel and #acr("SECP") outputs next to
 
 == Verification and Limitations of the Reference Calculation
 
-Selected Excel results were checked by manually reproducing the available #acr("CT") capability, the total secondary circuit resistance, the transformer rated current, the through fault current and the protection specific criteria from the input data. These checks reproduced the values shown in the calculation sheets and confirmed that the implemented calculation sequence is consistent with the equations presented above.
+/*Selected Excel results were checked by manually reproducing the available #acr("CT") capability, the total secondary circuit resistance, the transformer rated current, the through fault current and the protection specific criteria from the input data. These checks reproduced the values shown in the calculation sheets and confirmed that the implemented calculation sequence is consistent with the equations presented above.
 
 The consolidated results also allow the formula implementation to be checked across several #acr("CT") cores and voltage levels. In addition, the pass/fail status can be traced from the input values through the required and available limiting secondary #acr("emf").
 
-Nevertheless, the Excel sheet has not undergone a complete independent software validation. In particular, it does not contain automated input validity checks, protected formula cells, documented boundary value tests or an independently reviewed benchmark dataset. //The precise material constants used for the temperature correction of the cable resistance are also not explicitly documented in the Excel sheet.
+Nevertheless, the Excel sheet has not undergone a complete independent software validation. In particular, it does not contain automated input validity checks, protected formula cells, documented boundary value tests or an independently reviewed benchmark dataset.
+
+The Excel implementation is therefore considered a transparent and reproducible independent calculation for the investigated cases. It provides an appropriate basis for identifying numerical differences between #acr("SECP") and the device manual requirements, but it should not be interpreted as a universally validated #acr("CT") calculation tool.
+
+Transition resistances at terminal and disconnect connections were neglected in both the SECP calculations and the independent Excel reference calculation. Although this simplification is not strictly correct, its influence is negligible for the investigated cases. Based on the specified power loss of a Phoenix Contact test disconnect terminal block (1.31 W at 41 A), a terminal resistance of approximately 0.779 mΩ was estimated. Even assuming four terminal connections and applying an additional safety factor of 10, the resulting increase in the average secondary circuit resistance of 11.17 Ω is only approximately 0.28 %. The omission of terminal transition resistances is therefore not expected to have a measurable influence on the CT adequacy assessment.*/
+
+
+Selected Excel results were checked by manually reproducing the available #acr("CT") capability, the total secondary circuit resistance, the transformer rated current, the through-fault current and the protection-specific criteria from the input data. These checks reproduced the values shown in the calculation sheets and confirmed that the implemented calculation sequence is consistent with the equations presented above.
+
+The consolidated results also allow the formula implementation to be checked across several #acr("CT") cores and voltage levels. In addition, the pass/fail status can be traced from the input values through the required and available limiting secondary e.m.f.
+
+Nevertheless, the Excel sheet has not undergone a complete independent software validation. In particular, it does not contain automated input-validity checks, protected formula cells, documented boundary-value tests or an independently reviewed benchmark dataset.
+
+Like every engineering calculation, the reference calculation also relies on simplifying assumptions. One of these assumptions is the neglect of transition resistances at terminal and disconnect connections in the #acr("CT") secondary circuit. Although such resistances are physically present, their influence was assessed to be negligible for the investigated use case.
+
+An approximate transition resistance of $0.779 "mΩ"$ per connection was derived from the specified power loss of a Phoenix Contact test disconnect terminal block ($1.31 "W"$ at $41 "A")$. Assuming four terminal connections and applying an additional safety factor of 10 to account for ageing, contamination and contact degradation, the average secondary circuit resistance of the investigated cases would increase from $11.17 Ω$ to $11.21 Ω$ (approximately 0.28 %). The contribution is therefore insignificant compared with the overall secondary circuit resistance and the engineering margins applied in #acr("CT") dimensioning.
 
 The Excel implementation is therefore considered a transparent and reproducible independent calculation for the investigated cases. It provides an appropriate basis for identifying numerical differences between #acr("SECP") and the device manual requirements, but it should not be interpreted as a universally validated #acr("CT") calculation tool.
