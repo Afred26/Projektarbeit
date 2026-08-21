@@ -31,7 +31,7 @@ The #acr("IEC") and #acr("ISO") standards are treated as the release relevant no
 
 == Quality Model and Measurement
 
-The properties referenced by the decision rule are anchored in the #acr("ISO")/#acr("IEC") 25010 product quality model #cite(<ISO_IEC_25010>). Correctness and completeness are aspects of functional suitability, traceability is treated as an aspect of functional correctness and analysability and report fitness combines interaction capability with the maintainability of the report artefact. To make these properties measurable, each of them is operationalised with the goal question metric approach: A goal is refined into questions and each question into a metric with a decision criterion, as given in @tab-gqm. #cite(<Basili_GQM>)
+The properties referenced by the research questions are anchored in the #acr("ISO")/#acr("IEC") 25010 product quality model #cite(<ISO_IEC_25010>). Correctness and completeness are aspects of functional suitability, traceability is treated as an aspect of functional correctness and analysability and report fitness combines interaction capability with the maintainability of the report artefact. To make these properties measurable, each of them is operationalised with the goal question metric approach: A goal is refined into questions and each question into a metric with a decision criterion, as given in @tab-gqm. #cite(<Basili_GQM>)
 
 
 #figure(

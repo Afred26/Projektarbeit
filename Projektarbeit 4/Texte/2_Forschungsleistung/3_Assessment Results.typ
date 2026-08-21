@@ -4,7 +4,7 @@
 
 = Assessment Results <assessment>
 
-This chapter presents the results of the assessment, organized by the four research questions and closing with a review of the normative references used by #acr("SECP"). Three application device cases are examined: Transformer differential protection with the RET670, line differential protection with the RED670 and overcurrent protection with a REF650 requirement. The first two are computable in #acr("SECP") and assessed against the independent reference calculation, the third exercises the coverage question and is assessed through RQ3.
+This chapter presents the results of the assessment, organised by the four research questions and closing with a review of the normative references used by #acr("SECP"). Three application device cases are examined: Transformer differential protection with the RET670, line differential protection with the RED670 and overcurrent protection with a REF650 requirement. The first two are computable in #acr("SECP") and assessed against the independent reference calculation, the third exercises the coverage question and is assessed through RQ3.
 
 Two sources of evidence are used: The comparison Excel sheet @Excel_attach, which contains ten transformer differential and ten line differential cases and the #acr("SECP") calculation report for the same cases.
 
@@ -19,15 +19,15 @@ The cause can be identified from the detailed report. #acr("SECP") evaluates the
 
 $ R_"ct" + 2 R_"lead" + R_"relay" $ 
 
-whereas the reference calculation and the underlying RET670 requirement use a single lead resistance. 
+whereas the reference calculation and the underlying RET670 requirement apply the loop resistance once: 
 
-$ R_"ct" + R_L + S_R / I_"sr"^2 $<Widerstand> The quantity $R_"lead"$
+$ R_"ct" + R_L + S_R / I_"sr"^2 $
 
-printed by #acr("SECP") is already computed as a loop resistance over twice the cable length, so applying the further factor of two counts the lead resistance twice.
+The quantity $R_"lead"$ printed by #acr("SECP") is already computed as a loop resistance over twice the cable length, so applying the further factor of two counts the lead resistance twice.
 
 For case 220-1 the report evaluates 
 
-$ 30 * 577.35 * (1/800) * (7 + 2 * 1.0092 + 0.02) = 195.69 " V" $ 
+$ 30 dot 577.35 dot (1/800) dot (7 + 2 dot 1.0092 + 0.02) = 195.69 " V" $ 
 
 against the reference value of 172.72 V, a difference of 13.3%.
 
@@ -58,21 +58,21 @@ The generated report supports traceability in its form: Formulae, intermediate v
 Overcurrent protection is the case in which #acr("SECP") does not cover the required device. The REF650 required for the relevant planning work is not selectable in the #acr("CT") and #acr("VT") adequacy check module. The only overcurrent option offered is the REF630. The question is therefore whether the dimensioning basis that #acr("SECP") applies through the REF630 substitute is equivalent to and no less onerous than, the #acr("CT") requirement published for the required REF650. Both devices pursue the same objective, namely that the #acr("CT") must reproduce the relevant fault current accurately enough for the protection function to operate, but they express that requirement through different verification quantities.
 
 *REF630: Burden corrected accuracy limit factor.*\
-The REF630 application manual verifies the #acr("CT") through its accuracy class and a burden corrected #acr("ALF"). Starting from a nameplate class such as 5P20, the rated #acr("ALF") (which applies at the rated burden) is corrected to the actual connected burden,
+The REF630 application manual (see @REF630) verifies the #acr("CT") through its accuracy class and a burden corrected #acr("ALF"). Starting from a nameplate class such as 5P20, the rated #acr("ALF") (which applies at the rated burden) is corrected to the actual connected burden,
 
 $ "ALF'" = "ALF"  (S_r + I_"sr"^2 R_"ct") / (S_"act" + I_"sr"^2 R_"ct") $
 
-where $S_r$ is the rated and $S_"act"$ the actual burden. A lower actual burden yields a higher effective factor. The available $"ALF'"$ is then compared with the fault current multiple the #acr("CT") must reproduce. The result is dimensionless and the manual presents one common procedure for the non directional overcurrent stages rather than separate equations per characteristic.
+where $S_r$ is the rated and $S_"act"$ the actual burden. A lower actual burden yields a higher effective factor. The available $"ALF'"$ is then compared with the fault current multiple the #acr("CT") must reproduce. The result is dimensionless and the manual presents one common procedure for the non directional overcurrent stages rather than separate equations per characteristic. #cite(<REF630_Application_Manual>)
 
 *REF650: Required secondary limiting #acr("emf").*\
-The REF650 technical guide states the requirement directly as a minimum rated equivalent limiting secondary #acr("emf") $E_"al,req"$, which the selected #acr("CT") must satisfy through $E_"al" >= E_"al,req"$. For non directional instantaneous and definite time protection it specifies
+The REF650 technical guide (see @REF650) states the requirement directly as a minimum rated equivalent limiting secondary #acr("emf") $E_"al,req"$, which the selected #acr("CT") must satisfy through $E_"al" >= E_"al,req"$. For non directional instantaneous and definite time protection it specifies
 
 $ E_"al,req" = 1.5 I_"op" I_"sr" / I_"pr" (R_"ct" + R_L + S_R / I_"sr"^2) $
 
-with $I_"op"$ the primary operate value. In contrast to REF630, the requirement is function specific: Inverse time protection applies a factor of 20 on the operate multiple and directional protection uses the maximum close in fault current $I_"k,max"$.
+with $I_"op"$ the primary operate value. In contrast to REF630, the requirement is function specific: Inverse time protection applies a factor of 20 on the operate multiple and directional protection uses the maximum close in fault current $I_"k,max"$. #cite(<REF650_Technical_Guide>)
 
 *Equivalence assessment.*\
-The two procedures are physically related: #acr("IEC") 61869-2 defines both the accuracy limit quantities of class P and PR #acrpl("CT") and the equivalent limiting #acr("emf") and the REF650 guide notes that the secondary limiting #acr("emf") $E_"ALF"$ of a class P or PR #acr("CT") is approximately equal to $E_"al"$. In the form each manual presents them, however, they are not directly comparable, as summarized in @tab-oc-comparison.
+The two procedures are physically related: #acr("IEC") 61869-2 defines both the accuracy limit quantities of class P and PR #acrpl("CT") and the equivalent limiting #acr("emf") and the REF650 guide notes that the secondary limiting #acr("emf") $E_"ALF"$ of a class P or PR #acr("CT") is approximately equal to $E_"al"$ #cite(<IEC_61869_2>) #cite(<REF650_Technical_Guide>). In the form each manual presents them, however, they are not directly comparable, as summarised in @tab-oc-comparison.
 
 #figure(
   {
@@ -90,7 +90,10 @@ The two procedures are physically related: #acr("IEC") 61869-2 defines both the 
   caption: [Dimensioning basis of the REF630 substitute compared with the required REF650.],
 ) <tab-oc-comparison>
 
-Because the two device procedures use different verification quantities and function-specific input bases, equivalence could not be demonstrated from the available SECP implementation and published device requirements.
+Because the two device procedures use different verification quantities and function-specific input bases, equivalence could not be demonstrated from the available #acr("SECP") implementation and published device requirements.
+
+*Answer to RQ3.*\
+#acr("SECP") does not cover the required overcurrent case. The REF650 is not selectable and the offered REF630 substitute applies a different verification quantity on a different, function independent input basis, so its equivalence to the published REF650 requirement could not be demonstrated. The overcurrent case therefore remains a coverage blocker and the intended planning assessment cannot currently be performed in #acr("SECP").
 
 == RQ4 - Report Fitness for Customer Delivery
 
@@ -101,11 +104,11 @@ The standards referenced by #acr("SECP") are:
 - #acr("IEC") 61869-2 Edition 1.0 2012
 - #acr("IEC") TR 61869-100 Edition 1.0 2017
 - #acr("IEC") 60287-1:2006. 
-Of these, the general-requirements part #acr("IEC") 61869-1:2007 has been superseded by #acr("IEC") 61869-1:2023 and #acr("IEC") 60287-1 got a new revision in 2023, whereas #acr("IEC") 61869-2:2012 and #acr("IEC") TR 61869-100:2017 remain the current editions. #acr("SECP") therefore delivers, in every report, references to withdrawn editions of these standards.
+Of these, the general-requirements part #acr("IEC") 61869-1:2007 has been superseded by #acr("IEC") 61869-1:2023 #cite(<IEC_61869_1>) and #acr("IEC") 60287-1 was likewise superseded by a 2023 edition #cite(<IEC_60287_1>), whereas #acr("IEC") 61869-2:2012 and #acr("IEC") TR 61869-100:2017 remain the current editions. #acr("SECP") therefore delivers, in every report, references to withdrawn editions of two of its referenced standards.
 
 However, the report quality is significantly reduced by shortcomings in formatting, readability and maintainability. Although the output is generated as a Microsoft Word document, extensive use of automatically generated formula fields leads to numerous layout issues. In several locations, formula fields overlap or interfere with surrounding content, making subsequent editing difficult and time consuming. 
 
-This problem becomes increasingly severe for large projects, where reports can exceed a hundred pages and contain a large number of embedded formula fields. As a result, the large number of embedded formula fields made navigation and subsequent editing increasingly difficult. Therefore, even the small deficiencies identified under RQ1 and RQ2 cannot be corrected in the generated document with reasonable effort.
+This problem becomes increasingly severe for large projects, where reports can exceed a hundred pages: the sheer number of embedded formula fields makes navigation and subsequent editing increasingly difficult. Therefore, even the small deficiencies identified under RQ1 and RQ2 cannot be corrected in the generated document with reasonable effort.
 
 Additional formatting deficiencies are present throughout the report. Section breaks are frequently created through manual spacing rather than proper page break mechanisms, causing chapter headings to appear in arbitrary positions on a page rather than at the beginning of a new section. In some cases, a heading is displayed at the bottom of a page while the associated content continues on the next page. 
 

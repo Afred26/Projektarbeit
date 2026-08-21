@@ -35,7 +35,7 @@
 ) <RED670>
 
 #figure(
-  pdf.attach("REF650_S22_Requirements.pdf", description: "REF650 Application manual Section 22 Requirements"),
+  pdf.attach("REF650_S22_Requirements.pdf", description: "REF650 Technical guide Section 22 Requirements"),
   caption: [REF650 Requirements],
   kind: "attachment",
   supplement: "Attachment",
